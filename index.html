@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <!-- Etiquetas Meta de descripción y Open Graph -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="TecBioTec, 2do Congreso de Tecnología y Biociencias de UTEC - Fray Bentos 2026. ¡Inscríbete y sé parte del futuro de la ciencia y la tecnología en Uruguay!">
+    <meta name="keywords" content="TecBioTec, congreso UTEC, tecnología, biociencias, Fray Bentos, Uruguay, ingeniería">
+    <meta property="og:title" content="TecBioTec 2026 | 2do Congreso">
+    <meta property="og:description" content="Únete al 2do Congreso de Tecnología y Biociencias de UTEC este 4 y 5 de junio de 2026.">
+    <meta property="og:image" content="images/26_TBT_P1.png"> 
+    <title>TecBioTec 2026 | 2do Congreso</title>
+    <link rel="icon" href="images/logoST.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0z" />
+        </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle" style="background-color: #316CF4;">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                    Claro
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                    Oscuro
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene el header -->
+    <header class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            &nbsp;&nbsp;<img src="images/UTEC_W.png" alt="Logo_UTEC_W" width="125" height="auto">
+            &nbsp;&nbsp;<img src="images/logoTB.png" alt="TecBioTec Logo" width="85" height="85">&nbsp;&nbsp;
+            <a class="navbar-brand" href="#">
+                <h5 class="mb-0 text-white" style="line-height: 1.2;">2do Congreso de Tecnología<br>y Biociencias de UTEC | 2026</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-nowrap"> 
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#inicio">
+                            <i class="bi bi-house-door"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#organizacion">
+                            <i class="bi bi-diagram-3"></i> Organización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#programa">
+                            <i class="bi bi-calendar-event"></i> Programa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#comites">
+                            <i class="bi bi-mortarboard"></i> Comité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#ponentes">
+                            <i class="bi bi-mic"></i> Ponentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#posters">
+                            <i class="bi bi-easel"></i> Posters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#lugar">
+                            <i class="bi bi-geo-alt"></i> Lugar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-1" href="#inscripciones">
+                            <i class="bi bi-ticket-perforated"></i> Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Esto es otro super comentario para aclarar que aquí viene el inicio de la WEB de TECBIOTEC 2026 -->
+    <section id="inicio" class="container text-center section-offset">
+        <div class="d-none d-md-block" style="padding-top: 120px;"></div>
+        <div class="d-block d-md-none" style="padding-top: 180px;"></div>
+        <div class="container text-center mb-4">
+            <a href="#" target="_blank">
+                <img id="logoP1" src="images/26_TBT_P1.png" alt="26_TBT_P1" class="img-fluid w-75 mx-auto d-block" style="max-width: 1000px;">
+            </a>
+        </div>
+        
+        <div id="countdown" class="my-4 bg-primary text-white p-3 rounded text-center mx-auto shadow" style="max-width: 1000px;">
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-center mb-4">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold shadow-sm" onclick="window.open('https://ee-eu.kobotoolbox.org/x/wgLioGgW', '_blank')" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y únete ahora!">
+                <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
+                ¡Inscripción de trabajos!
+            </button>
+        </div>
+        
+        <div class="lead px-3">
+            <h1 class="text-uppercase text-danger fw-bold mb-2">TecBioTec 2026</h1>
+            <h2 class="fs-4 text-body mb-3">2.º Congreso de Tecnología y Biociencias UTEC</h2>
+            <p class="text-body-secondary">TecBioTec es un espacio académico y profesional orientado al intercambio en tecnología, biociencias e ingeniería.</p>
+            <p class="mb-0 text-body"><u>Fecha</u></p>
+            <p class="fs-5 fw-bold text-primary">4 y 5 de junio de 2026</p>
+        </div>
+
+        <div class="alert alert-warning border-warning shadow-sm mb-4 rounded-3 text-center" role="alert">
+            <h6 class="alert-heading fw-bold mb-2"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
+            <p class="mb-0">
+                <strong class="text-primary">viernes, 17 de abril 2026 - 23:59 Horas</strong><br>
+                </p>
+                <!--
+                <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: 13 de octubre 2024 - 23:59 Horas</span>
+                -->
+        </div>
+
+        <div class="mt-4 pb-4">
+            <p class="mb-1 text-body">
+                <strong>¿Preguntas y Comentarios?</strong> Escribe al Email de contacto:
+            </p>
+            <a href="mailto:tecbiotec@utec.edu.uy" class="icon-link icon-link-hover d-inline-block mt-2 text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="text-decoration: none; font-size: 1.2rem;">
+                <i class="bi bi-envelope-at-fill me-1"></i>
+                <strong>tecbiotec@utec.edu.uy</strong>
+            </a>
+        </div>
+    </section>
+
+    <!-- Esto es otro super comentario para aclarar que aquí vienen la organizacion de TECBIOTEC 2026 -->
+    <section id="organizacion" class="container my-5 section-offset">
+        <h2 class="mb-4 text-primary fw-bold">Organización</h2>
+        
+        <div class="lead" style="text-align: justify;">
+            <p>2do Congreso de Tecnología y Biociencias del ITR Suroeste de la Universidad Tecnológica del Uruguay es un evento académico de gran relevancia para el interior del país. Reúne a estudiantes, investigadores y profesionales de diversas disciplinas relacionadas con la tecnología y las biociencias, con el objetivo de promover el intercambio de conocimientos, experiencias e innovaciones en estos campos.</p>
+            <p>El congreso contará con conferencias magistrales, presentaciones de investigaciones, mesas redondas y sesiones de pósters, ofreciendo a los participantes la oportunidad de exponer sus trabajos, debatir ideas y establecer colaboraciones. Expertos nacionales e internacionales compartirán sus perspectivas sobre los últimos avances y desafíos en ingeniería y biociencias.</p>
+            <p>Este espacio busca fomentar el desarrollo académico y profesional de los asistentes, fortalecer redes de colaboración interdisciplinaria, y motivar a las nuevas generaciones de ingenieros y científicos a seguir innovando y explorando en sus áreas de estudio.</p>
+        </div>
+
+        <h3 class="mt-5 mb-4 text-primary fw-bold">Formatos de Participación</h3>
+        
+        <div class="lead" style="text-align: justify;">
+            <p>Para la edición 2026, los interesados deberán presentar sus trabajos mediante el <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://ee-eu.kobotoolbox.org/x/wgLioGgW" target="_blank" style="color: rgb(192,0,0);">enlace de inscripción de trabajos que aspiran a la realización de una ponencia o la presentación de un poster <i class="bi bi-box-arrow-up-right mb-1"></i></a> habilitado en esta página web. El <strong>Comité Científico</strong> realizará su valoración según los criterios del congreso. Si el trabajo presenta el nivel de madurez adecuado, se le asignará un espacio para ser socializado como Póster o Ponencia. Si aún se encuentra en etapas tempranas, los autores recibirán retroalimentación formativa y serán invitados a presentar sus avances en la siguiente edición.</p>
+            <p>
+                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <strong>Conferencias Magistrales (Por invitación del comité organizador):</strong> Expertos reconocidos en tecnología y biociencias ofrecerán conferencias, compartiendo sus conocimientos y perspectivas sobre los avances más recientes y los desafíos en estos campos.
+            </p>
+            <p>
+                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <strong>Ponencias:</strong> Trabajos seleccionados por el comité científico para presentación oral. Tendrán una duración estricta de <strong>20 minutos</strong>, 15 minutos de exposición por parte de un autor y 5 minutos dedicados a preguntas del auditorio.
+            </p>
+            <p>
+                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <strong>Posters:</strong> Modalidad para trabajos aceptados por el comité científico que se benefician de una presentación visual y experiencial, en formato de “póster”. Contarán con un espacio dedicado para fomentar la interacción directa, el debate de ideas y la retroalimentación por parte del publico asistentes.
+            </p>
+        </div>
+
+        <hr class="my-5"> 
+        
+        <p class="lead" style="text-align: justify;">
+            <strong class="text-primary">Publicación y Alianza Estratégica:</strong> Todos los trabajos aceptados integrarán una edición especial de memorias del evento, publicadas en alianza con la <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://revista.utec.edu.uy/ojs/index.php/revistalinks" target="_blank" style="color: rgb(192,0,0);">Revista LINKS <i class="bi bi-box-arrow-up-right mb-1"></i></a>. Adicionalmente, los autores de los trabajos más destacados del congreso recibirán una invitación especial para complementar sus resultados y publicar un resumen extendido o un artículo en una edición regular de la revista.
+        </p>
+
+        <div class="card mt-5 mb-4 shadow border-0 rounded-4 bg-body-tertiary">
+            <div class="card-body p-4 p-lg-5">
+                <div class="d-flex align-items-center mb-4">
+                    <img id="ICONO_SORG" src="images/ICONO_SORG.png" alt="TecBioTec Logo" width="65" height="65">
+                    <h4 class="ms-3 mb-0 text-primary fw-bold">Valor Conceptual de TecBioTec:</h4> 
+                </div>
+                <p class="lead m-0" style="text-align: justify;">
+                    Con gran entusiasmo presentamos la segunda edición del Congreso <strong>TecBioTec</strong>, un evento que continúa creciendo y evolucionando en el suroeste de Uruguay. Enriquecidos por las valiosas experiencias y aprendizajes de nuestro primer encuentro, regresamos con un firme compromiso hacia la mejora continua. Alineado con la visión de la Universidad Tecnológica - <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/" target="_blank" style="color: rgb(192,0,0);">UTEC <i class="bi bi-box-arrow-up-right mb-1"></i></a>, este espacio busca ser un punto de encuentro cercano y accesible, donde la <strong>tecnología y las biociencias</strong> convergen para generar una verdadera colaboración interdisciplinaria.
+                    <br><br>
+                    Más allá de lo académico, <strong>TecBioTec</strong> es una invitación al diálogo abierto entre la educación, la industria y la comunidad. Buscamos fortalecer los vínculos que impulsan la innovación y el desarrollo sostenible de nuestra región. Al compartir conocimientos y celebrar nuevas ideas, nuestro gran propósito es inspirar a las futuras generaciones de tecnólogos y profesionales, así como motivar a toda la sociedad a ser protagonista activa del cambio y el progreso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esto es otro super comentario para aclarar que aquí vienen los objetivos de TECBIOTEC 2026 -->
+    <section id="objetivos" class="container my-5 section-offset">
+        <div class="p-4 rounded-4 shadow-sm bg-body-tertiary border">
+            <div class="d-flex align-items-center mb-4">
+                <h4 class="mb-0 text-primary fw-bold">Objetivos del congreso:</h4> 
+            </div>        
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Construir puentes de diálogo y cooperación multisectorial, facilitando el intercambio de conocimientos y experiencias entre estudiantes, académicos y profesionales en tecnología y biociencias.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Visibilizar y acelerar la innovación tecnológica, impulsando la conversación y la cocreación de soluciones entre todos los participantes.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Tejer redes sólidas y duraderas de colaboración interdisciplinaria y multisectorial, que nutran proyectos y estudios conjuntos para el futuro de Uruguay.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Inspirar a las nuevas generaciones de estudiantes y jóvenes profesionales a liderar su desarrollo en tecnología y biociencias, revelando el horizonte de oportunidades de progreso.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Desplegar un abanico de experiencias de aprendizaje prácticas y transformadoras, como talleres y conferencias, que potencien el talento de los asistentes.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Acelerar el progreso tecnológico y productivo del suroeste de Uruguay, tejiendo puentes entre la educación terciaria de calidad y las necesidades reales de desarrollo de la región.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Vivir y encarnar los <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/sobre-utec/" target="_blank" style="color: rgb(192,0,0);">valores institucionales <i class="bi bi-box-arrow-up-right mb-1"></i></a> de UTEC, haciendo de la innovación, equidad e inclusión la base de nuestro quehacer diario.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Conectar la ciencia y la tecnología con soluciones tangibles que aborden desafíos globales y locales, generando un impacto positivo en la sociedad y el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esto es otro super comentario para aclarar que aquí viene EL CODIGO DE ETICA de TECBIOTEC 2026 -->
+    <section id="etica" class="container my-5 section-offset">
+        <div class="card shadow border-0 rounded-4 bg-body-tertiary overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+                
+                <div class="d-flex align-items-center mb-4">
+                    <i class="bi bi-shield-check text-primary fs-2"></i>
+                    <h4 class="ms-3 mb-0 text-primary fw-bold">Código de Ética y Conducta TecBioTec</h4> 
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <div class="float-end p-2 rounded-3 shadow-sm ms-4 mb-3 bg-white" style="width: 40%; max-width: 450px; shape-outside: polygon(0 0, 100% 0, 100% 20%, 95% 40%, 100% 60%, 98% 80%, 100% 100%, 0 100%);">
+                        <img src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="width: 100%; height: auto;">
+                    </div>
+                    
+                    <p class="lead m-0" style="text-align: justify;">
+                        <strong>TecBioTec 2026</strong> promueve un ambiente académico, profesional e interdisciplinario caracterizado por la seguridad, la inclusión, el respeto y la colaboración. Todas las personas participantes —asistentes, autores, ponentes, presentadores de póster, integrantes de comités, invitados y aliados— son convocadas a contribuir con honestidad y compromiso con el intercambio constructivo de conocimientos.
+                        <br><br>
+                        Los trabajos presentados en <strong>TecBioTec 2026</strong> reflejarán principios de integridad académica, originalidad, autoría responsable y uso ético de las fuentes, fortaleciendo una cultura de confianza y transparencia. La participación expresa la adhesión a estos principios para una construcción colectiva orientada al desarrollo científico, tecnológico y social.
+                    </p>
+
+                    <div class="d-flex justify-content-start mt-4">
+                        <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Lee el documento y asume el compromiso personal!">
+                            <i class="bi bi-file-earmark-pdf-fill me-2"></i> Leer Código de Ética (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row g-0 align-items-center d-block d-lg-none mt-4">
+                    <div class="col-12 text-center mb-4">
+                        <div class="p-2 bg-white rounded-3 shadow-sm d-inline-block border">
+                            <img src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="m-0" style="text-align: justify;">
+                            <strong>TecBioTec 2026</strong> promueve un ambiente académico caracterizado por la seguridad, la inclusión y la colaboración. Los trabajos presentados reflejarán principios de integridad académica y uso ético de las fuentes. La participación expresa la adhesión a estos principios para una construcción colectiva orientada al desarrollo científico y social.
+                        </p>
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" target="_blank" class="btn btn-primary btn-lg fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Lee el documento y asume el compromiso!">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i> Leer PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “programa” -->
+    <section id="programa" class="container py-5 section-offset">
+        <div class="text-center mb-5 mt-4">
+            <h2 class="display-4 fw-bold text-primary mb-3">Programa</h2>
+            <div class="d-inline-block px-4 py-2 rounded-pill bg-danger text-white shadow-sm mb-3">
+                <strong>Horario:</strong> ⏳ Esta información será publicada próximamente. <!-- 9:00 a 12:30 y 13:30 a 17:00 horas --> |
+                <strong>Modalidad: <u>Presencial</u></strong>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-light border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-people-fill text-primary fs-1"></i>
+                        <h3 class="ms-3 mb-0 text-primary fw-bold">Público Objetivo</h3>
+                    </div>
+                    <p class="lead text-dark mb-3" style="text-align: justify;">
+                        ¡Te invitamos a formar parte de un ecosistema único que reúne a los apasionados de la ciencia y la innovación! El <strong>2.º Congreso de Tecnología y Biociencias (TecBioTec) de UTEC</strong> es el punto de encuentro ideal para estudiantes universitarios, investigadores, docentes, profesionales de la industria, emprendedores y representantes de organizaciones públicas y ONGs.
+                    </p>
+                    <p class="lead text-dark m-0" style="text-align: justify;">
+                        Un espacio diseñado para intercambiar conocimientos, tejer redes de contacto con expertos y descubrir los avances que están transformando nuestra región. Si eres un entusiasta del desarrollo tecnológico y las biociencias, este es tu momento para inspirarte y ser protagonista activo del futuro científico e industrial de Uruguay. ¡Súmate y sé parte de esta segunda edición!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="images/TecBioTec2026_Dia1Prov.jpg" class="card-img-top" alt="Cronograma Día 1">
+                        <div class="card-body text-center bg-light">
+                            <a href="docs/TecBioTec2026_Dia1Prov.pdf" download target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
+                                <i class="bi bi-download me-2"></i> Actividades Día 1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="images/TecBioTec2026_Dia2Prov.jpg" class="card-img-top" alt="Cronograma Día 2">
+                        <div class="card-body text-center bg-light">
+                            <a href="docs/TecBioTec2026_Dia2Prov.pdf" download target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
+                                <i class="bi bi-download me-2"></i> Actividades Día 2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-lg rounded-4 mb-5 p-4">
+                <h4 class="text-center text-danger mb-4 fw-bold">
+                    <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://tecbiotec.github.io/Congreso2024/#" target="_blank" style="color: rgb(192,0,0);" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Visita la web del 2024!">Algunas imágenes de nuestra edición anterior - TecBioTec 2024 <i class="bi bi-globe-americas mb-1"></i></a>
+                </h4>
+                <div id="myCarousel_D1" class="carousel slide rounded-3 overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#myCarousel_D1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="images/FB_1_071124 (1).jpeg" class="d-block w-100" alt="Slide 1"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (2).jpeg" class="d-block w-100" alt="Slide 2"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (3).jpeg" class="d-block w-100" alt="Slide 3"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (4).jpeg" class="d-block w-100" alt="Slide 4"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (5).jpeg" class="d-block w-100" alt="Slide 5"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (6).jpeg" class="d-block w-100" alt="Slide 6"></div>
+                        <div class="carousel-item"><img src="images/FB_1_071124 (7).jpeg" class="d-block w-100" alt="Slide 7"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel_D1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel_D1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Esto es otro super comentario para aclarar que estan los ejes TEMATICOS -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold text-primary">Ejes Temáticos</h3>
+                    <p class="text-muted w-75 mx-auto">
+                        Abarcan diversas áreas de estudio en UTEC y el <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" class="text-decoration-none fw-bold">Instituto Tecnológico Regional Suroeste</a>, alineándose con el impulso a la innovación de la visión histórica de crecimiento y desarrollo del <a href="https://utec.edu.uy/uploads/documento/7c1a87937c7c1028ecb3a4546a8dfb3efec9097b.pdf" target="_blank" class="text-decoration-none fw-bold">Plan Estratégico institucional</a> y la <a href="https://observatorioplanificacion.cepal.org/es/planes/estrategia-nacional-de-desarrollo-uruguay-2050" target="_blank" class="text-decoration-none fw-bold">Estrategia Nacional 2050</a>.
+                    </p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow border-0 rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img id="ICONO_E1" src="images/ICONO_E1.png" alt="Icono E1" width="50" height="50" class="me-3">
+                                    <h5 class="card-title fw-bold m-0">Innovaciones Tecnológicas y Robóticas</h5>
+                                </div>
+                                <h6 class="text-muted small mb-3">Mecatrónica y Tecnologías de la Información</h6>
+                                <p class="card-text small text-secondary" style="text-align: justify;">Clave para impulsar la eficiencia y productividad en múltiples sectores. Mejoran procesos, facilitan la automatización de tareas complejas y aumentan la precisión promoviendo soluciones sostenibles.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
+                                <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank"><img src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank"><img src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow border-0 rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img id="ICONO_E2" src="images/ICONO_E2.png" alt="Icono E2" width="50" height="50" class="me-3">
+                                    <h5 class="card-title fw-bold m-0">Logística y Cadena de Abastecimiento</h5>
+                                </div>
+                                <h6 class="text-muted small mb-3">Diseño, Cadenas de valor, Procesos y Logística</h6>
+                                <p class="card-text small text-secondary" style="text-align: justify;">Claves para optimizar recursos y mejorar la competitividad. Permiten una entrega eficiente, reducen costos y aumentan la satisfacción del cliente, impulsando el crecimiento sostenible.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
+                                <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank"><img src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank"><img src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/cities/" target="_blank"><img src="images/ODS11.jpg" alt="ODS11" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank"><img src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank"><img src="images/ODS_ALL.jpg" alt="ODS_ALL" width="40" class="rounded shadow-sm"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow border-0 rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img id="ICONO_E3" src="images/ICONO_E3.png" alt="Icono E3" width="50" height="50" class="me-3">
+                                    <h5 class="card-title fw-bold m-0">Ciencia y Tecnología de Alimentos</h5>
+                                </div>
+                                <h6 class="text-muted small mb-3">Producción Lechera, Análisis, Seguridad Alimentaria</h6>
+                                <p class="card-text small text-secondary" style="text-align: justify;">Garantizan la calidad, seguridad y sostenibilidad en la producción alimentaria. Contribuyen a innovar y optimizar procesos, mejorando la salud y el bienestar de la sociedad.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
+                                <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank"><img src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/health/" target="_blank"><img src="images/ODS3.jpg" alt="ODS3" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank"><img src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank"><img src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank"><img src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow border-0 rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img id="ICONO_E5" src="images/ICONO_E5.png" alt="Icono E5" width="50" height="50" class="me-3">
+                                    <h5 class="card-title fw-bold m-0">Sostenibilidad y Medio Ambiente</h5>
+                                </div>
+                                <h6 class="text-muted small mb-3">Control Ambiental, Agricultura Inteligente, Sostenibilidad</h6>
+                                <p class="card-text small text-secondary" style="text-align: justify;">Pilares fundamentales para enfrentar el cambio climático. Estas prácticas optimizan el uso de los recursos, reducen el impacto ambiental y aseguran un equilibrio entre necesidades humanas y ecosistemas.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
+                                <a href="https://www.un.org/sustainabledevelopment/es/poverty/" target="_blank"><img src="images/ODS1.jpg" alt="ODS1" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank"><img src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" target="_blank"><img src="images/ODS6.jpg" alt="ODS6" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/energy/" target="_blank"><img src="images/ODS7.jpg" alt="ODS7" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank"><img src="images/ODS10.jpg" alt="ODS10" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" target="_blank"><img src="images/ODS13.jpg" alt="ODS13" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank"><img src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank"><img src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
+                                <a href="https://www.un.org/sustainabledevelopment/es/globalpartnerships/" target="_blank"><img src="images/ODS17.jpg" alt="ODS17" width="40" class="rounded shadow-sm"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Esto es otro super comentario para aclarar que estan las Charlas Magistrales -->
+            
+            <div class="row justify-content-center mb-5 mt-4">
+                <div class="col-lg-8 text-center">
+                    <p class="lead text-secondary">
+                        Actualmente nos encontramos afinando la programación de las charlas magistrales y talleres de TecBioTec 2026. En breve estaremos compartiendo esta información; después de todo, las buenas agendas también saben hacerse esperar un poco. ⏳
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+
+                    <div class="card shadow-lg border-0 rounded-4 h-100">
+                        <div class="card-header border-bottom-0 pt-4 pb-0 text-center bg-transparent">
+                            <img src="images/Ch_Magistrales.png" alt="Charlas Magistrales" width="50" class="mb-2">
+                            <h4 class="fw-bold text-primary">Charlas Magistrales</h4>
+                        </div>
+
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-primary border-bottom pb-2">Primer día</h5>
+                            <ul class="list-group list-group-flush mb-4">
+                                <!--
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Amadeo Sosa</strong><br><span class="text-secondary">Los desafíos de la educación tecnológica en el marco de la planificación estratégica</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Pia Grignola</strong><br><span class="text-secondary">Posgrado Sostenibilidad</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Annabela Estévez y Marina Flores</strong><br><span class="text-secondary">Ruta del hongo</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Alejandra Martínez</strong><br><span class="text-secondary">Innovación en diálogo</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Mariana Boiani</strong><br><span class="text-secondary">Construcción de una Agenda de I+D con foco en la cadena láctea</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Bruno Gabetti</strong><br><span class="text-secondary">El arte de preguntar: La IA como asistente para optimizar tu trabajo</span></div>
+                                </li>
+                                -->
+                            </ul>
+
+                            <h5 class="fw-bold text-primary border-bottom pb-2">Segundo día</h5>
+                            <ul class="list-group list-group-flush">
+                                <!--
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Yamilé Lara</strong><br><span class="text-secondary">IMEC e IMTE: Desarrollo Tecnológico en el Suroeste</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Nolan Sánchez</strong><br><span class="text-secondary">Diseño de Producto</span></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-start border-0 py-2 bg-transparent">
+                                    <i class="bi bi-mic-fill text-primary mt-1 me-3"></i>
+                                    <div><strong>Natalia Besil</strong><br><span class="text-secondary">Aportes de la espectrometría de masas a la autenticidad e inocuidad alimentaria</span></div>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Esto es otro super comentario para aclarar que estan los Talleres -->
+
+                <div class="col-lg-6">
+                    <div class="card shadow-lg border-0 rounded-4 h-100">
+                        <div class="card-header border-bottom-0 pt-4 pb-0 text-center bg-transparent">
+                            <img src="images/Talleres.png" alt="Talleres" width="50" class="mb-2">
+                            <h4 class="fw-bold text-primary">Talleres</h4>
+                        </div>
+
+                        <div class="card-body p-4">
+                            <div class="d-grid gap-3">
+                                <!--
+                                <a href="https://www.fischertechnik.de/es-es/escuelas/material-didactico/programación-para-secundaria/robotics-bt-beginner" target="_blank" class="btn btn-outline-primary text-start p-3 rounded-3 shadow-sm text-decoration-none">
+                                    <i class="bi bi-tools me-2"></i> <strong>J. Pablo Franco y Jesús Martínez</strong><br>
+                                    <span class="small" style="color: inherit;">Laboratorio STEM con tecnología Fischertechnik</span>
+                                </a>
+                                <div class="p-3 border border-primary rounded-3 shadow-sm" style="background-color: var(--bs-tertiary-bg);">
+                                    <i class="bi bi-music-note-beamed text-primary me-2"></i> <strong>Florencia Bobadilla</strong><br>
+                                    <span class="small" style="color: inherit;">Resonancia biológica: La ciencia del canto. La voz hablada y cantada como motor de preguntas.</span>
+                                </div>
+                                <a href="https://forms.gle/NdYhJUPThW2QNUzh6" target="_blank" class="btn btn-outline-primary text-start p-3 rounded-3 shadow-sm text-decoration-none" data-bs-toggle="tooltip" title="¡Inscripción previa aquí!">
+                                    <i class="bi bi-pencil-square me-2"></i> <strong>Pablo Tambasco</strong><br>
+                                    <span class="small" style="color: inherit;">Aseguramiento de la calidad de las planificaciones didácticas</span>
+                                </a>
+                                -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Comité científico” -->
+    <section id="comites" class="container my-5 section-offset">
+        <br><br>
+        
+        <h2>Comité científico</h2>
+        
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Nolan Sánchez T.</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <!-- <a href=" 2CvUy " target="_blank"> -->
+                                <img class="img-fluid icon-ods" src="images/Nolan Sánchez.jpg" alt="Nolan Sánchez" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            <!-- </a> -->
+                        </div><br><br>
+                        <p class="card-text">Coordinación Ingeniería Logística<br>(Sede Fray Bentos)</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:nolan.sanchez@utec.edu.uy" target="_blank">nolan.sanchez@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Diseño y Gestión de Cadenas de Suministros Resilientes.<br>Diseño, Implementación, Gestión y Control de: Redes de distribución, Cadenas de Suministros, Logística Integral, Gestión y Control de Inventarios, Gestión de Proveedores, Indicadores de Gestión.<br>Diseño y control de políticas de compras basados en conceptos Lean Implementación de políticas de eliminación de desperdicios y optimización de utilidades perfeccionando el servicio al cliente e incrementando la fidelización.<br>Incremento en la velocidad de respuesta a los requerimientos de los clientes mediante la implementación de sistemas de información inteligentes, ágiles y de última generación.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Rommel Andrés Diaz</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?434583b5dcb93658599be0be467c8fad" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Rommel Diaz.jpg" alt="Rommel Diaz" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería Logística</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:rommel.diaz@utec.edu.uy" target="_blank">rommel.diaz@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Doctor en Derecho y Ciencias Sociales, Universidad de la República. - Analista en Comercio Exterior, Universidad ORT Uruguay. - Curso de posgrado Supply Chain Management, en la Facultad de Ingeniería de la Universidad de Buenos Aires.  -Programa de Desarrollo Gerencial, Universidad ORT Uruguay. -Postgrado en Educación, Universidad ORT Uruguay. - Tesis en curso del Máster en Educación, Universidad ORT Uruguay.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Verónica Lychenheim</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?f04b6d9c272d7ab67ba723b67d74229d" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/ComC_Verónica Lychenheim.jpg" alt="ComC_Verónica Lychenheim" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería Logística</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:veronica.lychenheim@utec.edu.uy" target="_blank">veronica.lychenheim@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Licenciada en Sociología, UDELAR, Formación de Gerencia en Calidad en LATU Sistemas. Fue Gerente de Gestión de Calidad en TCC empresa de Servicios y Telecomunicaciones. Integró el Consejo de Jueces de INACAL. Es consultora de para empresas en Gestión de Calidad.</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Pia Grignola</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?0e7956f223a61a880454748d67cf59486bf554d462e33238232b94d5a7321fe8a84b4dc1351c31bfbe615433b0c66d3c065ea6cbb1d67641469d8e273ae5d136" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Pia Grignola.jpg" alt="Pia Grignola" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:pia.grignola@utec.edu.uy" target="_blank">pia.grignola@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Licenciada en Bioquimica, de la facultad de Ciencias, UdelaR y una maestria en Ciencias Agrarias, de la facultad de Agronomía, UdelaR. Docente encargada de Biotecnología en Alimentos, con enfasis en Ingeniería Genética. Analísta de laboratorio. </small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Valentina Bartaburu</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?11122ad2e8960442bec6c2873dc5e623" target="_blank">
+                            <img class="img-fluid icon-ods" src="images/Valentina Bartaburu.jpg" alt="Valentina Bartaburu" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:valentina.bartaburu@utec.edu.uy" target="_blank">valentina.bartaburu@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Es Licenciada en Nutrición (UNER) esta cursando una maestria en Tecnología Alimentaría (MITA) y tiene una diplomatura en Formación Profesional de la Universidad de San Martín e INEFOP) es profesora de Nutrición Humana, colabora con la difusión de la carrera.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Claudia Elizondo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <!-- <a href=" 2CvUy " target="_blank"> -->
+                                <img class="img-fluid icon-ods" src="images/Claudia Elizondo.jpg" alt="Claudia Elizondo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            <!-- </a> -->
+                        </div><br><br>
+                        <p class="card-text">Docente Tecnología en Control Ambiental</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.elizondo@utec.edu.uy" target="_blank">maria.elizondo@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Docente encargada Licenciatura en Análisis Alimentario. Licenciada en biología, MSc. en Ciencias Veterinarias, Dra. en medicina de la conservación.</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+  
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Guillermo Zinola</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://exportcvuy.anii.org.uy/cv/?178923525023ada108579cca52442a60cb44a3e35e8eed1c5b9db04baf184cb21ead03a0f3a3e5265a4bd7f0bbd6e30fe0036e345cb0c7edd284ca45d50899fd" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Guillermo Zinola.jpg" alt="Guillermo Zinola" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:guillermo.zinola@utec.edu.uy" target="_blank">guillermo.zinola@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Químico Agrícola y Ambiental y Licenciado en Química egresado de la Facultad de Química de la Universidad de la República y cuenta con una Maestría de doble titulación en Ingeniería Sanitaria y Ambiental otorgada por el instituto IHE (Delft, Holanda) y la Universidad del Valle (Cali, Colombia). Actualmente es Docente Adjunto de Efluentes agropecuarios y agroindustriales y participa de otras unidades curriculares de la carrera, y es investigador en sistemas biológicos de tratamiento y valorización de efluentes y residuos sólidos orgánicos agropecuarios y agroindustriales, donde se especializa en pequeña y mediana escala productiva. Cuenta con experiencia en las áreas de química y biotecnología ambiental, biodigestores productivos e industriales, desarrollo de tecnologías apropiadas de tratamiento biológico y valorización de efluentes y residuos sólidos orgánicos, producción agropecuaria, gestión ambiental y desarrollo de empresas científico-tecnológicas. Pertenece al Concejo Directivo de la RedBioLAC (Red de Biodigestores de Latinoamérica y el Caribe), siendo también docente en Universidad ORT Uruguay y socio fundador de la empresa NETUM.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Alejandra Szabo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?1c48312e472924ba0aeffa5db79cf41e06903b0f74aab7fb60ec2d9a30d5ff3dc2a0a7dc1015f6cc934468f507a2dbd70b4fcadc628855f4185e14929ecbf8ae" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Alejandra Szabo.jpg" alt="Alejandra Szabo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.szabo@utec.edu.uy" target="_blank">maria.szabo@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Ingeniera Quimica egresada de la Facultad de Ingenieria de la Universidad de la Republica. Pertence el Sistema Nacional De Investigadores - ANII. Amplia experiencia en investigaciony en docencia. Posee un Master en Ingenieria Ambiental y Sanitaria con honores realizado en IHE-Delft, Holanda, con vasto conocimiento en tratamiento de efluentes liquidos municipales e industirales, asi como tambien residuos solidos. Amplio conocimiento en nitrificacion y denitrificacion biologica. Especialista en gestion ambiental UNIT ISO 14000, se ha desempenado en encargada de area de Ingenieria Ambiental en consultoras, con el diseno de planta de tratamiento de efluentes y estudios de impacto. Actualmente se encuentra finalizando la especializacion en Doctorado en Ingenieria Ambiental y Sanitaria en TU Delft, Holanda, con enfoque en la valorizacion de residuos liquidos de industrias lacteas mediante el tratamiento anaerobio. A su vez cuenta con un Master en Administracion de Empresas, de la Escuela de Negocios de Barcelona.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Kelly Andresa Liesenfeld</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?2a2250f966489ffcb6fe9152c28fbe64" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Kelly Andresa Liesenfeld.jpg" alt="Kelly Andresa Liesenfeld" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:kelly.liesenfeld@utec.edu.uy" target="_blank">kelly.liesenfeld@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Ingeniera Ambiental y Sanitarista egresada de la Universidad Federal do Pampa (UNIPAMPA). Actualmente es docente encargada en las unidades curriculares de “Calidad de Aguas y Efluentes Tratados para Uso en Riego” y “Diseño, Operación y Mantenimiento de Sistemas de Tratamiento de Efluentes”. También realiza actividades de investigación en la remoción y recuperación fisicoquímica de nutrientes a partir de efluentes agropecuarios y agroindustriales. Cuenta con experiencia en las temáticas de tratamiento de aguas, efluentes, residuos sólidos y también impactos ambientales.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Tomás López</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?60a5cc2a5312de1830d131c4661217e33f20c3315cb3ad1f50cfabd222b817df99fca59344a48ccbaeaa278ac153f8ee877607b830a7cb5a0b2404c7b902a1c1" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Tomás López.jpg" alt="Tomás López" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Senior<br>Responsable técnico U.T. de Lácteos</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:tomas.lopez@utec.edu.uy" target="_blank">tomas.lopez@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Es Químico Farmacéutico egresado de la Universidad de la República-UDELAR, Máster y Doctor por la Universidad Autónoma de Barcelona (Programa de doctorado en Ciencia y Tecnología de los Alimentos; mención europea otorgada). Es Coordinador de la Licenciatura en Ciencia y Tecnología de Lácteos de la Universidad Tecnológica (UTEC), Profesor Senior UTEC (Encargado de las unidades curriculares Tecnología de Lácteos I y II) y Responsable de la Unidad Tecnológica de Lácteos de UTEC. Su actividad investigadora abarca: aplicación de tecnologías emergentes para el procesamiento de alimentos (alta presión hidrostática y de altas presiones dinámicas); inocuidad alimentaria; nanotecnología aplicada a alimentos; ciencia y tecnología de productos lácteos; desarrollo de productos tradicionales y novedosos.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Laura Celano</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cvsni/?urlId=ecc9baa449e3c24c4bd5def32f9151967cda3af25638e72660807aae6eed67ceecd0199609f309c9f86d4d602fa24a56414b483814301a60a0b3895df365e096&convocatoria=21&formato=html" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Laura Celano.jpg" alt="Laura Celano" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Ciencia y Tecnología de Lácteos</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:laura.celano@utec.edu.uy" target="_blank">laura.celano@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Es Licenciada en Bioquímica (UdelaR), tiene  Maestría en Ciencias Biológicas opción Bioquímica (PEDECIBA) y un Doctorado en Ciencias Biológicas (PEDECIBA). Es docente responsable de las UC Bioquímica y Ecología de Productos Lácteos y colabora con las UC Microbiolgía Alimentaria e Inocuidad y Legislación Alimentaria. Dirige proyectos finales de I+D+i y PPC de estudiantes para la obtención del título de grado.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Lorena Nidegger</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?379a54029fd8c96b2c1f32f8417ac771" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Lorena Nidegger.jpg" alt="Lorena Nidegger" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Ciencia y Tecnología de Lácteos</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.nidegger@utec.edu.uy" target="_blank">maria.nidegger@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Lienciatura en Ciencia y Tecnoligía de Lácteos (2015 - 2018)<br>
+                            Universidad Tecnológica - Universidad Tecnológica , Uruguay<br>
+                            Química Farmacéutica Plan 2000 (2000)<br>Universidad de la República, Facultad de Química ,Uruguay
+                        </small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Ponentes” -->
+    <section id="ponentes" class="container my-5 section-offset">
+
+        <h2 class="mb-4 text-primary fw-bold text-center text-md-start">Ponentes</h2>
+
+        <div class="card border-0 shadow-lg rounded-4 bg-body-tertiary overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+                
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4 text-center text-md-start">
+                    <img id="ICONO_Ponentes" src="images/Ponentes.png" alt="Ponentes IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
+                    <h4 class="mb-0 text-primary fw-bold">Información de interés para la participación como ponente:</h4>
+                </div>
+
+                <p class="lead mb-5" style="text-align: justify;">
+                    En el marco del congreso TecBioTec, una ponencia es una presentación oral formal en la que un participante (autor o coautor) expone su investigación, proyecto o estudio en desarrollo o terminado, frente a una audiencia compuesta por estudiantes, académicos, profesionales e interesados en las temáticas del evento.<br><br>
+                    La ponencia tiene como objetivo compartir avances científicos y tecnológicos, así como fomentar el intercambio de ideas y generar un espacio de discusión crítica.
+                </p>
+
+                <div class="p-4 bg-white rounded-4 shadow-sm border mb-5 text-center">
+                    <h5 class="fw-bold mb-3" style="color: #215E7B;">Formato para la elaboración de presentaciones para la realización de ponencias en TecBioTec 2026</h5>
+                    <a href="docs/Formato Ponencias TecBioTec.pptx" download class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y realiza tu ponencia!">
+                        <i class="bi bi-file-earmark-ppt-fill me-2"></i> ¡Descarga formato de presentaciones aquí!
+                    </a>
+                </div>
+
+                <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionPonentes">
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuracion" aria-expanded="true" aria-controls="collapseDuracion">
+                                Duración
+                            </button>
+                        </h2>
+                        <div id="collapseDuracion" class="accordion-collapse collapse show" data-bs-parent="#accordionPonentes">
+                            <div class="accordion-body">
+                                Cada ponencia tendrá una duración aproximada de entre 15 y 20 minutos, dependiendo del programa establecido por el comité organizador.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEstructura" aria-expanded="false" aria-controls="collapseEstructura">
+                                Estructura
+                            </button>
+                        </h2>
+                        <div id="collapseEstructura" class="accordion-collapse collapse" data-bs-parent="#accordionPonentes">
+                            <div class="accordion-body">
+                                Las ponencias deben seguir una estructura lógica que incluya una introducción al tema, metodología utilizada, resultados obtenidos y conclusiones, acompañadas de diapositivas o material audiovisual que facilite la comprensión.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInteraccion" aria-expanded="false" aria-controls="collapseInteraccion">
+                                Interacción
+                            </button>
+                        </h2>
+                        <div id="collapseInteraccion" class="accordion-collapse collapse" data-bs-parent="#accordionPonentes">
+                            <div class="accordion-body">
+                                Al final de la presentación, los ponentes dispondrán de un espacio de preguntas y respuestas, en el que la audiencia podrá hacer comentarios o plantear dudas sobre el trabajo expuesto. (Se sugiere máximo 5 minutos).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFormato" aria-expanded="false" aria-controls="collapseFormato">
+                                Formato
+                            </button>
+                        </h2>
+                        <div id="collapseFormato" class="accordion-collapse collapse" data-bs-parent="#accordionPonentes">
+                            <div class="accordion-body text-secondary" style="text-align: justify;">
+                                <p class="mb-4">Las ponencias pueden abordar resultados de investigaciones científicas, estudios de caso, avances tecnológicos o aplicaciones prácticas relacionadas con los ejes temáticos del congreso.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-fonts me-2"></i> Título de la Ponencia</h6>
+                                <p class="mb-3">Debe ser claro, conciso y representar el contenido del trabajo.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-people me-2"></i> Autores y Afiliaciones</h6>
+                                <p class="mb-3">Incluir el nombre de todos los autores, junto con sus respectivas instituciones, correos electrónicos institucionales y cualquier otra información de contacto relevante.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-file-earmark-text me-2"></i> Resumen</h6>
+                                <p class="mb-3">Una versión breve del resumen de 250 palabras ya presentado, que los autores pueden utilizar como introducción verbal a la audiencia. Debe incluir el objetivo del estudio, la metodología básica y las conclusiones más importantes.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-play-circle me-2"></i> Introducción</h6>
+                                <ul class="mb-3">
+                                    <li>Contextualización del tema, ¿Por qué es relevante esta investigación?, ¿Qué problema busca resolver?</li>
+                                    <li>Pregunta o hipótesis de investigación.</li>
+                                    <li>Plantear claramente el objetivo del trabajo.</li>
+                                    <li>Relación con los ejes temáticos del congreso.</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-gear me-2"></i> Metodología</h6>
+                                <ul class="mb-3">
+                                    <li>Explicación clara y detallada de los métodos utilizados en la investigación.</li>
+                                    <li>Descripción de las herramientas, técnicas y enfoques aplicados.</li>
+                                    <li>Indicar cualquier limitación o consideración ética (si corresponde).</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-graph-up-arrow me-2"></i> Resultados</h6>
+                                <p class="mb-3">Presentación de los resultados más importantes, respaldados por gráficos, tablas o imágenes. Hay que destacar los resultados que responden a la pregunta de investigación o que contribuyen significativamente al avance de la temática.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-chat-dots me-2"></i> Discusión y Análisis</h6>
+                                <ul class="mb-3">
+                                    <li>Interpretación de los resultados: ¿Qué significan estos hallazgos? ¿Cómo se comparan con investigaciones previas?</li>
+                                    <li>Discute las implicaciones de los resultados para el campo de estudio o la industria.</li>
+                                    <li>Mencionar las limitaciones del estudio y posibles áreas para investigaciones futuras.</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-check2-square me-2"></i> Conclusiones</h6>
+                                <ul class="mb-3">
+                                    <li>Resumen de los hallazgos más importantes y su relevancia para el área de estudio.</li>
+                                    <li>Relación con los Objetivos de Desarrollo Sostenible.</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-heart me-2"></i> Agradecimientos (Opcional)</h6>
+                                <p class="mb-3">Mención de cualquier institución, entidad o persona que haya contribuido significativamente al desarrollo de la investigación.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-journal-text me-2"></i> Referencias</h6>
+                                <p class="mb-3">Si bien no se suele incluir una lista extensa de referencias en la presentación oral, es útil tener algunas citas clave disponibles en caso de preguntas. También se pueden incluir en las diapositivas finales si es necesario.<br>
+                                <u>Recomendación:</u> Mínimo cinco fuentes de información confiable de los últimos 5 años. (Citación en norma APA).</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-mic me-2"></i> Preguntas y Respuestas</h6>
+                                <p class="mb-3"><strong>Duración:</strong> de 3 a 5 minutos máximo.<br>Espacio para interactuar con el público, respondiendo a preguntas o comentarios que surjan de la presentación una vez finalice esta.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-easel me-2"></i> Formato Visual (Diapositivas)</h6>
+                                <ul class="mb-4">
+                                    <li>Se recomienda un promedio de 8-12 diapositivas, teniendo en cuenta la duración de la ponencia.</li>
+                                    <li>Evitar saturar las diapositivas con mucho texto.</li>
+                                    <li><u>Gráficos y visualizaciones:</u> Incluir gráficos, tablas y figuras claras para respaldar los resultados y facilitar la comprensión.</li>
+                                    <li><u>Estilo:</u> Seguir una estructura visual simple, alineada con la identidad visual del congreso (considerar la guía de estilos de UTEC), para que el contenido sea legible y atractivo.</li>
+                                </ul>
+
+                                <div id="recursos" class="p-4 bg-white rounded-3 border">
+                                    <h6 class="fw-bold text-primary mb-3"><i class="bi bi-link-45deg me-2"></i> Recursos complementarios</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://utec.edu.uy/uploads/documento/82a36430707aab6fe708f8fbdf9497a1723251db.pdf" target="_blank" class="text-decoration-none">Manual de identidad visual de UTEC</a></li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://red.utec.edu.uy/" target="_blank" class="text-decoration-none">Plataforma RED UTEC</a></li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Formato sugerido: <strong>Formato de presentaciones TecBioTec 2026</strong> (Documento descargable en esta sección)</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Referente documental institucional: <a href="https://utec.edu.uy/uploads/documento/9f9e2d435acabd7513239771febf322fb3f0e227.pdf" target="_blank" class="text-decoration-none">Circular de trabajos finales de carreras</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProposito" aria-expanded="false" aria-controls="collapseProposito">
+                                Propósito
+                            </button>
+                        </h2>
+                        <div id="collapseProposito" class="accordion-collapse collapse" data-bs-parent="#accordionPonentes">
+                            <div class="accordion-body">
+                                Las ponencias permiten difundir conocimientos, generar redes de colaboración interdisciplinaria, y promover el desarrollo y la innovación en áreas clave vinculadas a los objetivos del congreso.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Posters” -->
+    <section id="posters" class="container my-5 section-offset">
+        <h2 class="mb-4 text-primary fw-bold text-center text-md-start">Posters</h2>
+        
+        <div class="card border-0 shadow-lg rounded-4 bg-body-tertiary overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+                
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4 text-center text-md-start">
+                    <img id="ICONO_Posters" src="images/Posters.png" alt="Posters IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
+                    <h4 class="mb-0 text-primary fw-bold">Información de interés para la participación en modalidad de póster:</h4>
+                </div>
+
+                <p class="lead mb-5 text-center text-md-start">
+                    El póster debe ser visualmente atractivo, dado que la interacción será más dinámica e informal que en una ponencia oral.
+                </p>
+
+                <div class="p-4 bg-white rounded-4 shadow-sm border mb-5 text-center">
+                    <h5 class="fw-bold mb-3" style="color: #215E7B;">Formato para la elaboración de posters a presentar en TecBioTec 2026</h5>
+                    <a href="docs/Formato Poster TecBioTec.pptx" download class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y elabora tu poster!">
+                        <i class="bi bi-file-earmark-ppt-fill me-2"></i> ¡Descarga formato de Poster aquí!
+                    </a>
+                </div>
+
+                <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionPosters">
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster1" aria-expanded="true" aria-controls="collapsePoster1">
+                                Dimensiones del Poster
+                            </button>
+                        </h2>
+                        <div id="collapsePoster1" class="accordion-collapse collapse show" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                <strong>Tamaño estándar sugerido:</strong> 90 cm de ancho x 120 cm de alto (orientación vertical).<br>
+                                El contenido debe ser legible desde una distancia de al menos un metro.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster2" aria-expanded="false" aria-controls="collapsePoster2">
+                                Título del Poster
+                            </button>
+                        </h2>
+                        <div id="collapsePoster2" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                Debe ubicarse en la parte superior del póster, en letras grandes y visibles (al menos 72 puntos).<br>
+                                El título debe ser breve y representativo del contenido del trabajo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster3" aria-expanded="false" aria-controls="collapsePoster3">
+                                Autores y Afiliaciones
+                            </button>
+                        </h2>
+                        <div id="collapsePoster3" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                <ul class="mb-0">
+                                    <li>Debajo del título, incluir los nombres de los autores y sus respectivas instituciones, correos electrónicos u otra información de contacto.</li>
+                                    <li><strong>Tamaño de letra sugerido:</strong> 36-50 puntos.</li>
+                                    <li>Identificar claramente la dirección de correo electrónico del autor principal para que los interesados en el trabajo puedan contactarlo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster4" aria-expanded="false" aria-controls="collapsePoster4">
+                                Resumen
+                            </button>
+                        </h2>
+                        <div id="collapsePoster4" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                Colocar un breve resumen de 100-200 palabras que capture la esencia del trabajo, similar al resumen presentado inicialmente. Debe resumir el objetivo, la metodología y los resultados principales.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster5" aria-expanded="false" aria-controls="collapsePoster5">
+                                Contenido
+                            </button>
+                        </h2>
+                        <div id="collapsePoster5" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body text-secondary" style="text-align: justify;">
+                                <div class="alert alert-light border mb-4">
+                                    <i class="bi bi-info-circle-fill text-primary me-2"></i> <strong>Tamaño de letra general sugerido:</strong> 30-40 puntos.
+                                </div>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-search me-2"></i> Contexto del Problema</h6>
+                                <p class="mb-3">Breve contexto del problema o pregunta de investigación que aborda el estudio. Utilizar gráficos, diagramas o imágenes que ayuden a contextualizar el tema.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-gear me-2"></i> Metodología</h6>
+                                <p class="mb-3">Explicación concisa de los métodos empleados en el estudio. Incluir diagramas de flujo, esquemas o fotos del equipo o técnicas utilizadas.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-graph-up-arrow me-2"></i> Resultados</h6>
+                                <p class="mb-1">Sección central y más importante del póster, donde se presentan los hallazgos clave.</p>
+                                <ul class="mb-3">
+                                    <li>Utilizar gráficos de barras, tablas, imágenes, mapas o diagramas claros que ilustren los datos.</li>
+                                    <li>Cada gráfico debe ir acompañado de un breve texto explicativo o leyenda.</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-chat-dots me-2"></i> Discusión</h6>
+                                <ul class="mb-3">
+                                    <li>Interpretación de los resultados. ¿Qué significan? ¿Cómo se relacionan con otros estudios?</li>
+                                    <li>Indicar las limitaciones y posibles implicaciones para el campo de estudio o aplicaciones prácticas.</li>
+                                </ul>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-check2-square me-2"></i> Conclusiones</h6>
+                                <p class="mb-3">Resumir en breves puntos los principales hallazgos y sus implicaciones.</p>
+
+                                <h6 class="text-primary fw-bold"><i class="bi bi-journal-text me-2"></i> Citas y Referencias</h6>
+                                <p class="mb-3">Incluir citas importantes. Esta sección va en la parte inferior, en un tamaño de letra más pequeño (20-30 puntos).</p>
+
+                                <div class="p-3 bg-white rounded-3 border">
+                                    <h6 class="text-primary fw-bold mb-2"><i class="bi bi-qr-code-scan me-2"></i> Código QR o Enlace al Trabajo (Opcional)</h6>
+                                    <p class="mb-0 small">Se puede añadir un código QR o un enlace a una versión digital del trabajo completo para facilitar que los asistentes puedan profundizar en el estudio posteriormente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster6" aria-expanded="false" aria-controls="collapsePoster6">
+                                Formato Visual del Poster
+                            </button>
+                        </h2>
+                        <div id="collapsePoster6" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3">
+                                        <i class="bi bi-layout-wtf text-primary fs-5 me-2 align-middle"></i> 
+                                        <strong>Uso del espacio:</strong> El póster debe estar bien equilibrado, sin sobrecargar una sección.
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-fonts text-primary fs-5 me-2 align-middle"></i> 
+                                        <strong>Tipografía:</strong> Usar una tipografía clara y legible que esté alineada con la identidad visual del congreso.
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-palette text-primary fs-5 me-2 align-middle"></i> 
+                                        <strong>Color:</strong> Utilizar una paleta de colores coherente con el diseño del congreso.
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-image text-primary fs-5 me-2 align-middle"></i> 
+                                        <strong>Gráficos e imágenes:</strong> Los gráficos deben ser grandes y estar bien etiquetados.
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-eye text-primary fs-5 me-2 align-middle"></i> 
+                                        <strong>Claridad:</strong> Evitar el uso excesivo de texto.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoster7" aria-expanded="false" aria-controls="collapsePoster7">
+                                Interacción durante la presentación
+                            </button>
+                        </h2>
+                        <div id="collapsePoster7" class="accordion-collapse collapse" data-bs-parent="#accordionPosters">
+                            <div class="accordion-body">
+                                Los autores estarán presentes junto a su póster para responder preguntas y profundizar en los detalles de su investigación ante los asistentes al evento.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Fray Bentos 2026 el lugar el evento” -->
+    <section id="lugar" class="container my-5 section-offset">
+        <h2 class="mb-2 text-primary fw-bold text-center text-md-start">Lugar</h2>
+        <p class="lead mb-4 text-center text-md-start text-secondary"><i class="bi bi-geo-alt-fill text-primary me-2"></i>UTEC en Fray Bentos (Barrio Anglo)</p>
+
+        <div id="carruselLugar" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-5" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carruselLugar" data-bs-slide-to="14" aria-label="Slide 15"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="images/ITR_SO_FB01.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 1"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB02.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 2"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB03.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 3"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB04.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 4"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB05.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 5"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB06.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 6"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB07.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 7"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB08.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 8"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB09.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 9"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB10.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 10"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB11.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 11"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB12.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 12"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB13.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 13"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB14.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 14"></div>
+                <div class="carousel-item"><img src="images/ITR_SO_FB15.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 15"></div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselLugar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselLugar" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-center gap-3 mb-5">
+            <a href="https://www.rionegro.gub.uy/" target="_blank" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
+                <i class="bi bi-bank me-2"></i> Intendencia de Rio Negro
+            </a>
+            <a href="https://www.tripadvisor.es/Tourism-g316042-Fray_Bentos_Rio_Negro_Department-Vacations.html" target="_blank" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
+                <i class="bi bi-compass me-2"></i> Descubre Fray Bentos
+            </a>
+        </div>
+
+        <div class="card border-0 shadow-lg rounded-4 bg-body-tertiary overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-7 mb-4 mb-lg-0 pe-lg-5">
+                        <h2 class="fw-bold lh-sm text-primary mb-4">Sede UTEC en Fray Bentos</h2>
+                        <p class="lead mb-4" style="text-align: justify;">
+                            La sede del ITR Suroeste de UTEC, ubicada estratégicamente en el histórico Barrio Anglo (declarado Patrimonio de la Humanidad por la UNESCO), es un polo de innovación donde el legado industrial se encuentra con la tecnología del futuro. El campus cuenta con laboratorios de última generación en Electrónica, Mecatrónica, Biomédica y Química, además de una sala de informática, un aula 3.0, un centro logístico y un Laboratorio de Innovación Abierta (LabA). Diseñado para fomentar un ecosistema de 'aprender haciendo', el edificio no solo conecta a los estudiantes con el sector productivo de la región, sino que también ofrece espacios vibrantes para el esparcimiento y la co-creación, incluyendo una cafetería y una amplia terraza con una vista privilegiada al río Uruguay.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-5">
+                        <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm border">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.6658310854687!2d-58.3304202!3d-33.117868099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a54d7e16136ab7%3A0x4231d8a7fc167090!2sUTEC%20-%20ITR%20South%20West!5e0!3m2!1sen!2suy!4v1774016554031!5m2!1sen!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                            Sobre UTEC Suroeste
+                        </a>
+                        <a href="https://utec.edu.uy/es/noticias/suroeste/" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                            Noticias UTEC Suroeste
+                        </a>
+                        <a href="https://whc.unesco.org/es/list/1464" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                            Paisaje cultural industrial de Fray Bentos
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección de “Inscripciones” -->
+    <section id="inscripciones" class="container my-5 section-offset">
+        <h2 class="mb-4 text-primary fw-bold text-center text-md-start">Inscripciones</h2>
+        
+        <div class="card border-0 shadow-lg rounded-4 bg-body-tertiary overflow-hidden mb-5">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-8 p-4 p-lg-5">
+                    <h3 class="fw-bold text-primary mb-3">Participa como asistente</h3>
+                    <p class="lead mb-4" style="text-align: justify;">
+                        ¡Estás cordialmente invitado a asistir al 2o Congreso de Tecnología y Biociencias TecBioTec de UTEC! Únete a estudiantes, académicos, investigadores y profesionales en este evento clave para descubrir los últimos avances en ingeniería y biociencias. Será una oportunidad única para aprender de expertos, establecer redes de contactos y conocer soluciones innovadoras que impulsan el desarrollo sostenible.<br><br>
+                        Si te apasiona la ciencia y la tecnología, no te lo pierdas.<br><strong class="text-primary">¡Ven y participa activamente en el futuro del conocimiento!</strong>
+                    </p>
+                    
+                    <!--
+                    <div class="alert alert-danger border-danger shadow-sm mb-4 rounded-3" role="alert">
+                        <i class="bi bi-gift-fill me-2 fs-5 align-middle"></i> <strong>¡Atención!</strong> Se entregará <u>Kit de regalo</u> (bolso, cuadernillo y lapicera) a los primeros 100 asistentes con <strong>inscripción válida</strong> en esta sección.
+                    </div>
+                    -->
+
+                    <a href="#" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y participa como asistente!">
+                        <i class="bi bi-person-plus-fill me-2"></i> Inscripción como asistente
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 text-center p-4 bg-white d-flex align-items-center justify-content-center h-100">
+                    <img src="images/Inscripción (público general)_TECBIOTEC.png" alt="QR Asistente" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-lg rounded-4 bg-body-tertiary overflow-hidden">
+            <div class="row g-0 align-items-center flex-lg-row-reverse">
+                <div class="col-lg-8 p-4 p-lg-5">
+                    <h3 class="fw-bold text-primary mb-3">Participa como ponente o con póster</h3>
+                    <p class="lead mb-4" style="text-align: justify;">
+                        ¡Te invitamos a inscribir <strong class="text-primary">"tu trabajo"</strong> en el 2o Congreso de Tecnología y Biociencias TecBioTec de UTEC! Envía la información detallada de tu investigación o proyecto para participar como ponente o presentar un póster. Comparte tus ideas y contribuciones con una audiencia diversa de académicos, investigadores y profesionales.<br><br>
+                        Es una oportunidad única para mostrar tu trabajo, recibir retroalimentación valiosa y formar parte del diálogo sobre los avances en ingeniería y biociencias.<br><strong class="text-primary">¡Inscribe "<u class="text-primary">tu trabajo</u>" y únete a la conversación!</strong>
+                    </p>
+
+                    <div class="alert alert-warning border-warning shadow-sm mb-4 rounded-3 text-center" role="alert">
+                        <h6 class="alert-heading fw-bold mb-2"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
+                        <p class="mb-0">
+                            <strong class="text-primary">viernes, 17 de abril 2026 - 23:59 Horas</strong><br>
+                            </p>
+                            <!--
+                            <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: 13 de octubre 2024 - 23:59 Horas</span>
+                            -->
+                    </div>
+
+                    <a href="https://ee-eu.kobotoolbox.org/x/wgLioGgW" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y únete ahora!">
+                        <i class="bi bi-file-earmark-arrow-up-fill me-2"></i> ¡Inscripción de trabajos aquí!
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 text-center p-4 bg-white border-end d-flex align-items-center justify-content-center h-100">
+                    <img src="images/Inscripción (expositores)_TECBIOTEC.png" alt="QR Ponente" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Esto es un mensaje que indica que aquí comienza la visualización del comité organizador -->
+    <section id="contacto" class="container my-5 section-offset">
+        <br><br>
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5 overflow-hidden">
+                <div class="card-body p-4 p-md-5">
+                    <div class="row justify-content-center align-items-center g-4 mb-4">
+                        <div class="col-auto text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-building-fill text-primary fs-1"></i>
+                                <h3 class="ms-3 mb-0 text-primary fw-bold text-nowrap">Contacto comité organizador</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <p class="lead mb-0">
+                                <strong>¿Preguntas y Comentarios?</strong> Escribe al Email de contacto:
+                                <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="color: rgb(192,0,0); text-decoration: none;">
+                                    <span style="text-shadow: 0px 0px 10px rgba(255,255,255, 0.8);">              
+                                        <strong>tecbiotec@utec.edu.uy</strong>
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <!-- Esto es un mensaje que indica liderazgo en la organización por parte de "LAA" -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 text-center">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/licenciatura-en-analisis-alimentario/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img class="img-fluid" src="images/LAA-logo-CMYK_FBM.png" alt="Logo LAA" style="max-height: 180px; object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Esto es un mensaje que indica liderazgo en la organización por parte del "Posgrado en Biociencias y Sostenibilidad Alimentaria" -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 text-center">
+                            <a href="https://utec.edu.uy/es/educacion/posgrado/programa-de-posgrado-en-biociencias-y-sostenibilidad-alimentaria/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img class="img-fluid" src="images/Esp_Biociencias.png" alt="Esp&M_Biociencias" style="max-height: 180px; object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Esto es un mensaje que indica liderazgo en la organización por parte del "IMEC" -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 text-center">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-mecatronica/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img class="img-fluid" src="images/IMEC-logo-CMYK_FBM.png" alt="Logo_IMEC" style="max-height: 180px; object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ¡FUA! Estos son los miembros del comité organizador: -->
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Yamilé Lara <br>General Co-Chair</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?ac71d9df68079ec566de0dc88b568a88" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Yamilé Lara.jpg" alt="Yamilé Lara" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Coordinación Ingeniería en Mecatrónica</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:yamile.lara@utec.edu.uy" target="_blank">yamile.lara@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Ingeniero en Mantenimiento Industrial (Venezuela, 2003). Diploma Estudios Avanzados (Master) en Ingeniería de Materiales (España, 2008). Magister Scientiarum en Ingeniería Mecánica (Venezuela, 2011). Candidato a Doctor en Ingeniería Estructural en la UDELAR (Uruguay, 2022) y a Especilista en Didactica de la Educación Superior en CLAEH (Uruguay, 2021). Ejerció como Investigador desde el 2006 en el Centro de Termofluidodinamica y Mantenimiento y docente de Ingeniería Mecánica en la Universidad de Oriente, asumiendo además cargos de dirección y coordinación hasta el 2018. Publicó varios artículos científicos relacionados a mantenimiento y confiabilidad, desgaste y lubricación de equipos rotativos y materiales. Participó en más 10 congresos y fue asesora de más de 65 trabajos de investigación de grado y postgrado. Fungió como Gerente de Proyectos y Adiestramiento en Centauro Consultores.C.A (2012-2017) y en SKILL.S.A (Uruguay) como Ingeniero en Confiabilidad (2018-2019). Desde e 2019 ejerce como Docente Adjunto de Ingeniería Mecatrónica en UTEC Fray Bentos hasta la actualidad.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Annabela Estevez <br>General Co-Chair</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?03d2db806f51a66e099c07807aba53de" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Annabela Estevez.jpg" alt="Annabela Estevez" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Coordinación Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:annabela.estevez@utec.edu.uy" target="_blank">annabela.estevez@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Químico Farmacéutico con más de 10 años de experiencia en la coordinación y gestión de programas académicos del sector alimentario en la UTEC - Universidad Tecnológica. Me apasiona diseñar e implementar planes de estudio innovadores, fomentar asociaciones con partes interesadas de la industria y la comunidad y liderar proyectos de investigación sobre productos naturales.<br>Mi trayectoria profesional también incluye trabajar en el sector privado como especialista en calidad, cosmética y productos naturales, así como asesoramiento en tecnologías alimentarias. He desarrollado habilidades en mejora de procesos de fabricación, resolución de problemas y comunicación, que me permiten entregar resultados y soluciones de alta calidad a los desafíos y oportunidades en mi campo.<br>Mi objetivo es contribuir al avance del conocimiento y la práctica en seguridad, calidad y sostenibilidad de los alimentos.</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Juan Pablo Franco Rubio<span style="color: rgb(222,222,222);"> -JPFR</span><br>Process Innovation and Technological Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/JPFR.jpg" alt="JPFR" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente<br>Ingeniería Logística</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:juan.franco.r@utec.edu.uy" target="_blank">juan.franco.r@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Magister en Diseño y Gestión de Procesos con énfasis en Sistemas logísticos (U. de la Sabana, 2014), Especialista en Administración Informática (U. de Santander, 2013) e Ingeniero Electrónico (Escuela Colombiana de Ingeniería - Julio Garavito, 2008). Diez años de experiencia como consultor empresarial para la caracterización y el mejoramiento de procesos organizacionales que involucran la cadena productiva de la imaginación, la creatividad y la innovación. Experiencia en labores de documentación, análisis y minería de datos para obtención de información y su transformación en conocimiento. Catorce años de experiencia en el ámbito académico. Experiencia en emprendimientos (en el sector agroproductivo) y asesoramiento a personas y organizaciones en ideación y fortalecimiento de negocios, en el marco de las condiciones propias de los mercados emergentes.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Jesús D. Martínez V.<span style="color: rgb(222,222,222);"> -JDMV</span><br>Process Innovation and Technological Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/JDMV.jpg" alt="JDMV" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente<br>Ingeniería Mecatrónica e Ingeniería Logística</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:jesus.martinez@utec.edu.uy" target="_blank">jesus.martinez@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Ingeniero Electrónico con Maestría en Tecnología Educativa de la Universidad de la Rioja, trabajando actualmente como docente encargado del área de electricidad y electrónica. Experiencia laboral en manejo de usuarios con aplicaciones de más de diez mil usuarios, destrezas para automatizar procesos repetitivos a favor de optimizar procesos con normativa SOX, manejo básico de directorio activo y presentación de informes, manejo de aplicaciones como Ofimática, Agility Studio, Moodle, lenguajes de programación como JavaScript, Python, C++. Manejo de frameworks como Selenium. Conocimiento en el levantamiento de procesos para automatizaciones RPA, generación de documentos PDD, diagramación procesos AS-IS, AS-DONE.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Diego Mauricio Acero Soto <br>Process Innovation and Technological Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://academia.uniandes.edu.co/AcademyCv/d.aceros" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Diego Acero.jpg" alt="Diego Acero" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Doctorado Gest.Innovac.Tecnol.</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:d.aceros@uniandes.edu.co" target="_blank">d.aceros@uniandes.edu.co</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Ingeniero electrónico. Estudiante de doctorado DGIT, Universidad de los Andes de Colombia. Docente de inicio de investigación en UTEC (2023-S2). Docente de planta, Universidad Pedagógica Nacional de Colombia.</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">María Rossina Figliolo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <a href="https://export.cvuy.uy/cv/?4d2cc160e12d935272539fb2a5eb1910" target="_blank">
+                                <img class="img-fluid icon-ods" src="images/Rossina Figliolo.jpg" alt="Rossina Figliolo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            </a>
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.figliolo@utec.edu.uy" target="_blank">maria.figliolo@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Química Farmacéutica egresada de la Universidad de la República (UDELAR). -Desde el 2018 se desempeña como docente de Fisicoquímica General e Industrial de la carrera Licenciatura en Análisis Alimentario-UTEC, ubicadas en el tercer y cuarto semestre respectivamente.<br>Durante 9 años fue encargada de la asignatura Fisicoquímica perteneciente al Tecnólogo Químico Paysandú.<br>Doctoranda en el área de Productos Naturales UDELAR.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">Miqueas Abraham</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <!-- <a href=" 2CvUy " target="_blank"> -->
+                                <img class="img-fluid icon-ods" src="images/Miqueas Abraham.jpg" alt="Miqueas Abraham" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            <!-- </a> -->
+                        </div><br><br>
+                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:mauricio.abraham@utec.edu.uy" target="_blank">mauricio.abraham@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Es Ingeniero Químico de la Universidad de la República. Es docente encargado de los cursos de Operaciones Unitarias I y II en el sexto y séptimo semestres respectivamente.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title mb-0">María Luciana Chelotti</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <!-- <a href=" 2CvUy " target="_blank"> -->
+                                <img class="img-fluid icon-ods" src="images/María Chelotti.jpg" alt="María Chelotti" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                            <!-- </a> -->
+                        </div><br><br>
+                        <p class="card-text">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.chelotti@utec.edu.uy" target="_blank">maria.chelotti@utec.edu.uy</a></small></p>
+                        <p class="card-text"><small class="text-body-secondary">Licenciada en Bioinformática (2012) en la facultad de Ingenieria de la Universidad Nacional de Entre Ríos (FIUNER) Argentina. Profesorado de Química en el Instituto de Formación Docente "Dr. Guillermo Ruggia" de Fray Bentos, RN Uruguay (en curso). Experiencia como laboratorista (2012-2018) en el Instituto Nacional de Tecnología Agropecuria (INTA) en Argentina. Laboratorista en laboratorio de Microbiología del Laboratorio Tecnológico del Uruguay- Unidad Fray Bentos (LATU-UFB). Docente de inicio de Química de la carrera de Ingeniería en Mecatrónica (UTEC ITR-SO).</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+
+            
+
+            
+        </div>
+
+        <br><br>
+
+        <!-- Esto es un mensaje que indica que aquí comienza la visualización del apoyo institucional UTEC -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5 overflow-hidden">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center g-4">
+                        
+                        <div class="col-auto text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="bi bi-building-fill text-primary fs-1"></i>
+                                <h3 class="ms-3 mb-0 text-primary fw-bold text-nowrap">Con el apoyo institucional de:</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Esto es un mensaje que indica Apoyo institucional UTEC "DIE" -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 text-center">
+                            <a href="https://utec.edu.uy/es/investigacion/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img class="img-fluid" src="images/DIE-logo-CMYK_FB.png" alt="Logo DIE" style="max-height: 180px; object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Esto es un mensaje que indica Apoyo institucional UTEC "ILOG" -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 text-center">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-logistica/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img class="img-fluid" src="images/ILOG-logo-CMYK_FBM.png" alt="Logo ILOG" style="max-height: 180px; object-fit: contain;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Esto es un mensaje provicional correspondiente a la Participación estratégica Empresa - GOB -->
+        <div class="container-fluid px-0">
+            <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5 overflow-hidden">
+                <div class="card-body p-4 p-md-5">
+                    
+                    <div class="row justify-content-center align-items-center g-4">
+                        
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                                <i class="bi bi-bank text-primary fs-1"></i>
+                                <h3 class="ms-3 mb-0 text-primary fw-bold">Participación estratégica:</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="p-4 rounded-4 text-center" style="border: 2px dashed rgba(var(--bs-primary-rgb), 0.3); background-color: var(--bs-secondary-bg);">
+                                <p class="lead mb-2 text-primary">
+                                    <strong>Empresarial y Gubernamental</strong>
+                                </p>
+                                <p class="mb-0 text-secondary">
+                                    Próximamente disponible. Estamos trabajando en el relacionamiento estratégico.
+                                </p>
+                                <div class="mt-2 text-primary">
+                                    <i class="bi bi-briefcase-fill me-2 fs-4"></i>
+                                    <i class="bi bi-handshake-fill me-2 fs-4"></i>
+                                    <i class="bi bi-bank me-2 fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aqui comienza la información correspondiente a la Participación estratégic Empresa - GOB -->
+        <!--
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5"> 
+                    <a href="https://www.paysandu.gub.uy/" target="_blank">
+                        <img class="img-fluid" src="images/LOGO_INT_Paysandu.png" alt="LOGO_INT_Paysandu" style="width: 240px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                    <a href="https://adp.org.uy/" target="_blank">
+                        <img class="img-fluid" src="images/LOGO_AD_Paysandu.png" alt="LOGO_AD_Paysandu" style="width: 440px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">
+                    <a href="https://www.rionegro.gub.uy/" target="_blank">
+                        <img class="img-fluid" src="images/LOGO_INT_RioNegro.png" alt="LOGO_INT_RioNegro" style="width: 480px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>   
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.inefop.uy/proyectos" target="_blank">
+                        <img class="img-fluid" src="images/LOGO_INEFOP.png" alt="LOGO_INEFOP" style="width: 344px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <p class="lead"><strong style="color: #97B966;">R</strong>espuestas <strong style="color: #97B966;">I</strong>nnovadoras a <strong style="color: #97B966;">D</strong>esafíos <strong style="color: #97B966;">E</strong>stratégicos <strong style="color: #97B966;">(RIDE)</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://linktr.ee/montesdelplata" target="_blank">
+                        <img class="img-fluid" src="images/MDP_LogoFT.png" alt="MDP_LogoFT" style="width: 603px; height: 120px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.sofka.com.co/" target="_blank">
+                        <img class="img-fluid" src="images/SOFKA_FT.png" alt="SOFKA_FT" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.dexin.com.uy/" target="_blank">
+                        <img class="img-fluid" src="images/Dexin.png" alt="Dexin" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.biologistica.com.uy/inicio" target="_blank">
+                        <img class="img-fluid" src="images/BIOLOGISTICA.jpg" alt="BIOLOGISTICA" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.laboratoriodezenur.com.uy/" target="_blank">
+                        <img class="img-fluid" src="images/DEZENUR.png" alt="DEZENUR" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://pontevedra.com.uy/" target="_blank">
+                        <img class="img-fluid" src="images/Pontevedra.png" alt="Pontevedra" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://azucarlito.com/inicio/" target="_blank">
+                        <img class="img-fluid" src="images/Azucalito.png" alt="Azucalito" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="d-flex justify-content-center align-items-center my-5">  
+                    <a href="https://www.instagram.com/aguamoroti/" target="_blank">
+                        <img class="img-fluid" src="images/ElMoroti.png" alt="Moroti" style="width: 240px; height: 150px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    </a>
+                </div>
+            </div>
+        </div>
+        -->
+
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="lead">TecBioTec 2026 - <a href="https://utec.edu.uy/es/" target="_blank" style="color: #FFFFFF;"><strong>UTEC</strong></a></p>
+        <p class="lead">
+            <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" class="text-white" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Anímate a escribirnos!">Contacta con nosotros</a> al Email: <strong>tecbiotec@utec.edu.uy</strong>
+        </p>
+        <p class="lead" style="font-size: 14px;">El diseño conceptual y la creación de contenido están a cargo del comité organizador.<br>Las imágenes han sido proporcionadas por el departamento de comunicaciones de UTEC, junto con otras obtenidas de dominio público.</p>
+        <p class="lead" style="font-size: 14px;">Esta página web ha sido desarrollada utilizando el framework <a href="https://getbootstrap.com/" target="_blank" style="color: #FFFFFF;">Bootstrap 5.3</a></p>
+        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 19-03-2026<br><br>República Oriental del Uruguay</p>
+        <p class="lead" style="font-size: 14px;">
+            <a href="https://utec.edu.uy/uploads/documento/17de002e9a04c9d1859f0ffaef508d38e8452613.pdf" target="_blank" style="color: #FFFFFF;" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Consulta y conoce mas!!">
+                Política de privacidad y tratamiento de datos
+            </a> 
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Inicialización de los tooltips -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+
+</body>
+</html>

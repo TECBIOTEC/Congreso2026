@@ -1,0 +1,349 @@
+/* --- ESTILO DE DESPLAZAMIENTO PARA HEADER FIJO --- */
+.section-offset {
+    padding-top: 220px !important; 
+    margin-top: -220px !important; 
+}
+
+@media (min-width: 768px) {
+    .section-offset {
+        padding-top: 160px !important; /* Un poco más de margen para tu header de PC */
+        margin-top: -160px !important;
+    }
+}
+
+/* Tipografías Personalizadas */
+
+/* UTEC txt Black para titulares */
+@font-face {
+    font-family: 'UTECtxt Black';
+    src: url('../font/UTECtxt Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* UTEC txt Heavy para subtítulos */
+@font-face {
+    font-family: 'UTECtxt Heavy';
+    src: url('../font/UTECtxt Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* UTEC txt Regular para textos cortos */
+@font-face {
+    font-family: 'UTECtxt Roman';
+    src: url('../font/UTECtxt Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplicación de las tipografías según las indicaciones */
+
+/* Titulares (h1, h2, h3, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'UTECtxt Black', sans-serif; /* Titulares usan UTEC txt Black */
+    font-weight: 900; /* Asegura que se aplique el peso adecuado */
+}
+
+/* Subtítulos */
+.subtitle {
+    font-family: 'UTECtxt Heavy', sans-serif; /* Subtítulos usan UTEC txt Heavy */
+    font-weight: 800; /* Asegura que se aplique el peso adecuado */
+}
+
+/* Textos cortos */
+p, li, span, a, .short-text {
+    font-family: 'UTECtxt Roman', sans-serif; /* Textos cortos usan UTEC txt Regular */
+    font-weight: normal;
+}
+
+/* Aplicación de negrita */
+strong {
+    font-weight: 900; /* Asegura que las etiquetas <strong> aparezcan en negrita */
+}
+
+/* Estilos generales adicionales */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'UTECtxt Roman', sans-serif; /* Texto principal en UTEC txt Roman */
+    line-height: 1.6;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #316CF4; /* Azul del header */
+    color: white;
+    padding: 20px 0;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estado normal: Blanco al 75% de opacidad para los links de la barra de navegación */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important; 
+    transition: color 0.3s ease-in-out; /* Transición suave */
+    font-weight: 500; /* Grosor elegante */
+}
+
+/* Estado al pasar el cursor (Hover) o foco: Blanco puro y brillante al 100% */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffffff !important; 
+}
+
+/* Botón para el cambio de tema */
+.bd-mode-toggle {
+    z-index: 1500;
+    background-color: #316CF4;
+    border-radius: 0.375rem; /* Bordes redondeados */
+}
+
+/* Estilo para los íconos dentro del botón */
+.bd-mode-toggle svg {
+    fill: white; /* Cambiar color de los íconos a blanco */
+}
+
+/* Ajustes adicionales para mejorar la apariencia y usabilidad */
+.container {
+    margin-bottom: 50px;
+}
+
+/* Estilos personalizados para el logo principal según el tema */
+#logo-main {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el contador */
+#countdown {
+    font-size: 2rem;
+    background-color: #316CF4; /* Azul del header */
+    color: white;
+    text-align: center;
+}
+
+/* Estilo general del carrusel */
+.carousel .carousel-inner {
+    border-radius: 0.375rem; /* Bordes redondeados para mantener consistencia */
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.carousel-item {
+    height: 500px; /* Altura consistente para todas las diapositivas */
+    background-color: #316CF4; /* Fondo azul consistente con el resto de la página */
+    color: white; /* Texto en blanco para contraste */
+    position: relative; /* Mantén relative para posicionar el caption si es necesario */
+}
+
+/* Asegura que las imágenes llenen el contenedor */
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Para que las imágenes cubran todo el espacio sin distorsión */
+}
+
+.carousel-caption h1 {
+    font-family: 'UTECtxt Black', sans-serif; /* Asegura que los titulares usen la fuente personalizada */
+    font-weight: 900;
+    font-size: 2.5rem; /* Tamaño de fuente consistente con los titulares */
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-family: 'UTECtxt Roman', sans-serif; /* Asegura que los textos usen la fuente personalizada */
+    font-size: 1.25rem; /* Tamaño de fuente ajustado */
+    opacity: 0.85; /* Opacidad para mejorar la legibilidad */
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para los controles */
+    border-radius: 50%; /* Controles redondeados */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: white; /* Indicadores en blanco para contraste */
+}
+
+.carousel-indicators .active {
+    background-color: #003366; /* Indicador activo con color azul oscuro */
+}
+
+/* Alineación de los iconos ODS */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.icon-ods {
+    width: 150px;
+    height: auto;
+}
+
+/* Tooltip personalizado - Forzar estilos */
+.tooltip.show {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out !important;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #D2DD8B !important; /* Color de fondo */
+    color: #81A552 !important; /* Color del texto */
+    padding: 8px 10px !important; /* Padding */
+    font-family: 'UTECtxt Roman', sans-serif !important; /* Fuente personalizada */
+    font-size: 0.875rem !important; /* Tamaño de texto */
+    border-radius: 0.25rem !important; /* Bordes redondeados */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2) !important; /* Sombra */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #D2DD8B !important; /* Color de la flecha arriba */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #D2DD8B !important; /* Color de la flecha abajo */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #D2DD8B !important; /* Color de la flecha izquierda */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #D2DD8B !important; /* Color de la flecha derecha */
+}
+
+/* Modo oscuro */
+[data-bs-theme="dark"] .tooltip .tooltip-inner {
+    background-color: #D2DD8B !important; /* Color de fondo */
+    color: #81A552 !important; /* Color del texto */
+    padding: 8px 10px !important; /* Padding */
+    font-family: 'UTECtxt Roman', sans-serif !important; /* Fuente personalizada */
+    font-size: 0.875rem !important; /* Tamaño de texto */
+    border-radius: 0.25rem !important; /* Bordes redondeados */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2) !important; /* Sombra */
+}
+
+[data-bs-theme="dark"] .tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+[data-bs-theme="dark"] .tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #D2DD8B !important; /* Color de la flecha arriba en modo oscuro */
+}
+
+[data-bs-theme="dark"] .tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+[data-bs-theme="dark"] .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #D2DD8B !important; /* Color de la flecha abajo en modo oscuro */
+}
+
+[data-bs-theme="dark"] .tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+[data-bs-theme="dark"] .tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #D2DD8B !important; /* Color de la flecha izquierda en modo oscuro */
+}
+
+[data-bs-theme="dark"] .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+[data-bs-theme="dark"] .tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #D2DD8B !important; /* Color de la flecha derecha en modo oscuro */
+}
+
+/* Estilo personalizado para el acordeón en modo claro */
+[data-bs-theme="light"] .accordion-button {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #316CF4; /* Texto color principal */
+    border: 1px solid #316CF4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+}
+
+[data-bs-theme="light"] .accordion-button:not(.collapsed) {
+    background-color: #316CF4; /* Color principal para el botón expandido */
+    color: #fff; /* Texto blanco */
+}
+
+[data-bs-theme="light"] .accordion-body {
+    background-color: #ffffff; /* Fondo claro */
+    color: #000; /* Texto oscuro */
+    border-radius: 10px;
+    border: 1px solid #dee2e6; /* Borde claro */
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Cambia el color de las marcas del acordeón en modo claro */
+[data-bs-theme="light"] .accordion-button::after {
+    filter: brightness(0) invert(1); /* Cambia el color de las flechas a blanco */
+}
+
+/* Estilo personalizado para el acordeón en modo oscuro */
+[data-bs-theme="dark"] .accordion-button {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+    border: 1px solid #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #495057; /* Color más oscuro para el botón expandido */
+    color: #f8f9fa; /* Texto claro */
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #495057; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+    border-radius: 10px;
+    border: 1px solid #6c757d; /* Borde oscuro */
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Cambia el color de las marcas del acordeón en modo oscuro */
+[data-bs-theme="dark"] .accordion-button::after {
+    filter: brightness(0) invert(1); /* Cambia el color de las flechas a blanco */
+}
+
+/* Estilo específico para #myCarousel_D1 */
+    #myCarousel_D1 {
+        width: 480px;
+        height: 500px;
+        margin: auto;
+    }
+
+    #myCarousel_D1 .carousel-inner {
+        height: 100%;
+    }
+
+    #myCarousel_D1 .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ajusta las imágenes para que se adapten al espacio */
+    }
