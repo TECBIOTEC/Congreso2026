@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y25KETKNNK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y25KETKNNK');
+    </script>
 </head>
 
 <body>
@@ -1468,180 +1476,485 @@
         </div>
 
         <!-- ¡FUA! Estos son los miembros del comité organizador: -->
-        <br>
+
+        <style>
+            /* 1. Contenedor de la tarjeta: Bordes redondeados y transición suave */
+            .card-docente { 
+                border-radius: 10px; 
+                overflow: hidden; 
+                transition: all 0.3s ease; 
+            }
+
+            /* 2. Contenedor de la foto: Centra la imagen con espacio arriba y abajo */
+            .icon-container { 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                padding: 20px 0; 
+            }
+
+            /* 3. Estilo de la imagen: Tamaño fijo, bordes y sombra */
+            .img-docente { 
+                width: 160px; 
+                height: 160px; 
+                object-fit: cover; /* Evita que la foto se estire */
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+                border-radius: 25px; 
+                transition: transform 0.3s ease; /* Efecto hover */
+            }
+
+            /* 4. Efecto visual: La foto crece un poco al pasar el mouse */
+            .img-docente:hover { 
+                transform: scale(1.05); 
+            }
+
+            /* 5. Texto del perfil: Justificado y con tamaño de letra cómodo para lectura larga */
+            .collapse-content { 
+                text-align: justify; 
+                font-size: 0.9rem; 
+                line-height: 1.5; 
+            }
+            
+            /* Opcional: Estilo para los títulos */
+            .docente-cargo {
+                font-weight: 600;
+                color: #555;
+                margin-bottom: 10px;
+            }
+        </style>
+
         <div class="row">
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Yamilé Lara <br>General Co-Chair</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Yamilé Lara <br><small style="font-size: 0.8rem; opacity: 0.8;">General Co-Chair</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
                             <a href="https://export.cvuy.uy/cv/?ac71d9df68079ec566de0dc88b568a88" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Yamilé Lara.jpg" alt="Yamilé Lara" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                                <img class="img-docente" src="images/Yamilé Lara.jpg" alt="Yamilé Lara">
                             </a>
-                        </div><br><br>
-                        <p class="card-text">Coordinación Ingeniería en Mecatrónica</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:yamile.lara@utec.edu.uy" target="_blank">yamile.lara@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Ingeniero en Mantenimiento Industrial (Venezuela, 2003). Diploma Estudios Avanzados (Master) en Ingeniería de Materiales (España, 2008). Magister Scientiarum en Ingeniería Mecánica (Venezuela, 2011). Candidato a Doctor en Ingeniería Estructural en la UDELAR (Uruguay, 2022) y a Especilista en Didactica de la Educación Superior en CLAEH (Uruguay, 2021). Ejerció como Investigador desde el 2006 en el Centro de Termofluidodinamica y Mantenimiento y docente de Ingeniería Mecánica en la Universidad de Oriente, asumiendo además cargos de dirección y coordinación hasta el 2018. Publicó varios artículos científicos relacionados a mantenimiento y confiabilidad, desgaste y lubricación de equipos rotativos y materiales. Participó en más 10 congresos y fue asesora de más de 65 trabajos de investigación de grado y postgrado. Fungió como Gerente de Proyectos y Adiestramiento en Centauro Consultores.C.A (2012-2017) y en SKILL.S.A (Uruguay) como Ingeniero en Confiabilidad (2018-2019). Desde e 2019 ejerce como Docente Adjunto de Ingeniería Mecatrónica en UTEC Fray Bentos hasta la actualidad.</small></p>
+                        </div>
+                        <p class="card-text fw-bold mb-1">Coordinación<br>Ingeniería en Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:yamile.lara@utec.edu.uy">yamile.lara@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilYamile">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Ingeniero en Mantenimiento Industrial (Venezuela, 2003). Diploma Estudios Avanzados (Master) en Ingeniería de Materiales (España, 2008). Magister Scientiarum en Ingeniería Mecánica (Venezuela, 2011). Candidato a Doctor en Ingeniería Estructural en la UDELAR (Uruguay, 2022) y a Especilista en Didactica de la Educación Superior en CLAEH (Uruguay, 2021). Ejerció como Investigador desde el 2006 en el Centro de Termofluidodinamica y Mantenimiento y docente de Ingeniería Mecánica en la Universidad de Oriente, asumiendo además cargos de dirección y coordinación hasta el 2018. Publicó varios artículos científicos relacionados a mantenimiento y confiabilidad, desgaste y lubricación de equipos rotativos y materiales. Participó en más 10 congresos y fue asesora de más de 65 trabajos de investigación de grado y postgrado. Fungió como Gerente de Proyectos y Adiestramiento en Centauro Consultores.C.A (2012-2017) y en SKILL.S.A (Uruguay) como Ingeniero en Confiabilidad (2018-2019). Desde e 2019 ejerce como Docente Adjunto de Ingeniería Mecatrónica en UTEC Fray Bentos hasta la actualidad.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYamile">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Annabela Estevez <br>General Co-Chair</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Annabela Estevez <br><small style="font-size: 0.8rem; opacity: 0.8;">General Co-Chair</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
                             <a href="https://export.cvuy.uy/cv/?03d2db806f51a66e099c07807aba53de" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Annabela Estevez.jpg" alt="Annabela Estevez" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                                <img class="img-docente" src="images/Annabela Estevez.jpg" alt="Annabela Estevez">
                             </a>
-                        </div><br><br>
-                        <p class="card-text">Coordinación Licenciatura en Análisis Alimentario</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:annabela.estevez@utec.edu.uy" target="_blank">annabela.estevez@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Químico Farmacéutico con más de 10 años de experiencia en la coordinación y gestión de programas académicos del sector alimentario en la UTEC - Universidad Tecnológica. Me apasiona diseñar e implementar planes de estudio innovadores, fomentar asociaciones con partes interesadas de la industria y la comunidad y liderar proyectos de investigación sobre productos naturales.<br>Mi trayectoria profesional también incluye trabajar en el sector privado como especialista en calidad, cosmética y productos naturales, así como asesoramiento en tecnologías alimentarias. He desarrollado habilidades en mejora de procesos de fabricación, resolución de problemas y comunicación, que me permiten entregar resultados y soluciones de alta calidad a los desafíos y oportunidades en mi campo.<br>Mi objetivo es contribuir al avance del conocimiento y la práctica en seguridad, calidad y sostenibilidad de los alimentos.</small></p>
+                        </div>
+                        <p class="card-text fw-bold mb-1">Coordinación<br>Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:annabela.estevez@utec.edu.uy">annabela.estevez@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilAnnabela">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Químico Farmacéutico con más de 10 años de experiencia en la coordinación y gestión de programas académicos del sector alimentario en la UTEC - Universidad Tecnológica. Me apasiona diseñar e implementar planes de estudio innovadores, fomentar asociaciones con partes interesadas de la industria y la comunidad y liderar proyectos de investigación sobre productos naturales.<br><br>Mi trayectoria profesional también incluye trabajar en el sector privado como especialista en calidad, cosmética y productos naturales, así como asesoramiento en tecnologías alimentarias. He desarrollado habilidades en mejora de procesos de fabricación, resolución de problemas y comunicación, que me permiten entregar resultados y soluciones de alta calidad a los desafíos y oportunidades en mi campo.<br><br>Mi objetivo es contribuir al avance del conocimiento y la práctica en seguridad, calidad y sostenibilidad de los alimentos.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAnnabela">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Nolan Sánchez T.<br>General Co-Chair</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Nolán Sánchez T. <br><small style="font-size: 0.8rem; opacity: 0.8;">General Co-Chair</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <!-- <a href=" 2CvUy " target="_blank"> -->
-                                <img class="img-fluid icon-ods" src="images/Nolan Sánchez.jpg" alt="Nolan Sánchez" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            <!-- </a> -->
-                        </div><br><br>
-                        <p class="card-text">Coordinación Ingeniería Logística<br>(Sede Fray Bentos)</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:nolan.sanchez@utec.edu.uy" target="_blank">nolan.sanchez@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Diseño y Gestión de Cadenas de Suministros Resilientes.<br>Diseño, Implementación, Gestión y Control de: Redes de distribución, Cadenas de Suministros, Logística Integral, Gestión y Control de Inventarios, Gestión de Proveedores, Indicadores de Gestión.<br>Diseño y control de políticas de compras basados en conceptos Lean Implementación de políticas de eliminación de desperdicios y optimización de utilidades perfeccionando el servicio al cliente e incrementando la fidelización.<br>Incremento en la velocidad de respuesta a los requerimientos de los clientes mediante la implementación de sistemas de información inteligentes, ágiles y de última generación.</small></p>
+                            <img class="img-docente" src="images/Nolan Sánchez.jpg" alt="Nolan Sánchez">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Coordinación Ingeniería Logística<br>(Sede Fray Bentos)</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:nolan.sanchez@utec.edu.uy">nolan.sanchez@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilNolan">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Diseño y Gestión de Cadenas de Suministros Resilientes.<br>Diseño, Implementación, Gestión y Control de: Redes de distribución, Cadenas de Suministros, Logística Integral, Gestión y Control de Inventarios, Gestión de Proveedores, Indicadores de Gestión.<br>Diseño y control de políticas de compras basados en conceptos Lean Implementación de políticas de eliminación de desperdicios y optimización de utilidades perfeccionando el servicio al cliente e incrementando la fidelización.<br>Incremento en la velocidad de respuesta a los requerimientos de los clientes mediante la implementación de sistemas de información inteligentes, ágiles y de última generación.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilNolan">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <br>
         <div class="row">
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Juan Pablo Franco Rubio<span style="color: rgb(222,222,222);"> -JPFR</span><br>Process Innovation and Technological Development</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Juan Pablo Franco Rubio <span style="color: rgb(222,222,222); font-size: 0.8rem;">- JPFR</span><br><small style="font-size: 0.8rem; opacity: 0.8;">Process Innovation and Technological Development</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
                             <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/JPFR.jpg" alt="JPFR" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                                <img class="img-docente" src="images/JPFR.jpg" alt="JPFR">
                             </a>
-                        </div><br><br>
-                        <p class="card-text">Docente<br>Ingeniería Logística</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:juan.franco.r@utec.edu.uy" target="_blank">juan.franco.r@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Magister en Diseño y Gestión de Procesos con énfasis en Sistemas logísticos (U. de la Sabana, 2014), Especialista en Administración Informática (U. de Santander, 2013) e Ingeniero Electrónico (Escuela Colombiana de Ingeniería - Julio Garavito, 2008). Diez años de experiencia como consultor empresarial para la caracterización y el mejoramiento de procesos organizacionales que involucran la cadena productiva de la imaginación, la creatividad y la innovación. Experiencia en labores de documentación, análisis y minería de datos para obtención de información y su transformación en conocimiento. Catorce años de experiencia en el ámbito académico. Experiencia en emprendimientos (en el sector agroproductivo) y asesoramiento a personas y organizaciones en ideación y fortalecimiento de negocios, en el marco de las condiciones propias de los mercados emergentes.</small></p>
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Logística<br>e Ingeniería Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:juan.franco.r@utec.edu.uy">juan.franco.r@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilJPFR">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Magister en Diseño y Gestión de Procesos con énfasis en Sistemas logísticos (U. de la Sabana, 2014), Especialista en Administración Informática (U. de Santander, 2013) e Ingeniero Electrónico (Escuela Colombiana de Ingeniería - Julio Garavito, 2008). Diez años de experiencia como consultor empresarial para la caracterización y el mejoramiento de procesos organizacionales que involucran la cadena productiva de la imaginación, la creatividad y la innovación. Experiencia en labores de documentación, análisis y minería de datos para obtención de información y su transformación en conocimiento. Catorce años de experiencia en el ámbito académico. Experiencia en emprendimientos (en el sector agroproductivo) y asesoramiento a personas y organizaciones en ideación y fortalecimiento de negocios, en el marco de las condiciones propias de los mercados emergentes.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJPFR">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Jesús D. Martínez V.<span style="color: rgb(222,222,222);"> -JDMV</span><br>Process Innovation and Technological Development</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Jesús D. Martínez V.<span style="color: rgb(222,222,222); font-size: 0.8rem;"> - JDMV</span><br><small style="font-size: 0.8rem; opacity: 0.8;">Process Innovation and Technological Development</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/JDMV.jpg" alt="JDMV" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente<br>Ingeniería Mecatrónica e Ingeniería Logística</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:jesus.martinez@utec.edu.uy" target="_blank">jesus.martinez@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Ingeniero Electrónico con Maestría en Tecnología Educativa de la Universidad de la Rioja, trabajando actualmente como docente encargado del área de electricidad y electrónica. Experiencia laboral en manejo de usuarios con aplicaciones de más de diez mil usuarios, destrezas para automatizar procesos repetitivos a favor de optimizar procesos con normativa SOX, manejo básico de directorio activo y presentación de informes, manejo de aplicaciones como Ofimática, Agility Studio, Moodle, lenguajes de programación como JavaScript, Python, C++. Manejo de frameworks como Selenium. Conocimiento en el levantamiento de procesos para automatizaciones RPA, generación de documentos PDD, diagramación procesos AS-IS, AS-DONE.</small></p>
+                                <img class="img-docente" src="images/JDMV.jpg" alt="JDMV">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica<br>e Ingeniería Logística</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:jesus.martinez@utec.edu.uy">jesus.martinez@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilJDMV">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Ingeniero Electrónico con Maestría en Tecnología Educativa de la Universidad de la Rioja, trabajando actualmente como docente encargado del área de electricidad y electrónica. Experiencia laboral en manejo de usuarios con aplicaciones de más de diez mil usuarios, destrezas para automatizar procesos repetitivos a favor de optimizar procesos con normativa SOX, manejo básico de directorio activo y presentación de informes, manejo de aplicaciones como Ofimática, Agility Studio, Moodle, lenguajes de programación como JavaScript, Python, C++. Manejo de frameworks como Selenium. Conocimiento en el levantamiento de procesos para automatizaciones RPA, generación de documentos PDD, diagramación procesos AS-IS, AS-DONE.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJDMV">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Diego Mauricio Acero Soto <br>Process Innovation and Technological Development</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Diego Mauricio Acero Soto<br><small style="font-size: 0.8rem; opacity: 0.8;">Process Innovation and Technological Development</small></h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
                             <a href="https://academia.uniandes.edu.co/AcademyCv/d.aceros" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Diego Acero.jpg" alt="Diego Acero" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
+                                <img class="img-docente" src="images/Diego Acero.jpg" alt="Diego Acero">
                             </a>
-                        </div><br><br>
-                        <p class="card-text">Doctorado Gest.Innovac.Tecnol.</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:d.aceros@uniandes.edu.co" target="_blank">d.aceros@uniandes.edu.co</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Ingeniero electrónico. Estudiante de doctorado DGIT, Universidad de los Andes de Colombia. Docente de inicio de investigación en UTEC (2023-S2). Docente de planta, Universidad Pedagógica Nacional de Colombia.</small></p>
+                        </div>
+                        <p class="card-text fw-bold mb-1">Doctorado<br>Gestión de la Innovación Tecnológica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:d.aceros@uniandes.edu.co">d.aceros@uniandes.edu.co</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilDiego">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Ingeniero electrónico. Estudiante de doctorado DGIT, Universidad de los Andes de Colombia. Docente de inicio de investigación en UTEC (2023-S2). Docente de planta, Universidad Pedagógica Nacional de Colombia.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilDiego">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <br>
         <div class="row">
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
                         <h5 class="card-title mb-0">María Rossina Figliolo</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?4d2cc160e12d935272539fb2a5eb1910" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Rossina Figliolo.jpg" alt="Rossina Figliolo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.figliolo@utec.edu.uy" target="_blank">maria.figliolo@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Química Farmacéutica egresada de la Universidad de la República (UDELAR). -Desde el 2018 se desempeña como docente de Fisicoquímica General e Industrial de la carrera Licenciatura en Análisis Alimentario-UTEC, ubicadas en el tercer y cuarto semestre respectivamente.<br>Durante 9 años fue encargada de la asignatura Fisicoquímica perteneciente al Tecnólogo Químico Paysandú.<br>Doctoranda en el área de Productos Naturales UDELAR.</small></p>
+                                <img class="img-docente" src="images/Rossina Figliolo.jpg" alt="Rossina Figliolo">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:maria.figliolo@utec.edu.uy">maria.figliolo@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilRossina">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Química Farmacéutica egresada de la Universidad de la República (UDELAR). -Desde el 2018 se desempeña como docente de Fisicoquímica General e Industrial de la carrera Licenciatura en Análisis Alimentario-UTEC, ubicadas en el tercer y cuarto semestre respectivamente.<br><br>Durante 9 años fue encargada de la asignatura Fisicoquímica perteneciente al Tecnólogo Químico Paysandú.<br><br>Doctoranda en el área de Productos Naturales UDELAR.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilRossina">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
                         <h5 class="card-title mb-0">Miqueas Abraham</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <!-- <a href=" 2CvUy " target="_blank"> -->
-                                <img class="img-fluid icon-ods" src="images/Miqueas Abraham.jpg" alt="Miqueas Abraham" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            <!-- </a> -->
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:mauricio.abraham@utec.edu.uy" target="_blank">mauricio.abraham@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Es Ingeniero Químico de la Universidad de la República. Es docente encargado de los cursos de Operaciones Unitarias I y II en el sexto y séptimo semestres respectivamente.</small></p>
+                            <img class="img-docente" src="images/Miqueas Abraham.jpg" alt="Miqueas Abraham">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:mauricio.abraham@utec.edu.uy">mauricio.abraham@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilMiqueas">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Es Ingeniero Químico de la Universidad de la República. Es docente encargado de los cursos de Operaciones Unitarias I y II en el sexto y séptimo semestres respectivamente.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilMiqueas">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">María Luciana Chelotti</h5>
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Jhonatan M. Cardozo C.</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <!-- <a href=" 2CvUy " target="_blank"> -->
-                                <img class="img-fluid icon-ods" src="images/María Chelotti.jpg" alt="María Chelotti" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            <!-- </a> -->
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería Mecatrónica</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.chelotti@utec.edu.uy" target="_blank">maria.chelotti@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Licenciada en Bioinformática (2012) en la facultad de Ingenieria de la Universidad Nacional de Entre Ríos (FIUNER) Argentina. Profesorado de Química en el Instituto de Formación Docente "Dr. Guillermo Ruggia" de Fray Bentos, RN Uruguay (en curso). Experiencia como laboratorista (2012-2018) en el Instituto Nacional de Tecnología Agropecuria (INTA) en Argentina. Laboratorista en laboratorio de Microbiología del Laboratorio Tecnológico del Uruguay- Unidad Fray Bentos (LATU-UFB). Docente de inicio de Química de la carrera de Ingeniería en Mecatrónica (UTEC ITR-SO).</small></p>
+                            <img class="img-docente" src="images/JhonatanCardozo.jpg" alt="Jhonatan Cardozo">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:jhonatan.cardozo@utec.edu.uy">jhonatan.cardozo@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilJhonatan">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Licenciado en Análisis Alimentario (Egresado 2025), con experiencia en docencia universitaria y trabajo técnico en el área de química aplicada. Actualmente me desempeño como Docente de Inicio en la Licenciatura en Análisis Alimentario, participando en cursos de Química Orgánica, Inorgánica y Analítica, y colaborando además en la enseñanza de Química General e Inorgánica en la carrera de Ingeniería en Mecatrónica.<br><br>Desde 2023, formo parte del desarrollo del área de Productos Naturales dentro de la Universidad Tecnológica, integrando actividades de formación, investigación y vinculación con el medio. En paralelo, he brindado asesoramiento técnico a emprendimientos del sector alimentario, especialmente en procesos de registro de productos ante autoridades bromatológicas, contribuyendo a la formalización y mejora de la calidad e inocuidad de alimentos.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJhonatan">Ver perfil completo</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Agustina Rodriguez</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/AgustinaRodriguez.jpg" alt="Agustina Rodriguez">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Logística</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:agustina.rodriguez@utec.edu.uy">agustina.rodriguez@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilAgustina">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Ingeniera en Alimentos (Facultad de Ingeniería Química de la Universidad Nacional del Litoral, Santa Fe, Argentina) Máster en Organización de Empresas y Proyectos Industriales (Universidad Europea del Atlántico) Diplomatura en Desarrollo Sostenible (Universidad Tecnológica Nacional, Buenos Aires, Argentina) Diez años de experiencia en implementación de sistemas de gestión de calidad e inocuidad, sistema de gestión ambiental y proyectos de mejora continua.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAgustina">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Yecaranda Ramos</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/YecarandaRamos.jpg" alt="Yecaranda Ramos">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:yecaranda.ramos@utec.edu.uy">yecaranda.ramos@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilYecaranda">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Licenciada en Comunicación Social egresada de la Universidad Yacambú (Venezuela 2019), con más de 6 años experiencia trabajando como periodista en medios de comunicación regionales, nacionales e internacionales. Lidero y ejecuto procesos de producción en radio, tv, redes sociales y medios digitales. Además, trabajé como agente comunitario par (Colombia 2020-2021) y anteriormente realicé dos voluntariados (Venezuela 2012 - 2019) donde adquirí experiencia en la formación, acompañamiento y animación de niños, jóvenes y adultos. Actualmente, trabajo como docente de inicio IMEC.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYecaranda">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Yazmín Bentancour</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/YazmínBentancour.jpg" alt="Yazmín Bentancour">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:yazmin.bentancour@utec.edu.uy">yazmin.bentancour@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilYazmin">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Tecnóloga en Mecatrónica y estudiante de Ingeniería en Mecatrónica.<br><br>Es docente de inicio del área de Ingeniería Mecatrónica en el ITRSO.<br><br>Durante el año 2024 fue becaria de la carrera de IMEC y becaria de iniciación a la investigación de UTEC en la unidad tecnológica IMTE durante el 2025.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYazmin">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">María Luciana Chelotti</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/María Chelotti.jpg" alt="María Chelotti">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:maria.chelotti@utec.edu.uy">maria.chelotti@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilChelotti">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Licenciada en Bioinformática (2012) en la facultad de Ingenieria de la Universidad Nacional de Entre Ríos (FIUNER) Argentina. Profesorado de Química en el Instituto de Formación Docente "Dr. Guillermo Ruggia" de Fray Bentos, RN Uruguay (en curso). Experiencia como laboratorista (2012-2018) en el Instituto Nacional de Tecnología Agropecuria (INTA) en Argentina. Laboratorista en laboratorio de Microbiología del Laboratorio Tecnológico del Uruguay- Unidad Fray Bentos (LATU-UFB). Docente de inicio de Química de la carrera de Ingeniería en Mecatrónica (UTEC ITR-SO).</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilChelotti">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Anelisse Plachicoff</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/AnelissePlachicoff.jpg" alt="Anelisse Plachicoff">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Coordinadora<br>Relacionamiento con el medio</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:anelisse.plachicoff@utec.edu.uy">anelisse.plachicoff@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilPlachicoff">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Es Licenciada en Relaciones Internacionales, con orientación en comercio exterior, egresada de la Facultad de Derecho de la UDELAR.<br><br>Certificada como Project Management Professional (PMP) por el PMI (Project Management Institute).<br><br>Certificada en Liderazgo de la Innovación por el Massachusetts Institute of Technology (MIT). Es Coordinadora de Relacionamiento con el medio de la UTEC donde se dedica a generar, desarrollar y consolidar vínculos con organizaciones, instituciones y empresas, así como a gestar y coordinar proyectos de extensión.<br><br>También se desempeña como Docente de Inicio en el Programa de Emprendimientos.<br><br>Desde 2019 participa en la formulación, evaluación, ejecución y gestión de proyectos a presentar ante instrumentos públicos y privados que impliquen mejoras tecnológicas en las empresas.<br><br>Así mismo trabaja ayudando a emprendedores a generar sinergias que les permitan mediante prácticas asociativas conseguir sus objetivos anuales.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilPlachicoff">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm card-docente">
+                    <div class="card-header text-white bg-primary py-3">
+                        <h5 class="card-title mb-0">Yazmín Bentancour</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <div class="icon-container">
+                            <img class="img-docente" src="images/YazmínBentancour.jpg" alt="Yazmín Bentancour">
+                        </div>
+                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text mb-3">
+                            <small class="text-muted">Email: <a href="mailto:yazmin.bentancour@utec.edu.uy">yazmin.bentancour@utec.edu.uy</a></small>
+                        </p>
+
+                        <div class="collapse collapse-content text-start" id="perfilYazmin2">
+                            <div class="pt-3 border-top mt-2">
+                                <p><small class="text-body-secondary">Tecnóloga en Mecatrónica y estudiante de Ingeniería en Mecatrónica.<br><br>Es docente de inicio del área de Ingeniería Mecatrónica en el ITRSO.<br><br>Durante el año 2024 fue becaria de la carrera de IMEC y becaria de iniciación a la investigación de UTEC en la unidad tecnológica IMTE durante el 2025.</small></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYazmin2">Ver perfil completo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
 
         </div>
 
@@ -1849,7 +2162,7 @@
         </p>
         <p class="lead" style="font-size: 14px;">El diseño conceptual y la creación de contenido están a cargo del comité organizador.<br>Las imágenes han sido proporcionadas por el departamento de comunicaciones de UTEC, junto con otras obtenidas de dominio público.</p>
         <p class="lead" style="font-size: 14px;">Esta página web ha sido desarrollada utilizando el framework <a href="https://getbootstrap.com/" target="_blank" style="color: #FFFFFF;">Bootstrap 5.3</a></p>
-        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 26-03-2026<br><br>República Oriental del Uruguay</p>
+        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 28-03-2026<br><br>República Oriental del Uruguay</p>
         <p class="lead" style="font-size: 14px;">
             <a href="https://utec.edu.uy/uploads/documento/17de002e9a04c9d1859f0ffaef508d38e8452613.pdf" target="_blank" style="color: #FFFFFF;" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Consulta y conoce mas!!">
                 Política de privacidad y tratamiento de datos
