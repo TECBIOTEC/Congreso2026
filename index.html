@@ -187,7 +187,16 @@
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-center mb-4">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold shadow-sm" onclick="window.open('https://ee-eu.kobotoolbox.org/x/qXf69UdV', '_blank')" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y únete ahora!">
+                    <button type="button" 
+                        class="btn btn-primary btn-lg px-4 me-md-2 fw-bold shadow-sm"
+                        onclick="gtag('event', 'click_inscripcion', {
+                            'event_category': 'inscripcion',
+                            'event_label': 'hero_boton_trabajos'
+                        }); window.open('https://ee-eu.kobotoolbox.org/x/qXf69UdV', '_blank');"
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="right" 
+                        title="¡Anímate y únete ahora!">
+                        
                         <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
                         ¡Inscripción de trabajos!
                     </button>
@@ -221,7 +230,20 @@
         <h3 class="mt-5 mb-4 text-primary fw-bold">Formatos de Participación</h3>
         
         <div class="lead" style="text-align: justify;">
-            <p>Para la edición 2026, los interesados deberán presentar sus trabajos mediante el <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://ee-eu.kobotoolbox.org/x/wgLioGgW" target="_blank" style="color: rgb(192,0,0);">enlace de inscripción de trabajos que aspiran a la realización de una ponencia o la presentación de un poster <i class="bi bi-box-arrow-up-right mb-1"></i></a> habilitado en esta página web. El <strong>Comité Científico</strong> realizará su valoración según los criterios del congreso. Si el trabajo presenta el nivel de madurez adecuado, se le asignará un espacio para ser socializado como Póster o Ponencia. Si aún se encuentra en etapas tempranas, los autores recibirán retroalimentación formativa y serán invitados a presentar sus avances en la siguiente edición.</p>
+            <p>Para la edición 2026, los interesados deberán presentar sus trabajos mediante el
+                <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" 
+                   href="https://ee-eu.kobotoolbox.org/x/qXf69UdV" 
+                   target="_blank" 
+                   style="color: rgb(192,0,0);"
+                   onclick="gtag('event', 'click_inscripcion', {
+                       'event_category': 'inscripcion',
+                       'event_label': 'texto_enlace_inscripcion'
+                   });">
+                   enlace de inscripción de trabajos que aspiran a la realización de una ponencia o la presentación de un poster 
+                   <i class="bi bi-box-arrow-up-right mb-1"></i>
+                </a> 
+                habilitado en esta página web. El <strong>Comité Científico</strong> realizará su valoración según los criterios del congreso. Si el trabajo presenta el nivel de madurez adecuado, se le asignará un espacio para ser socializado como Póster o Ponencia. Si aún se encuentra en etapas tempranas, los autores recibirán retroalimentación formativa y serán invitados a presentar sus avances en la siguiente edición.
+            </p>
             <p>
                 <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                 <strong>Conferencias Magistrales (Por invitación del comité organizador):</strong> Expertos reconocidos en tecnología y biociencias ofrecerán conferencias, compartiendo sus conocimientos y perspectivas sobre los avances más recientes y los desafíos en estos campos.
@@ -338,7 +360,17 @@
                     </p>
 
                     <div class="d-flex justify-content-start mt-4">
-                        <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Lee el documento y asume el compromiso personal!">
+                        <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" 
+                           target="_blank" 
+                           class="btn btn-primary btn-lg px-4 fw-bold shadow-sm"
+                           data-bs-toggle="tooltip" 
+                           data-bs-placement="right" 
+                           title="¡Lee el documento y asume el compromiso personal!"
+                           onclick="gtag('event', 'click_codigo_etica', {
+                               'event_category': 'engagement',
+                               'event_label': 'boton_codigo_etica_pdf'
+                           });">
+                            
                             <i class="bi bi-file-earmark-pdf-fill me-2"></i> Leer Código de Ética (PDF)
                         </a>
                     </div>
@@ -1175,7 +1207,7 @@
         </div>
     </section>
 
-    <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Fray Bentos 2026 el lugar el evento” -->
+    <!-- Esto es un super comentario para aclarar que aquí viene la Sección lugar: “Fray Bentos 2026” -->
     <section id="lugar" class="container my-5 section-offset">
         <h2 class="mb-2 text-primary fw-bold text-center text-md-start">Lugar</h2>
         <p class="lead mb-4 text-center text-md-start text-secondary"><i class="bi bi-geo-alt-fill text-primary me-2"></i>UTEC en Fray Bentos (Barrio Anglo)</p>
@@ -1292,7 +1324,16 @@
                     </div>
                     -->
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhcuSDL_ruNTwo1-D4RWmdlH4p-iANVr3Ul-LotXiEJ5sSLw/viewform?pli=1" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y participa como asistente!">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhcuSDL_ruNTwo1-D4RWmdlH4p-iANVr3Ul-LotXiEJ5sSLw/viewform?pli=1" 
+                       target="_blank" 
+                       class="btn btn-primary btn-lg px-4 fw-bold shadow-sm"
+                       data-bs-toggle="tooltip" 
+                       data-bs-placement="right" 
+                       title="¡Anímate y participa como asistente!"
+                       onclick="gtag('event', 'click_registro_asistentes', {
+                           'event_category': 'conversion',
+                           'event_label': 'boton_registro_asistentes'
+                       });">
                         <i class="bi bi-person-plus-fill me-2"></i> Inscripción como asistente
                     </a>
                 </div>
@@ -1317,7 +1358,15 @@
                     </p>
                     <p class="mb-0" style="text-align: justify; font-size: 1.1rem; color: #333;">
                         Es una oportunidad única para mostrar tu trabajo, recibir retroalimentación valiosa y formar parte del diálogo sobre los avances en ingeniería y biociencias.<br>
-                        <a href="https://ee-eu.kobotoolbox.org/x/qXf69UdV" target="_blank" class="fw-bold text-primary text-decoration-none mt-2 d-inline-block">¡Inscribe "tu trabajo" y únete a la conversación!</a>
+                        <a href="https://ee-eu.kobotoolbox.org/x/qXf69UdV" 
+                           target="_blank" 
+                           class="fw-bold text-primary text-decoration-none mt-2 d-inline-block"
+                           onclick="gtag('event', 'click_inscripcion', {
+                               'event_category': 'inscripcion',
+                               'event_label': 'cta_texto_emocional'
+                           });">
+                           ¡Inscribe "tu trabajo" y únete a la conversación!
+                        </a>
                     </p>
                 </div>
             </div>
@@ -1364,7 +1413,16 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-center mb-4">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold shadow-sm" onclick="window.open('https://ee-eu.kobotoolbox.org/x/qXf69UdV', '_blank')" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Anímate y únete ahora!">
+                        <button type="button" 
+                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold shadow-sm"
+                            onclick="gtag('event', 'click_inscripcion', {
+                                'event_category': 'inscripcion',
+                                'event_label': 'boton_secundario_trabajos'
+                            }); window.open('https://ee-eu.kobotoolbox.org/x/qXf69UdV', '_blank');"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="right" 
+                            title="¡Anímate y únete ahora!">
+                            
                             <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
                             ¡Inscripción de trabajos!
                         </button>
