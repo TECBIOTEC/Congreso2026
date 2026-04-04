@@ -244,15 +244,42 @@
             </div>
         </div>
 
-        <div class="mt-4 pb-4">
-            <p class="mb-1 text-body">
-                <strong>¿Preguntas y Comentarios?</strong> Escribe al Email de contacto:
-            </p>
-            <a href="mailto:tecbiotec@utec.edu.uy" class="icon-link icon-link-hover d-inline-block mt-2 text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="text-decoration: none; font-size: 1.2rem;">
-                <i class="bi bi-envelope-at-fill me-1"></i>
-                <strong>tecbiotec@utec.edu.uy</strong>
-            </a>
+        <!-- Asistente virtual y correo de ocntacto -->
+        <div class="container mt-4 pb-4">
+    
+            <div class="mb-4 p-4 bg-light rounded-3 shadow-sm border">
+                <h4 class="mb-3 text-primary">
+                    <i class="bi bi-robot me-2"></i>Asistente Virtual TecBioTec 2026
+                </h4>
+                <p class="text-body mb-3">
+                    ¡Hola! Soy el asistente inteligente del Congreso. Pregúntame sobre las bases, fechas importantes, inscripciones o cualquier detalle del evento.
+                </p>
+                
+                <div class="input-group mb-2">
+                    <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
+                    <input type="text" class="form-control form-control-lg border-start-0 ps-0" placeholder="Ej: ¿Cuándo es la fecha límite para enviar trabajos?" id="searchWidgetTrigger" style="box-shadow: none;" />
+                </div>
+                <small class="text-muted">Haz clic en la barra y escribe tu pregunta para abrir el chat.</small>
+            </div>
+
+            <div class="mt-4 pb-4">
+                <p class="mb-1 text-body">
+                    <strong>¿El asistente no resolvió tu duda o tienes más comentarios?</strong> Escribe al Email de contacto:
+                </p>
+                <a href="mailto:tecbiotec@utec.edu.uy" class="icon-link icon-link-hover d-inline-block mt-2 text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="text-decoration: none; font-size: 1.2rem;">
+                    <i class="bi bi-envelope-at-fill me-1"></i>
+                    <strong>tecbiotec@utec.edu.uy</strong>
+                </a>
+            </div>
+
         </div>
+
+        <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
+
+        <gen-search-widget
+          configId="b3515494-0088-4b84-9433-b983e9e3e407"
+          triggerId="searchWidgetTrigger">
+        </gen-search-widget>
 
     </section>
 
