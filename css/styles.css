@@ -349,6 +349,5 @@ a:hover {
     }
 
 .grecaptcha-badge { 
-left: 20px !important; 
-right: auto !important; 
+    bottom: 100px !important; /*Ajustar este número*/
 }
