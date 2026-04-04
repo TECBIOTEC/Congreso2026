@@ -347,3 +347,8 @@ a:hover {
         height: 100%;
         object-fit: cover; /* Ajusta las imágenes para que se adapten al espacio */
     }
+
+.grecaptcha-badge { 
+left: 20px !important; 
+right: auto !important; 
+}
