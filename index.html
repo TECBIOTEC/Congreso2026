@@ -244,7 +244,7 @@
             </div>
         </div>
 
-        <!-- Asistente virtual y correo de ocntacto -->
+        <!-- Asistente virtual y correo de contacto -->
         <div class="container mt-4 pb-4">
     
             <div class="mb-4 p-4 bg-light rounded-3 shadow-sm border">
@@ -259,6 +259,7 @@
                     <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
                     <input type="text" class="form-control form-control-lg border-start-0 ps-0" placeholder="Ej: ¿Cuándo es la fecha límite para enviar trabajos?" id="searchWidgetTrigger" style="box-shadow: none;" />
                 </div>
+
                 <small class="text-muted">Haz clic en la barra y escribe tu pregunta para abrir el chat.</small>
             </div>
 
@@ -274,8 +275,9 @@
 
         </div>
 
+        <!-- Widget JavaScript bundle -->
         <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
-
+        <!-- Search widget element is not visible by default -->
         <gen-search-widget
           configId="b3515494-0088-4b84-9433-b983e9e3e407"
           triggerId="searchWidgetTrigger">
@@ -2345,6 +2347,22 @@
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
         });
+    </script>
+
+    <script>
+      // Retraer el reCAPTCHA en movil al tocar fuera de él icono
+      document.addEventListener('touchstart', function(event) {
+        var recaptcha = document.querySelector('.grecaptcha-badge');
+        
+        // Si el reCAPTCHA existe y el toque NO fue sobre el reCAPTCHA
+        if (recaptcha && !recaptcha.contains(event.target)) {
+           // Desactiva la interacción por 1 milisegundo para forzar que el celular "suelte" el botón
+           recaptcha.style.pointerEvents = 'none'; 
+           setTimeout(function() { 
+               recaptcha.style.pointerEvents = 'auto'; 
+           }, 10);
+        }
+      });
     </script>
 
 </body>
