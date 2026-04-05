@@ -352,14 +352,14 @@ a:hover {
     bottom: 180px !important; /*Ajustar este número*/
 }
 
-/* OCULTAR EL RECAPTCHA ATASCADO EN MÓVIL */
+/* OCULTAR EL RECAPTCHA ATASCADO EN MÓVIL
 .grecaptcha-badge { 
     visibility: hidden !important; 
-}
+}*/
 
 /* Chat Bot "X" DE CERRAR EN ESCRITORIO */
 /* Los íconos del widget base toman el color claro (blanco) */
-gen-search-widget {
+gen-search-widget::part(close-button),
+gen-search-widget::part(icon) {
     color: white !important;
-    --mdc-theme-text-primary-on-background: white !important;
 }
