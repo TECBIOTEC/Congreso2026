@@ -2349,21 +2349,5 @@
         });
     </script>
 
-    <script>
-      // Retraer el reCAPTCHA en movil al tocar fuera de él icono
-      document.addEventListener('touchstart', function(event) {
-        var recaptcha = document.querySelector('.grecaptcha-badge');
-        
-        // Si el reCAPTCHA existe y el toque NO fue sobre el reCAPTCHA
-        if (recaptcha && !recaptcha.contains(event.target)) {
-           // Desactiva la interacción por 1 milisegundo para forzar que el celular "suelte" el botón
-           recaptcha.style.pointerEvents = 'none'; 
-           setTimeout(function() { 
-               recaptcha.style.pointerEvents = 'auto'; 
-           }, 10);
-        }
-      });
-    </script>
-
 </body>
 </html>
