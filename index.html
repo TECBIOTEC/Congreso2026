@@ -255,10 +255,17 @@
                     ¡Hola! Soy el asistente inteligente del Congreso. Pregúntame sobre las bases, fechas importantes, inscripciones o cualquier detalle del evento.
                 </p>
                 
-                <div class="input-group mb-2">
-                    <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
-                    <input type="text" class="form-control form-control-lg border-start-0 ps-0" placeholder="Ej: ¿Cuándo es la fecha límite para enviar trabajos?" id="searchWidgetTrigger" style="box-shadow: none;" />
-                </div>
+                <!-- Widget JavaScript bundle -->
+                <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
+
+                <!-- Search widget element is not visible by default -->
+                <gen-search-widget
+                  configId="b3515494-0088-4b84-9433-b983e9e3e407"
+                  triggerId="searchWidgetTrigger">
+                </gen-search-widget>
+
+                <!-- Element that opens the widget on click. It does not have to be an input -->
+                <input placeholder="Buscar aquí" id="searchWidgetTrigger" />
 
                 <small class="text-muted">Haz clic en la barra y escribe tu pregunta para abrir el chat.</small>
             </div>
@@ -274,14 +281,6 @@
             </div>
 
         </div>
-
-        <!-- Widget JavaScript bundle -->
-        <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
-        <!-- Search widget element is not visible by default -->
-        <gen-search-widget
-          configId="b3515494-0088-4b84-9433-b983e9e3e407"
-          triggerId="searchWidgetTrigger">
-        </gen-search-widget>
 
     </section>
 
