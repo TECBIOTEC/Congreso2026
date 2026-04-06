@@ -245,38 +245,43 @@
         </div>
 
         <!-- Asistente virtual y correo de contacto -->
-        <div class="container mt-4 pb-4">
-    
-            <div class="mb-4 p-4 bg-light rounded-3 shadow-sm border">
-                <h4 class="mb-3 text-primary">
+        <div class="container mt-4 pb-4 text-center">
+
+            <div class="mx-auto mb-4 p-4 bg-white rounded-4 shadow-sm border" style="max-width: 750px;">
+                <h4 class="mb-3 text-primary fw-bold">
                     <i class="bi bi-robot me-2"></i>Asistente Virtual TecBioTec 2026
                 </h4>
-                <p class="text-body mb-3">
+                <p class="text-secondary mb-4 px-md-4">
                     ¡Hola! Soy el asistente inteligente del Congreso. Pregúntame sobre las bases, fechas importantes, inscripciones o cualquier detalle del evento.
                 </p>
                 
                 <!-- Widget JavaScript bundle -->
                 <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
-
-                <!-- Search widget element is not visible by default -->
+                
+                <!-- Search widget element is not visible by default - Esto mi amigo, hace la magia -->
                 <gen-search-widget
-                  configId="b3515494-0088-4b84-9433-b983e9e3e407"
+                  configId="b3515494-0088-4b84-9433-b983e9e3e407" 
                   triggerId="searchWidgetTrigger">
                 </gen-search-widget>
-
-                <!-- Element that opens the widget on click. It does not have to be an input -->
-                <input placeholder="Buscar aquí" id="searchWidgetTrigger" />
-
+                <div class="d-flex justify-content-center mb-2">
+                    <!-- Element that opens the widget on click. It does not have to be an input -->
+                    <input 
+                        type="text" 
+                        class="form-control form-control-lg border-primary shadow-sm text-center" 
+                        placeholder="Haz clic aquí para preguntar..." 
+                        id="searchWidgetTrigger" 
+                        style="max-width: 450px; cursor: pointer;" 
+                    />
+                </div>
                 <small class="text-muted">Haz clic en la barra y escribe tu pregunta para abrir el chat.</small>
             </div>
 
             <div class="mt-4 pb-4">
-                <p class="mb-1 text-body">
-                    <strong>¿El asistente no resolvió tu duda o tienes más comentarios?</strong> Escribe al Email de contacto:
+                <p class="mb-3 text-body">
+                    <strong>¿El asistente no resolvió tu duda o tienes más comentarios?</strong><br>Escribe al Email de contacto:
                 </p>
-                <a href="mailto:tecbiotec@utec.edu.uy" class="icon-link icon-link-hover d-inline-block mt-2 text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="text-decoration: none; font-size: 1.2rem;">
-                    <i class="bi bi-envelope-at-fill me-1"></i>
-                    <strong>tecbiotec@utec.edu.uy</strong>
+                <a href="mailto:tecbiotec@utec.edu.uy" class="btn btn-outline-danger rounded-pill px-4 py-2 shadow-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!">
+                    <i class="bi bi-envelope-at-fill me-2"></i><strong>tecbiotec@utec.edu.uy</strong>
                 </a>
             </div>
 
