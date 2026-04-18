@@ -147,14 +147,15 @@
 
         <div class="bg-body-tertiary p-4 p-lg-5 border-top">
             <div class="container-fluid px-0" style="max-width: 900px;"> 
+                
                 <div class="alert shadow-sm mb-4 rounded-3 text-center" role="alert" style="background-color: #fffdf5; border: 1px solid #f6c23e;">
                     <h6 class="alert-heading fw-bold mb-2" style="color: #997404;"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
-                    <p class="mb-0">
-                        <strong class="text-primary" style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
+                    
+                    <p class="mb-1 text-muted text-decoration-line-through">
+                        <strong style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
                     </p>
-                    <!--
-                    <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: 13 de octubre 2024 - 23:59 Horas</span>
-                    -->
+                    
+                    <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: domingo, 26 de abril 2026 - 23:59 Horas</span>
                 </div>
 
                 <div class="card shadow-sm mb-5 border-0 rounded-4" style="background-color: #f7fcf2; border-left: 8px solid #A6CE39 !important;">
@@ -169,20 +170,26 @@
                             Para el proceso de inscripción de trabajos, <u style="color: #666;">será indispensable que todas las personas autoras cuenten con su propio identificador digital de investigador (ORCID)</u>. Este dato deberá registrarse al momento de completar el formulario de postulación del trabajo. En caso de que alguna persona autora aún no disponga de este identificador, será necesario crearlo; su obtención es gratuita y puede completarse en pocos minutos.
                         </p>
                         
-                        <div class="d-flex flex-wrap gap-3">
+                        <div>
+                            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                                <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
+                                    <i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
+                                </a>
 
-                            <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!"><i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
-                            </a>
+                                <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                    <i class="bi bi-question-circle me-1"></i> Guía paso a paso
+                                </a>
 
-                            <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
-                                <i class="bi bi-question-circle me-1"></i> Guía paso a paso
-                            </a>
+                                <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                    <i class="bi bi-play-btn me-1"></i> Videotutoriales
+                                </a>
+                            </div>
 
-                            <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
-                                <i class="bi bi-play-btn me-1"></i> Videotutoriales
-                            </a>
-
+                            <div class="text-center mt-4">
+                                <img id="XOR_CID" src="images/XOR_CID.jpg" alt="XOR_CID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 
@@ -239,6 +246,16 @@
                         <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
                         ¡Inscripción de trabajos!
                     </button>
+                </div>
+
+                <div class="alert shadow-sm mb-4 rounded-3 text-center" role="alert" style="background-color: #fffdf5; border: 1px solid #f6c23e;">
+                    <h6 class="alert-heading fw-bold mb-2" style="color: #997404;"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
+                    
+                    <p class="mb-1 text-muted text-decoration-line-through">
+                        <strong style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
+                    </p>
+                    
+                    <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: domingo, 26 de abril 2026 - 23:59 Horas</span>
                 </div>
                 
             </div>
@@ -670,15 +687,37 @@
             <div class="col-lg-6">
                 <div class="card shadow-lg border-0 rounded-4 h-100">
                     <div class="card-header border-bottom-0 pt-4 pb-0 text-center bg-transparent">
-                        <img src="images/Talleres.png" alt="Talleres" width="50" class="mb-2">
-                        <h4 class="fw-bold text-primary">Talleres</h4>
+                        
+                        <div class="mb-3">
+                            <img src="images/Talleres.png" alt="Talleres" width="50" class="mb-2">
+                            <h4 class="fw-bold text-primary mb-0">Talleres</h4>
+                        </div>
+
+                        <hr class="w-50 mx-auto text-muted my-4">
+
+                        <div class="mb-2">
+                            <img src="images/SpSes.png" alt="Sesiones Especiales" width="50" class="mb-2">
+                            <h4 class="fw-bold text-primary mb-0">Sesiones Especiales</h4>
+                        </div>
+                        
                     </div>
+                    
                     <div class="card-body p-4">
-                        <div class="d-grid gap-3">
-                            </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-grid gap-3">
+                                </div>
+                        </div>
+                        
+                        <div>
+                            <div class="d-grid gap-3">
+                                </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+
         </div>
 
     </section>
@@ -686,247 +725,34 @@
     <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Comité científico” -->
     <section id="comites" class="container my-5 section-offset">
         <br><br>
-        
-        <h2>Comité científico</h2>
-        
-        <br>
-        <div class="row">
 
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Rommel Andrés Diaz</h5>
+        <div class="card shadow-sm border-0 rounded-4 mb-5" style="border-left: 6px solid #0d6efd !important; background-color: #fafbfe;">
+            <div class="card-body p-4 p-lg-5">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-5 mb-4 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <i class="bi bi-people-fill text-primary me-3" style="font-size: 2.5rem;"></i>
+                        <h2 class="fw-bold text-primary mb-0">Comité científico:</h2>
                     </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?434583b5dcb93658599be0be467c8fad" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Rommel Diaz.jpg" alt="Rommel Diaz" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería Logística</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:rommel.diaz@utec.edu.uy" target="_blank">rommel.diaz@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Doctor en Derecho y Ciencias Sociales, Universidad de la República. - Analista en Comercio Exterior, Universidad ORT Uruguay. - Curso de posgrado Supply Chain Management, en la Facultad de Ingeniería de la Universidad de Buenos Aires.  -Programa de Desarrollo Gerencial, Universidad ORT Uruguay. -Postgrado en Educación, Universidad ORT Uruguay. - Tesis en curso del Máster en Educación, Universidad ORT Uruguay.</small></p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Verónica Lychenheim</h5>
+                    <div class="col-lg-7">
+                        <div class="p-4 rounded-4 text-center" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                            <h5 class="text-primary mb-2">Perfiles en actualización</h5>
+                            <p class="text-muted mb-3" style="font-size: 0.95rem;">
+                                Próximamente disponible.<br> 
+                                Estamos trabajando en la actualización de los integrantes del comité científico.
+                            </p>
+                            <div class="d-flex justify-content-center gap-3 mt-2">
+                                <i class="bi bi-person-badge text-primary fs-5"></i>
+                                <i class="bi bi-mortarboard text-primary fs-5"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?f04b6d9c272d7ab67ba723b67d74229d" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/ComC_Verónica Lychenheim.jpg" alt="ComC_Verónica Lychenheim" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería Logística</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:veronica.lychenheim@utec.edu.uy" target="_blank">veronica.lychenheim@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Licenciada en Sociología, UDELAR, Formación de Gerencia en Calidad en LATU Sistemas. Fue Gerente de Gestión de Calidad en TCC empresa de Servicios y Telecomunicaciones. Integró el Consejo de Jueces de INACAL. Es consultora de para empresas en Gestión de Calidad.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Natalia Macri</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?ca9cdab829f4d428e1ac8c7978c19a808b0eb47fa86aa1cec8d4939456bdbf0f81f0a4b07e4de096e4b8f08cd90fd5d35776605969ef4be2272c8fc92d988d92" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Natalia Macri.jpg" alt="Natalia Macri" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería Logística</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:natalia.macri@utec.edu.uy" target="_blank">natalia.macri@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Maestría en Educación y TIC - UOC, Posgrado en Sistemas de Información en las Organizaciones y Gestión de Empresas de TI -UDELAR, Contadora Pública - Universidad de Montevideo. Cuenta con más de 15 años de experiencia en coordinación de equipos técnicos orientados a la capacitación y consultoría a mipymes, capacita y asesora a empresarios. Actualmente se desempeña como docente en UTEC en la carrera de Ingeniería en Logística.</small></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-        <br>
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Pia Grignola</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?0e7956f223a61a880454748d67cf59486bf554d462e33238232b94d5a7321fe8a84b4dc1351c31bfbe615433b0c66d3c065ea6cbb1d67641469d8e273ae5d136" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Pia Grignola.jpg" alt="Pia Grignola" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:pia.grignola@utec.edu.uy" target="_blank">pia.grignola@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Licenciada en Bioquimica, de la facultad de Ciencias, UdelaR y una maestria en Ciencias Agrarias, de la facultad de Agronomía, UdelaR. Docente encargada de Biotecnología en Alimentos, con enfasis en Ingeniería Genética. Analísta de laboratorio. </small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Valentina Bartaburu</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?11122ad2e8960442bec6c2873dc5e623" target="_blank">
-                            <img class="img-fluid icon-ods" src="images/Valentina Bartaburu.jpg" alt="Valentina Bartaburu" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Análisis Alimentario</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:valentina.bartaburu@utec.edu.uy" target="_blank">valentina.bartaburu@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Es Licenciada en Nutrición (UNER) esta cursando una maestria en Tecnología Alimentaría (MITA) y tiene una diplomatura en Formación Profesional de la Universidad de San Martín e INEFOP) es profesora de Nutrición Humana, colabora con la difusión de la carrera.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Claudia Elizondo</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <!-- <a href=" 2CvUy " target="_blank"> -->
-                                <img class="img-fluid icon-ods" src="images/Claudia Elizondo.jpg" alt="Claudia Elizondo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            <!-- </a> -->
-                        </div><br><br>
-                        <p class="card-text">Docente Tecnología en Control Ambiental</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.elizondo@utec.edu.uy" target="_blank">maria.elizondo@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Docente encargada Licenciatura en Análisis Alimentario. Licenciada en biología, MSc. en Ciencias Veterinarias, Dra. en medicina de la conservación.</small></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-  
-        <br>
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Guillermo Zinola</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://exportcvuy.anii.org.uy/cv/?178923525023ada108579cca52442a60cb44a3e35e8eed1c5b9db04baf184cb21ead03a0f3a3e5265a4bd7f0bbd6e30fe0036e345cb0c7edd284ca45d50899fd" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Guillermo Zinola.jpg" alt="Guillermo Zinola" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:guillermo.zinola@utec.edu.uy" target="_blank">guillermo.zinola@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Químico Agrícola y Ambiental y Licenciado en Química egresado de la Facultad de Química de la Universidad de la República y cuenta con una Maestría de doble titulación en Ingeniería Sanitaria y Ambiental otorgada por el instituto IHE (Delft, Holanda) y la Universidad del Valle (Cali, Colombia). Actualmente es Docente Adjunto de Efluentes agropecuarios y agroindustriales y participa de otras unidades curriculares de la carrera, y es investigador en sistemas biológicos de tratamiento y valorización de efluentes y residuos sólidos orgánicos agropecuarios y agroindustriales, donde se especializa en pequeña y mediana escala productiva. Cuenta con experiencia en las áreas de química y biotecnología ambiental, biodigestores productivos e industriales, desarrollo de tecnologías apropiadas de tratamiento biológico y valorización de efluentes y residuos sólidos orgánicos, producción agropecuaria, gestión ambiental y desarrollo de empresas científico-tecnológicas. Pertenece al Concejo Directivo de la RedBioLAC (Red de Biodigestores de Latinoamérica y el Caribe), siendo también docente en Universidad ORT Uruguay y socio fundador de la empresa NETUM.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Alejandra Szabo</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?1c48312e472924ba0aeffa5db79cf41e06903b0f74aab7fb60ec2d9a30d5ff3dc2a0a7dc1015f6cc934468f507a2dbd70b4fcadc628855f4185e14929ecbf8ae" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Alejandra Szabo.jpg" alt="Alejandra Szabo" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.szabo@utec.edu.uy" target="_blank">maria.szabo@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Ingeniera Quimica egresada de la Facultad de Ingenieria de la Universidad de la Republica. Pertence el Sistema Nacional De Investigadores - ANII. Amplia experiencia en investigaciony en docencia. Posee un Master en Ingenieria Ambiental y Sanitaria con honores realizado en IHE-Delft, Holanda, con vasto conocimiento en tratamiento de efluentes liquidos municipales e industirales, asi como tambien residuos solidos. Amplio conocimiento en nitrificacion y denitrificacion biologica. Especialista en gestion ambiental UNIT ISO 14000, se ha desempenado en encargada de area de Ingenieria Ambiental en consultoras, con el diseno de planta de tratamiento de efluentes y estudios de impacto. Actualmente se encuentra finalizando la especializacion en Doctorado en Ingenieria Ambiental y Sanitaria en TU Delft, Holanda, con enfoque en la valorizacion de residuos liquidos de industrias lacteas mediante el tratamiento anaerobio. A su vez cuenta con un Master en Administracion de Empresas, de la Escuela de Negocios de Barcelona.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Kelly Andresa Liesenfeld</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?2a2250f966489ffcb6fe9152c28fbe64" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Kelly Andresa Liesenfeld.jpg" alt="Kelly Andresa Liesenfeld" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Ingeniería en Agua y Desarrollo Sostenible</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:kelly.liesenfeld@utec.edu.uy" target="_blank">kelly.liesenfeld@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Ingeniera Ambiental y Sanitarista egresada de la Universidad Federal do Pampa (UNIPAMPA). Actualmente es docente encargada en las unidades curriculares de “Calidad de Aguas y Efluentes Tratados para Uso en Riego” y “Diseño, Operación y Mantenimiento de Sistemas de Tratamiento de Efluentes”. También realiza actividades de investigación en la remoción y recuperación fisicoquímica de nutrientes a partir de efluentes agropecuarios y agroindustriales. Cuenta con experiencia en las temáticas de tratamiento de aguas, efluentes, residuos sólidos y también impactos ambientales.</small></p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
-
-        <br>
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Tomás López</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?60a5cc2a5312de1830d131c4661217e33f20c3315cb3ad1f50cfabd222b817df99fca59344a48ccbaeaa278ac153f8ee877607b830a7cb5a0b2404c7b902a1c1" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Tomás López.jpg" alt="Tomás López" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Senior<br>Responsable técnico U.T. de Lácteos</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:tomas.lopez@utec.edu.uy" target="_blank">tomas.lopez@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Es Químico Farmacéutico egresado de la Universidad de la República-UDELAR, Máster y Doctor por la Universidad Autónoma de Barcelona (Programa de doctorado en Ciencia y Tecnología de los Alimentos; mención europea otorgada). Es Coordinador de la Licenciatura en Ciencia y Tecnología de Lácteos de la Universidad Tecnológica (UTEC), Profesor Senior UTEC (Encargado de las unidades curriculares Tecnología de Lácteos I y II) y Responsable de la Unidad Tecnológica de Lácteos de UTEC. Su actividad investigadora abarca: aplicación de tecnologías emergentes para el procesamiento de alimentos (alta presión hidrostática y de altas presiones dinámicas); inocuidad alimentaria; nanotecnología aplicada a alimentos; ciencia y tecnología de productos lácteos; desarrollo de productos tradicionales y novedosos.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Laura Celano</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cvsni/?urlId=ecc9baa449e3c24c4bd5def32f9151967cda3af25638e72660807aae6eed67ceecd0199609f309c9f86d4d602fa24a56414b483814301a60a0b3895df365e096&convocatoria=21&formato=html" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Laura Celano.jpg" alt="Laura Celano" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Ciencia y Tecnología de Lácteos</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:laura.celano@utec.edu.uy" target="_blank">laura.celano@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Es Licenciada en Bioquímica (UdelaR), tiene  Maestría en Ciencias Biológicas opción Bioquímica (PEDECIBA) y un Doctorado en Ciencias Biológicas (PEDECIBA). Es docente responsable de las UC Bioquímica y Ecología de Productos Lácteos y colabora con las UC Microbiolgía Alimentaria e Inocuidad y Legislación Alimentaria. Dirige proyectos finales de I+D+i y PPC de estudiantes para la obtención del título de grado.</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-header text-white bg-primary">
-                        <h5 class="card-title mb-0">Lorena Nidegger</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?379a54029fd8c96b2c1f32f8417ac771" target="_blank">
-                                <img class="img-fluid icon-ods" src="images/Lorena Nidegger.jpg" alt="Lorena Nidegger" style="width: 160px; height: 160px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); border-radius: 25px;">
-                            </a>
-                        </div><br><br>
-                        <p class="card-text">Docente Licenciatura en Ciencia y Tecnología de Lácteos</p>
-                        <p class="card-text"><small class="text-body-secondary">Email: <a href="mailto:maria.nidegger@utec.edu.uy" target="_blank">maria.nidegger@utec.edu.uy</a></small></p>
-                        <p class="card-text"><small class="text-body-secondary">Lienciatura en Ciencia y Tecnoligía de Lácteos (2015 - 2018)<br>
-                            Universidad Tecnológica - Universidad Tecnológica , Uruguay<br>
-                            Química Farmacéutica Plan 2000 (2000)<br>Universidad de la República, Facultad de Química ,Uruguay
-                        </small></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
+            
     </section>
 
     <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Ponentes” -->
@@ -1440,14 +1266,15 @@
 
             <div class="bg-body-tertiary p-4 p-lg-5 border-top">
                 <div class="container-fluid px-0" style="max-width: 900px;"> 
+
                     <div class="alert shadow-sm mb-4 rounded-3 text-center" role="alert" style="background-color: #fffdf5; border: 1px solid #f6c23e;">
                         <h6 class="alert-heading fw-bold mb-2" style="color: #997404;"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
-                        <p class="mb-0">
-                            <strong class="text-primary" style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
+                        
+                        <p class="mb-1 text-muted text-decoration-line-through">
+                            <strong style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
                         </p>
-                        <!--
-                        <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: 13 de octubre 2024 - 23:59 Horas</span>
-                        -->
+                        
+                        <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: domingo, 26 de abril 2026 - 23:59 Horas</span>
                     </div>
 
                     <div class="card shadow-sm mb-5 border-0 rounded-4" style="background-color: #f7fcf2; border-left: 8px solid #A6CE39 !important;">
@@ -1462,20 +1289,26 @@
                                 Para el proceso de inscripción de trabajos, <u style="color: #666;">será indispensable que todas las personas autoras cuenten con su propio identificador digital de investigador (ORCID)</u>. Este dato deberá registrarse al momento de completar el formulario de postulación del trabajo. En caso de que alguna persona autora aún no disponga de este identificador, será necesario crearlo; su obtención es gratuita y puede completarse en pocos minutos.
                             </p>
                             
-                            <div class="d-flex flex-wrap gap-3">
+                            <div>
+                                <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                                    <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
+                                        <i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
+                                    </a>
 
-                                <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!"><i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
-                                </a>
+                                    <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                        <i class="bi bi-question-circle me-1"></i> Guía paso a paso
+                                    </a>
 
-                                <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
-                                    <i class="bi bi-question-circle me-1"></i> Guía paso a paso
-                                </a>
+                                    <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                        <i class="bi bi-play-btn me-1"></i> Videotutoriales
+                                    </a>
+                                </div>
 
-                                <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
-                                    <i class="bi bi-play-btn me-1"></i> Videotutoriales
-                                </a>
-
+                                <div class="text-center mt-4">
+                                    <img id="XOR_CID" src="images/XOR_CID.jpg" alt="XOR_CID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -1532,6 +1365,16 @@
                             <span class="spinner-grow spinner-grow-sm me-2" aria-hidden="true"></span>
                             ¡Inscripción de trabajos!
                         </button>
+                    </div>
+
+                    <div class="alert shadow-sm mb-4 rounded-3 text-center" role="alert" style="background-color: #fffdf5; border: 1px solid #f6c23e;">
+                        <h6 class="alert-heading fw-bold mb-2" style="color: #997404;"><i class="bi bi-calendar-x-fill me-2"></i>Fecha límite de inscripción de trabajos:</h6>
+                        
+                        <p class="mb-1 text-muted text-decoration-line-through">
+                            <strong style="font-size: 1.15rem;">viernes, 17 de abril 2026 - 23:59 Horas</strong>
+                        </p>
+                        
+                        <span class="fs-5 text-danger fw-bold"><i class="bi bi-clock-history me-2"></i>Nueva fecha: domingo, 26 de abril 2026 - 23:59 Horas</span>
                     </div>
                     
                 </div>
@@ -2326,7 +2169,7 @@
         </p>
         <p class="lead" style="font-size: 14px;">El diseño conceptual y la creación de contenido están a cargo del comité organizador.<br>Las imágenes han sido proporcionadas por el departamento de comunicaciones de UTEC, junto con otras obtenidas de dominio público.</p>
         <p class="lead" style="font-size: 14px;">Esta página web ha sido desarrollada utilizando el framework <a href="https://getbootstrap.com/" target="_blank" style="color: #FFFFFF;">Bootstrap 5.3</a></p>
-        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 12-04-2026<br><br>República Oriental del Uruguay</p>
+        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 17-04-2026<br><br>República Oriental del Uruguay</p>
         <p class="lead" style="font-size: 14px;">
             <a href="https://utec.edu.uy/uploads/documento/17de002e9a04c9d1859f0ffaef508d38e8452613.pdf" target="_blank" style="color: #FFFFFF;" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Consulta y conoce mas!!">
                 Política de privacidad y tratamiento de datos
