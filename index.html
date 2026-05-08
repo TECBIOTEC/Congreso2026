@@ -77,8 +77,10 @@
     <!-- Esto es un super comentario para aclarar que aquí viene el header -->
     <header class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
         <div class="container-fluid">
-            &nbsp;&nbsp;<img src="images/UTEC_W.png" alt="Logo_UTEC_W" width="125" height="auto">
-            &nbsp;&nbsp;<img src="images/logoTB.png" alt="TecBioTec Logo" width="85" height="85">&nbsp;&nbsp;
+            <div class="d-flex align-items-center ms-2 gap-3">
+        <img src="images/UTEC_W.png" alt="Logo_UTEC_W" width="125" height="auto">
+        <img src="images/logoTB.png" alt="TecBioTec Logo" width="85" height="85">
+    </div>
             <a class="navbar-brand" href="#">
                 <h5 class="mb-0 text-white" style="line-height: 1.2;">2o Congreso de Tecnología<br>y Biociencias de UTEC | 2026</h5>
             </a>
@@ -123,15 +125,14 @@
             </div>
         </div>
     </header>
+    <main>
 
     <!-- Esto es otro super comentario para aclarar que aquí viene el inicio de la WEB de TECBIOTEC 2026 -->
     <section id="inicio" class="container text-center section-offset">
         <div class="d-none d-md-block" style="padding-top: 120px;"></div>
         <div class="d-block d-md-none" style="padding-top: 180px;"></div>
         <div class="container text-center mb-4">
-            <a href="#" target="_blank">
-                <img id="logoP1" src="images/26_TBT_P1.png" alt="26_TBT_P1" class="img-fluid w-75 mx-auto d-block" style="max-width: 1000px;">
-            </a>
+            <img loading="lazy" id="logoP1" src="images/26_TBT_P1.png" alt="Póster oficial TecBioTec 2026" class="img-fluid w-75 mx-auto d-block" style="max-width: 1000px;">
         </div>
         
         <div id="countdown" class="my-4 bg-primary text-white p-3 rounded text-center mx-auto shadow" style="max-width: 1000px;">
@@ -145,6 +146,40 @@
             <p class="fs-5 fw-bold text-primary">4 y 5 de junio de 2026</p>
         </div>
 
+
+
+        <div class="card shadow-sm mb-5 border-0 rounded-4" style="background-color: #ffffff; border-left: 8px solid #fd7e14 !important;">
+            <div class="card-body p-4 p-md-5">
+                
+                <div class="d-flex align-items-center mb-4">
+                    <span class="badge rounded-pill me-2 shadow-sm text-white d-flex align-items-center" style="background-color: #fd7e14; font-size: 1rem; padding: 0.4em 0.8em;">
+                        <i class="bi bi-geo-alt-fill fs-6 me-1"></i> ¿En qué etapa vamos? 🧭
+                    </span>
+                    <h4 class="fw-bold mb-0" style="color: #333333;">Así avanza TecBioTec 2026 🚀</h4>
+                </div>
+
+                <p class="mb-4 text-secondary" style="text-align: justify; font-size: 1.05rem;">
+                    Actualmente, TecBioTec 2026 se encuentra en la <strong>etapa de evaluación de trabajos por parte del Comité Científico</strong>, prevista entre el 5 y el 20 de mayo de 2026. Esta fase es posterior al proceso de <em>desk check</em> y anonimización de los trabajos recibidos, y antecede a la revisión de conceptos de evaluación, la notificación de resultados a los autores y la preparación de las versiones finales de los trabajos aceptados.
+                </p>
+
+                <div class="text-center mt-4">
+                    <img src="images/EstadoProceso_080526.png" 
+                         class="img-fluid rounded-4 shadow-sm" 
+                         alt="Ruta de avance de TecBioTec 2026: Actualmente en la Etapa 4 de Evaluación de trabajos por el Comité Científico" 
+                         style="max-width: 100%; height: auto; border: 1px solid #e9ecef;">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <!-- Esto es un mensaje que indica que TECBIOTEC 2026 es Declarado de interés ministerial -->
         <div class="container-fluid px-0">
             <div class="card mb-5 border-0 shadow rounded-4 bg-body-tertiary border-start border-primary border-5">
@@ -152,8 +187,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="docs/0551-026 2026-11-0001-1333.pdf" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/Logo MEC_DIM_2025_color.png" alt="Logo_MEC" style="max-height: 180px; object-fit: contain;">
+                            <a href="docs/0551-026 2026-11-0001-1333.pdf" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/Logo MEC_DIM_2025_color.png" alt="Logo_MEC" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -189,21 +224,21 @@
                         
                         <div>
                             <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                                <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
+                                <a href="https://orcid.org/" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
                                     <i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
                                 </a>
 
-                                <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
                                     <i class="bi bi-question-circle me-1"></i> Guía paso a paso
                                 </a>
 
-                                <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
                                     <i class="bi bi-play-btn me-1"></i> Videotutoriales
                                 </a>
                             </div>
 
                             <div class="text-center mt-4">
-                                <img id="XOR_CID" src="images/XOR_CID.jpg" alt="XOR_CID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
+                                <img loading="lazy" id="XOR_CID" src="images/XOR_CID.jpg" alt="Ejemplo de identificador ORCID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
                             </div>
                         </div>
 
@@ -225,7 +260,7 @@
                         </p>
 
                         <div class="d-flex flex-wrap gap-3 mt-4">
-                            <a href="https://youtu.be/nuI9oVewPK0" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
+                            <a href="https://youtu.be/nuI9oVewPK0" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
                                 <i class="bi bi-youtube me-1" style="color: #ff0000;"></i> Ver video en YouTube
                             </a>
                         </div><br>
@@ -236,11 +271,11 @@
                         
                         <div class="d-flex flex-wrap gap-3 mt-4">
                             
-                            <a href="https://drive.google.com/file/d/17zxl_g8tyiYzh662T6YpXFRaWbhn4KX5/view" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Abrir PDF de la Guía">
+                            <a href="https://drive.google.com/file/d/17zxl_g8tyiYzh662T6YpXFRaWbhn4KX5/view" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Abrir PDF de la Guía">
                                 <i class="bi bi-file-earmark-text-fill me-1" style="color: #0056b3;"></i> Ver Guía práctica para postulación exitosa
                             </a>
 
-                            <a href="https://drive.google.com/file/d/1GncvWgcWjavzsWTkFsDOaYJK69hbLMeG/view?usp=sharing" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir PDF del Ejemplo">
+                            <a href="https://drive.google.com/file/d/1GncvWgcWjavzsWTkFsDOaYJK69hbLMeG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir PDF del Ejemplo">
                                 <i class="bi bi-file-earmark-pdf-fill me-1" style="color: #dc3545;"></i> Ver PDF de Ejemplo de referencia 
                             </a>
 
@@ -334,7 +369,7 @@
             <p>Para la edición 2026, los interesados deberán presentar sus trabajos mediante el
                 <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" 
                    href="https://ee-eu.kobotoolbox.org/x/qXf69UdV" 
-                   target="_blank" 
+                   target="_blank" rel="noopener noreferrer" 
                    style="color: rgb(192,0,0);"
                    onclick="gtag('event', 'click_inscripcion', {
                        'event_category': 'inscripcion',
@@ -346,15 +381,15 @@
                 habilitado en esta página web. El <strong>Comité Científico</strong> realizará su valoración según los criterios del congreso. Si el trabajo presenta el nivel de madurez adecuado, se le asignará un espacio para ser socializado como Póster o Ponencia. Si aún se encuentra en etapas tempranas, los autores recibirán retroalimentación formativa y serán invitados a presentar sus avances en la siguiente edición.
             </p>
             <p>
-                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                 <strong>Conferencias Magistrales (Por invitación del comité organizador):</strong> Expertos reconocidos en tecnología y biociencias ofrecerán conferencias, compartiendo sus conocimientos y perspectivas sobre los avances más recientes y los desafíos en estos campos.
             </p>
             <p>
-                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                 <strong>Ponencias:</strong> Trabajos seleccionados por el comité científico para presentación oral. Tendrán una duración estricta de <strong>20 minutos</strong>, 15 minutos de exposición por parte de un autor y 5 minutos dedicados a preguntas del auditorio.
             </p>
             <p>
-                <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                 <strong>Pósteres:</strong> Modalidad para trabajos aceptados por el comité científico que se benefician de una presentación visual y experiencial, en formato de “póster”. Contarán con un espacio dedicado para fomentar la interacción directa, el debate de ideas y la retroalimentación por parte del público asistente.
             </p>
         </div>
@@ -362,17 +397,17 @@
         <hr class="my-5"> 
         
         <p class="lead" style="text-align: justify;">
-            <strong class="text-primary">Publicación y Alianza Estratégica:</strong> Todos los trabajos aceptados integrarán una edición especial de memorias del evento, publicadas en alianza con la <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://revista.utec.edu.uy/ojs/index.php/revistalinks" target="_blank" style="color: rgb(192,0,0);">Revista LINKS <i class="bi bi-box-arrow-up-right mb-1"></i></a>. Adicionalmente, las personas autoras de los trabajos más destacados del congreso recibirán una invitación especial para complementar sus resultados y postular un resumen extendido o un artículo para su posible publicación en una edición regular de la revista. En la medida de lo posible, se buscará que estos trabajos destacados puedan formar parte del Vol. 4, previsto para 2026.
+            <strong class="text-primary">Publicación y Alianza Estratégica:</strong> Todos los trabajos aceptados integrarán una edición especial de memorias del evento, publicadas en alianza con la <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://revista.utec.edu.uy/ojs/index.php/revistalinks" target="_blank" rel="noopener noreferrer" style="color: rgb(192,0,0);">Revista LINKS <i class="bi bi-box-arrow-up-right mb-1"></i></a>. Adicionalmente, las personas autoras de los trabajos más destacados del congreso recibirán una invitación especial para complementar sus resultados y postular un resumen extendido o un artículo para su posible publicación en una edición regular de la revista. En la medida de lo posible, se buscará que estos trabajos destacados puedan formar parte del Vol. 4, previsto para 2026.
         </p>
 
         <div class="card mt-5 mb-4 shadow border-0 rounded-4 bg-body-tertiary">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-4">
-                    <img id="ICONO_SORG" src="images/ICONO_SORG.png" alt="TecBioTec Logo" width="65" height="65">
+                    <img loading="lazy" id="ICONO_SORG" src="images/ICONO_SORG.png" alt="TecBioTec Logo" width="65" height="65">
                     <h4 class="ms-3 mb-0 text-primary fw-bold">Valor Conceptual de TecBioTec:</h4> 
                 </div>
                 <p class="lead m-0" style="text-align: justify;">
-                    Con gran entusiasmo presentamos la segunda edición del Congreso <strong>TecBioTec</strong>, un evento que continúa creciendo y evolucionando en el suroeste de Uruguay. Enriquecidos por las valiosas experiencias y aprendizajes de nuestro primer encuentro, regresamos con un firme compromiso hacia la mejora continua. Alineado con la visión de la Universidad Tecnológica - <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/" target="_blank" style="color: rgb(192,0,0);">UTEC <i class="bi bi-box-arrow-up-right mb-1"></i></a>, este espacio busca ser un punto de encuentro cercano y accesible, donde la <strong>tecnología y las biociencias</strong> convergen para generar una verdadera colaboración interdisciplinaria.
+                    Con gran entusiasmo presentamos la segunda edición del Congreso <strong>TecBioTec</strong>, un evento que continúa creciendo y evolucionando en el suroeste de Uruguay. Enriquecidos por las valiosas experiencias y aprendizajes de nuestro primer encuentro, regresamos con un firme compromiso hacia la mejora continua. Alineado con la visión de la Universidad Tecnológica - <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/" target="_blank" rel="noopener noreferrer" style="color: rgb(192,0,0);">UTEC <i class="bi bi-box-arrow-up-right mb-1"></i></a>, este espacio busca ser un punto de encuentro cercano y accesible, donde la <strong>tecnología y las biociencias</strong> convergen para generar una verdadera colaboración interdisciplinaria.
                     <br><br>
                     Más allá de lo académico, <strong>TecBioTec</strong> es una invitación al diálogo abierto entre la educación, la industria y la comunidad. Buscamos fortalecer los vínculos que impulsan la innovación y el desarrollo sostenible de nuestra región. Al compartir conocimientos y celebrar nuevas ideas, nuestro gran propósito es inspirar a las futuras generaciones de tecnólogos y profesionales, así como motivar a toda la sociedad a ser protagonista activa del cambio y el progreso.
                 </p>
@@ -389,49 +424,49 @@
             <div class="row row-cols-1 row-cols-lg-2 g-4">
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Construir puentes de diálogo y cooperación multisectorial, facilitando el intercambio de conocimientos y experiencias entre estudiantes, académicos y profesionales en tecnología y biociencias.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Visibilizar y acelerar la innovación tecnológica, impulsando la conversación y la cocreación de soluciones entre todos los participantes.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Tejer redes sólidas y duraderas de colaboración interdisciplinaria y multisectorial, que nutran proyectos y estudios conjuntos para el futuro de Uruguay.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Inspirar a las nuevas generaciones de estudiantes y jóvenes profesionales a liderar su desarrollo en tecnología y biociencias, revelando el horizonte de oportunidades de progreso.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Desplegar un abanico de experiencias de aprendizaje prácticas y transformadoras, como talleres y conferencias, que potencien el talento de los asistentes.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Acelerar el progreso tecnológico y productivo del suroeste de Uruguay, tejiendo puentes entre la educación terciaria de calidad y las necesidades reales de desarrollo de la región.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
-                        <p class="m-0" style="text-align: justify;">Vivir y encarnar los <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/sobre-utec/" target="_blank" style="color: rgb(192,0,0);">valores institucionales <i class="bi bi-box-arrow-up-right mb-1"></i></a> de UTEC, haciendo de la innovación, equidad e inclusión la base de nuestro quehacer diario.</p>
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <p class="m-0" style="text-align: justify;">Vivir y encarnar los <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://utec.edu.uy/es/sobre-utec/" target="_blank" rel="noopener noreferrer" style="color: rgb(192,0,0);">valores institucionales <i class="bi bi-box-arrow-up-right mb-1"></i></a> de UTEC, haciendo de la innovación, equidad e inclusión la base de nuestro quehacer diario.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
+                        <img loading="lazy" src="images/ICONO_SORG.png" alt="Icono" width="35" height="35" class="me-3 flex-shrink-0 mt-1">
                         <p class="m-0" style="text-align: justify;">Conectar la ciencia y la tecnología con soluciones tangibles que aborden desafíos globales y locales, generando un impacto positivo en la sociedad y el medio ambiente.</p>
                     </div>
                 </div>
@@ -451,7 +486,7 @@
 
                 <div class="d-none d-lg-block">
                     <div class="float-end p-2 rounded-3 shadow-sm ms-4 mb-3 bg-white" style="width: 40%; max-width: 450px; shape-outside: polygon(0 0, 100% 0, 100% 20%, 95% 40%, 100% 60%, 98% 80%, 100% 100%, 0 100%);">
-                        <img src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="width: 100%; height: auto;">
+                        <img loading="lazy" src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="width: 100%; height: auto;">
                     </div>
                     
                     <p class="lead m-0" style="text-align: justify;">
@@ -462,7 +497,7 @@
 
                     <div class="d-flex justify-content-start mt-4">
                         <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" 
-                           target="_blank" 
+                           target="_blank" rel="noopener noreferrer" 
                            class="btn btn-primary btn-lg px-4 fw-bold shadow-sm"
                            data-bs-toggle="tooltip" 
                            data-bs-placement="right" 
@@ -480,7 +515,7 @@
                 <div class="row g-0 align-items-center d-block d-lg-none mt-4">
                     <div class="col-12 text-center mb-4">
                         <div class="p-2 bg-white rounded-3 shadow-sm d-inline-block border">
-                            <img src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
+                            <img loading="lazy" src="images/SORG.png" alt="Ética TecBioTec" class="img-fluid rounded-3" style="max-width: 100%; height: auto;">
                         </div>
                     </div>
                     <div class="col-12">
@@ -489,7 +524,7 @@
                         </p>
                         
                         <div class="d-grid gap-2 mt-4">
-                            <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" target="_blank" class="btn btn-primary btn-lg fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Lee el documento y asume el compromiso!">
+                            <a href="docs/Código de Ética y Conducta TecBioTec V1.1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Lee el documento y asume el compromiso!">
                                 <i class="bi bi-file-earmark-pdf-fill me-2"></i> Leer PDF
                             </a>
                         </div>
@@ -526,9 +561,9 @@
         <div class="row g-4 mb-5">
             <div class="col-lg-6">
                 <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
-                    <img src="images/TecBioTec2026_Dia1Prov.jpg" class="card-img-top" alt="Cronograma Día 1">
+                    <img loading="lazy" src="images/TecBioTec2026_Dia1Prov.jpg" class="card-img-top" alt="Cronograma Día 1">
                     <div class="card-body text-center bg-light">
-                        <a href="docs/TecBioTec2026_Dia1Prov.pdf" download target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
+                        <a href="docs/TecBioTec2026_Dia1Prov.pdf" download target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
                             <i class="bi bi-download me-2"></i> Actividades Día 1
                         </a>
                     </div>
@@ -536,9 +571,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
-                    <img src="images/TecBioTec2026_Dia2Prov.jpg" class="card-img-top" alt="Cronograma Día 2">
+                    <img loading="lazy" src="images/TecBioTec2026_Dia2Prov.jpg" class="card-img-top" alt="Cronograma Día 2">
                     <div class="card-body text-center bg-light">
-                        <a href="docs/TecBioTec2026_Dia2Prov.pdf" download target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
+                        <a href="docs/TecBioTec2026_Dia2Prov.pdf" download target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="¡Descarga PDF!">
                             <i class="bi bi-download me-2"></i> Actividades Día 2
                         </a>
                     </div>
@@ -548,7 +583,7 @@
 
         <div class="card border-0 shadow-lg rounded-4 mb-5 p-4">
             <h4 class="text-center text-danger mb-4 fw-bold">
-                <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://tecbiotec.github.io/Congreso2024/#" target="_blank" style="color: rgb(192,0,0);" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Visita la web del 2024!">Algunas imágenes de nuestra edición anterior - TecBioTec 2024 <i class="bi bi-globe-americas mb-1"></i></a>
+                <a class="icon-link icon-link-hover text-danger fw-bold text-decoration-none" href="https://tecbiotec.github.io/Congreso2024/#" target="_blank" rel="noopener noreferrer" style="color: rgb(192,0,0);" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Visita la web del 2024!">Algunas imágenes de nuestra edición anterior - TecBioTec 2024 <i class="bi bi-globe-americas mb-1"></i></a>
             </h4>
             <div id="myCarousel_D1" class="carousel slide rounded-3 overflow-hidden" data-bs-ride="carousel">
                 
@@ -566,16 +601,16 @@
                 </div>
                 
                 <div class="carousel-inner">
-                    <div class="carousel-item active"><img src="images/FB_1_071124 (1).jpeg" class="d-block w-100" alt="Slide 1"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (2).jpeg" class="d-block w-100" alt="Slide 2"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (3).jpeg" class="d-block w-100" alt="Slide 3"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (4).jpeg" class="d-block w-100" alt="Slide 4"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (5).jpeg" class="d-block w-100" alt="Slide 5"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (6).jpeg" class="d-block w-100" alt="Slide 6"></div>
-                    <div class="carousel-item"><img src="images/FB_1_071124 (7).jpeg" class="d-block w-100" alt="Slide 7"></div>
-                    <div class="carousel-item"><img src="images/FB_2426_0.jpg" class="d-block w-100" alt="Slide 8"></div>
-                    <div class="carousel-item"><img src="images/FB_2426_1.jpg" class="d-block w-100" alt="Slide 9"></div>
-                    <div class="carousel-item"><img src="images/FB_2426_2.JPG" class="d-block w-100" alt="Slide 10"></div>
+                    <div class="carousel-item active"><img loading="lazy" src="images/FB_1_071124 (1).jpeg" class="d-block w-100" alt="Slide 1"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (2).jpeg" class="d-block w-100" alt="Slide 2"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (3).jpeg" class="d-block w-100" alt="Slide 3"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (4).jpeg" class="d-block w-100" alt="Slide 4"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (5).jpeg" class="d-block w-100" alt="Slide 5"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (6).jpeg" class="d-block w-100" alt="Slide 6"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_1_071124 (7).jpeg" class="d-block w-100" alt="Slide 7"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_2426_0.jpg" class="d-block w-100" alt="Slide 8"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_2426_1.jpg" class="d-block w-100" alt="Slide 9"></div>
+                    <div class="carousel-item"><img loading="lazy" src="images/FB_2426_2.JPG" class="d-block w-100" alt="Slide 10"></div>
                 </div>
                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel_D1" data-bs-slide="prev">
@@ -593,7 +628,7 @@
             <div class="text-center mb-4">
                 <h3 class="fw-bold text-primary">Ejes Temáticos</h3>
                 <p class="text-muted w-75 mx-auto">
-                    Abarcan diversas áreas de estudio en UTEC y el <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" class="text-decoration-none fw-bold">Instituto Tecnológico Regional Suroeste</a>, alineándose con el impulso a la innovación de la visión histórica de crecimiento y desarrollo del <a href="https://utec.edu.uy/uploads/documento/7c1a87937c7c1028ecb3a4546a8dfb3efec9097b.pdf" target="_blank" class="text-decoration-none fw-bold">Plan Estratégico institucional</a> y la <a href="https://observatorioplanificacion.cepal.org/es/planes/estrategia-nacional-de-desarrollo-uruguay-2050" target="_blank" class="text-decoration-none fw-bold">Estrategia Nacional 2050</a>.
+                    Abarcan diversas áreas de estudio en UTEC y el <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-bold">Instituto Tecnológico Regional Suroeste</a>, alineándose con el impulso a la innovación de la visión histórica de crecimiento y desarrollo del <a href="https://utec.edu.uy/uploads/documento/7c1a87937c7c1028ecb3a4546a8dfb3efec9097b.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-bold">Plan Estratégico institucional</a> y la <a href="https://observatorioplanificacion.cepal.org/es/planes/estrategia-nacional-de-desarrollo-uruguay-2050" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-bold">Estrategia Nacional 2050</a>.
                 </p>
             </div>
 
@@ -602,16 +637,16 @@
                     <div class="card h-100 shadow border-0 rounded-4">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
-                                <img id="ICONO_E1" src="images/ICONO_E1.png" alt="Icono E1" width="50" height="50" class="me-3">
+                                <img loading="lazy" id="ICONO_E1" src="images/ICONO_E1.png" alt="Icono E1" width="50" height="50" class="me-3">
                                 <h5 class="card-title fw-bold m-0">Mecatrónica y tecnologías afines</h5>
                             </div>
                             <h6 class="text-muted small mb-3">Tecnologías digitales y modernización tecnológica</h6>
                             <p class="card-text small text-secondary" style="text-align: justify;">Clave para impulsar la eficiencia y productividad en múltiples sectores. Mejoran procesos, facilitan la automatización de tareas complejas y aumentan la precisión promoviendo soluciones sostenibles.</p>
                         </div>
                         <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
-                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank"><img src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank"><img src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
                         </div>
                     </div>
                 </div>
@@ -620,19 +655,19 @@
                     <div class="card h-100 shadow border-0 rounded-4">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
-                                <img id="ICONO_E2" src="images/ICONO_E2.png" alt="Icono E2" width="50" height="50" class="me-3">
+                                <img loading="lazy" id="ICONO_E2" src="images/ICONO_E2.png" alt="Icono E2" width="50" height="50" class="me-3">
                                 <h5 class="card-title fw-bold m-0">Logística y Cadena de Abastecimiento</h5>
                             </div>
                             <h6 class="text-muted small mb-3">Diseño, Cadenas de valor, Procesos y Logística</h6>
                             <p class="card-text small text-secondary" style="text-align: justify;">Claves para optimizar recursos y mejorar la competitividad. Permiten una entrega eficiente, reducen costos y aumentan la satisfacción del cliente, impulsando el crecimiento sostenible.</p>
                         </div>
                         <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
-                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank"><img src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank"><img src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/cities/" target="_blank"><img src="images/ODS11.jpg" alt="ODS11" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank"><img src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank"><img src="images/ODS_ALL.jpg" alt="ODS_ALL" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS8.jpg" alt="ODS8" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS9.jpg" alt="ODS9" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/cities/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS11.jpg" alt="ODS11" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS_ALL.jpg" alt="ODS_ALL" width="40" class="rounded shadow-sm"></a>
                         </div>
                     </div>
                 </div>
@@ -641,19 +676,19 @@
                     <div class="card h-100 shadow border-0 rounded-4">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
-                                <img id="ICONO_E3" src="images/ICONO_E3.png" alt="Icono E3" width="50" height="50" class="me-3">
+                                <img loading="lazy" id="ICONO_E3" src="images/ICONO_E3.png" alt="Icono E3" width="50" height="50" class="me-3">
                                 <h5 class="card-title fw-bold m-0">Ciencia y Tecnología de Alimentos</h5>
                             </div>
                             <h6 class="text-muted small mb-3">Producción Lechera, Análisis, Seguridad Alimentaria</h6>
                             <p class="card-text small text-secondary" style="text-align: justify;">Garantizan la calidad, seguridad y sostenibilidad en la producción alimentaria. Contribuyen a innovar y optimizar procesos, mejorando la salud y el bienestar de la sociedad.</p>
                         </div>
                         <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
-                            <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank"><img src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/health/" target="_blank"><img src="images/ODS3.jpg" alt="ODS3" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank"><img src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank"><img src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank"><img src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/health/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS3.jpg" alt="ODS3" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS4.jpg" alt="ODS4" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS12.jpg" alt="ODS12" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
                         </div>
                     </div>
                 </div>
@@ -662,22 +697,22 @@
                     <div class="card h-100 shadow border-0 rounded-4">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
-                                <img id="ICONO_E5" src="images/ICONO_E5.png" alt="Icono E5" width="50" height="50" class="me-3">
+                                <img loading="lazy" id="ICONO_E5" src="images/ICONO_E5.png" alt="Icono E5" width="50" height="50" class="me-3">
                                 <h5 class="card-title fw-bold m-0">Sostenibilidad y Medio Ambiente</h5>
                             </div>
                             <h6 class="text-muted small mb-3">Control Ambiental, Agricultura Inteligente, Sostenibilidad</h6>
                             <p class="card-text small text-secondary" style="text-align: justify;">Pilares fundamentales para enfrentar el cambio climático. Estas prácticas optimizan el uso de los recursos, reducen el impacto ambiental y aseguran un equilibrio entre necesidades humanas y ecosistemas.</p>
                         </div>
                         <div class="card-footer bg-white border-0 d-flex gap-2 flex-wrap justify-content-center pb-4">
-                            <a href="https://www.un.org/sustainabledevelopment/es/poverty/" target="_blank"><img src="images/ODS1.jpg" alt="ODS1" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank"><img src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" target="_blank"><img src="images/ODS6.jpg" alt="ODS6" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/energy/" target="_blank"><img src="images/ODS7.jpg" alt="ODS7" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank"><img src="images/ODS10.jpg" alt="ODS10" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" target="_blank"><img src="images/ODS13.jpg" alt="ODS13" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank"><img src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank"><img src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
-                            <a href="https://www.un.org/sustainabledevelopment/es/globalpartnerships/" target="_blank"><img src="images/ODS17.jpg" alt="ODS17" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/poverty/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS1.jpg" alt="ODS1" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/hunger/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS2.jpg" alt="ODS2" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS6.jpg" alt="ODS6" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/energy/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS7.jpg" alt="ODS7" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS10.jpg" alt="ODS10" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS13.jpg" alt="ODS13" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/oceans/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS14.jpg" alt="ODS14" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS15.jpg" alt="ODS15" width="40" class="rounded shadow-sm"></a>
+                            <a href="https://www.un.org/sustainabledevelopment/es/globalpartnerships/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/ODS17.jpg" alt="ODS17" width="40" class="rounded shadow-sm"></a>
                         </div>
                     </div>
                 </div>
@@ -696,7 +731,7 @@
             <div class="col-lg-6">
                 <div class="card shadow-lg border-0 rounded-4 h-100">
                     <div class="card-header border-bottom-0 pt-4 pb-0 text-center bg-transparent">
-                        <img src="images/Ch_Magistrales.png" alt="Charlas Magistrales" width="50" class="mb-2">
+                        <img loading="lazy" src="images/Ch_Magistrales.png" alt="Charlas Magistrales" width="50" class="mb-2">
                         <h4 class="fw-bold text-primary">Charlas Magistrales</h4>
                     </div>
                     <div class="card-body p-4">
@@ -715,19 +750,21 @@
                     <div class="card-header border-bottom-0 pt-4 pb-0 text-center bg-transparent">
                         
                         <div class="mb-3">
-                            <img src="images/Talleres.png" alt="Talleres" width="50" class="mb-2">
+                            <img loading="lazy" src="images/Talleres.png" alt="Talleres" width="50" class="mb-2">
                             <h4 class="fw-bold text-primary mb-0">Talleres</h4>
                         </div>
 
                         <hr class="w-50 mx-auto text-muted my-4">
 
                         <div class="mb-2">
-                            <img src="images/SpSes.png" alt="Sesiones Especiales" width="50" class="mb-2">
+                            <img loading="lazy" src="images/SpSes.png" alt="Sesiones Especiales" width="50" class="mb-2">
                             <h4 class="fw-bold text-primary mb-0">Sesiones Especiales</h4>
                         </div>
                         
                     </div>
                     
+                    <!-- marcador de posición (placeholder) -->
+
                     <div class="card-body p-4">
                         
                         <div class="mb-4">
@@ -751,34 +788,692 @@
     <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Comité científico” -->
     <section id="comites" class="container my-5 section-offset">
         <br><br>
-
+        
         <div class="card shadow-sm border-0 rounded-4 mb-5" style="border-left: 6px solid #0d6efd !important; background-color: #fafbfe;">
+            
             <div class="card-body p-4 p-lg-5">
-                <div class="row align-items-center">
-                    
-                    <div class="col-lg-5 mb-4 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
-                        <i class="bi bi-people-fill text-primary me-3" style="font-size: 2.5rem;"></i>
-                        <h2 class="fw-bold text-primary mb-0">Comité científico:</h2>
+                
+                <div class="d-flex align-items-center mb-5 pb-3" style="border-bottom: 1px solid #dee2e6;">
+                    <i class="bi bi-people-fill text-primary me-3" style="font-size: 2.5rem;"></i>
+                    <h2 class="fw-bold text-primary mb-0">Comité científico</h2>
+                </div>
+
+                <!-- EJE: MECATRÓNICA -->
+                <h4 class="fw-bold titulo-eje-cientifico mb-4">
+                    <i class="bi bi-cpu-fill me-2"></i>Mecatrónica y Tecnologías Afines
+                </h4>
+                <div class="row mb-5">
+
+                    <!-- Rafael Rojas -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Rafael Rojas Rodríguez</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Politécnica de Puebla</span>
+                            <a href="mailto:rafael.rojas@uppuebla.edu.mx" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>rafael.rojas@uppuebla.edu.mx</a>
+                            
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-rrojas" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+                            
+                            <div class="collapse mt-3" id="perfil-rrojas">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://www.uppuebla.edu.mx/mecatronica-2024/" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/RafaelRojasRodríguez.jpg" alt="RafaelRojasRodríguez" class="rounded-circle img-perfil-colapsado shadow-sm" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Director del Programa Académico de Ingeniería Mecatrónica</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Es ingeniero electrónico con especialidad en control de procesos, tienen una maestría en ciencias en ingeniería industrial con especialidad en control estadístico de procesos, también es maestro en ciencias de la educación con especialidad en diseño curricular bajo el modelo educativo basado en competencias y tienen un doctorado en ciencias en ingeniería mecatrónica. Es miembro del Sistema Nacional de Investigadores de México y director del programa académico de Ingeniería Mecatrónica de la Universidad Politécnica de Puebla. Es autor de cuando menos 15 publicaciones en revistas indexadas y participante en más de 20 congresos de talla nacional e internacional</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <div class="p-4 rounded-4 text-center" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
-                            <h5 class="text-primary mb-2">Perfiles en actualización</h5>
-                            <p class="text-muted mb-3" style="font-size: 0.95rem;">
-                                Próximamente disponible.<br> 
-                                Estamos trabajando en la actualización de los integrantes del comité científico.
-                            </p>
-                            <div class="d-flex justify-content-center gap-3 mt-2">
-                                <i class="bi bi-person-badge text-primary fs-5"></i>
-                                <i class="bi bi-mortarboard text-primary fs-5"></i>
+                    <!-- Félix Payares -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Félix Payares</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad de Oriente (Venezuela)</span>
+                            <a href="mailto:fopayares.anz@udo.edu.ve" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>fopayares.anz@udo.edu.ve</a>
+                            
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-fpayares" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+                            
+                            <div class="collapse mt-3" id="perfil-fpayares">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://www.linkedin.com/in/felix-payares-77941774" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/FelixPayares.jpg" alt="FelixPayares" class="rounded-circle img-perfil-colapsado shadow-sm" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Profesor Titular e Investigador</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">El Dr. Félix Payares es Ingeniero Mecánico y Profesor Titular de la Universidad de Oriente (UDO), Núcleo Anzoátegui. Con una destacada trayectoria en el Departamento de Ingeniería Mecánica, se especializa en el área de Fabricación y Diseño Mecánico, específicamente en simulación estructural de máquinas, equipos estáticos y componentes mecánicos. En este ámbito, ha colaborado con instituciones internacionales como la Universidad Politécnica de Valencia. En materia de gestión académica, ha desempeñado roles clave en programas de formación a nivel de pregrado, postgrado e industrial, destacando su labor como coordinador en el Centro de Estudios de Postgrado y en la Maestría en Ingeniería Mecánica de la UDO. Asimismo, posee una amplia experiencia en asesoría técnica y en el desarrollo de soluciones de ingeniería para el sector industrial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sebastian Soto -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Sebastian Soto</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">ATD INDUSTRY</span>
+                            <a href="mailto:ssoto@atdsas.com" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>ssoto@atdsas.com</a>
+                            
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-ssoto" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+                            
+                            <div class="collapse mt-3" id="perfil-ssoto">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://orcid.org/0000-0003-2738-2312" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/PerfGEN.png" alt="PerfGEN" class="rounded-circle img-perfil-colapsado shadow-sm" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Desarrollador de prototipos y productos mecatrónicos</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Ingeniero mecatrónico con 8 años de experiencia en investigación, docencia e industria, desarrollando prototipos y productos mecatrónicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carlos Diaz Novo -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Carlos Diaz Novo</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:carlos.diaz.n@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>carlos.diaz.n@utec.edu.uy</a>
+                            
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-cdiaz" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+                            
+                            <div class="collapse mt-3" id="perfil-cdiaz">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://utec.edu.uy/es/investigacion/investigadores-utec/carlos-diaz-novo/" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/carlos_diaz.jpg" alt="Carlos Diaz Novo" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Profesor Asociado IBIO/ Encargado IMEC</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Ingeniero Mecánico y Doctor en Ciencias Técnicas, con Maestría en Diseño Mecánico y formación complementaria en Canadá, Polonia, Bélgica, España y Colombia. Docente universitario en Uruguay, Cuba y Canadá e invitado en Europa y América Latina. Investigador activo con publicaciones científicas y participación en congresos internacionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <!-- EJE: LOGÍSTICA -->
+                <h4 class="fw-bold titulo-eje-cientifico mb-4">
+                    <i class="bi bi-box-seam-fill me-2"></i>Logística y Cadena de Abastecimiento
+                </h4>
+                <div class="row mb-5">
+
+                    <!-- Jackson Luis Bartz -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Jackson Luis Bartz</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:jackson.bartz@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>jackson.bartz@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-jbartz" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-jbartz">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://www.linkedin.com/in/jackson-luis-bartz-501ba03/" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/jackson_bartz.jpg" alt="Jackson Bartz" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Asociado en Ingeniería en Logística</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Docente de Logistica Empresaria, Diseño y Gestion de Cadenas de Suministro y coordinador de la carrera de Ingenieria en Logistica ITR-N.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
+                    <!-- Verónica Lychenheim -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Verónica Lychenheim</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:veronica.lychenheim@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>veronica.lychenheim@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-vlychenheim" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-vlychenheim">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://export.cvuy.uy/cv/?f04b6d9c272d7ab67ba723b67d74229d" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/ComC_Verónica Lychenheim.jpg" alt="Verónica Lychenheim" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Encargado Área Cadena de Suministros</span>
+                                            <span class="d-block small text-muted">Docente Encargado Área de Análisis y Gestión Logística</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Licenciada en Sociología por UDELAR, con formación en Gerencia de Calidad en LATU Sistemas. Cuenta con amplia experiencia en gestión organizacional, habiendo sido Gerente de Gestión de Calidad en TCC, empresa del sector telecomunicaciones. Integró el Consejo de Jueces de INACAL, participando en procesos de evaluación bajo modelos de excelencia. Se desempeña como consultora en gestión de calidad, asesorando a organizaciones en el diseño e implementación de sistemas y mejora continua. Es docente encargada en UTEC en las áreas de Cadena de Suministros y Análisis y Gestión Logística, donde articula formación académica con experiencia profesional aplicada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Natalia Macri Muela -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Natalia Macri Muela</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:natalia.macri@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>natalia.macri@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-nmacri" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-nmacri">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?ca9cdab829f4d428e1ac8c7978c19a808b0eb47fa86aa1cec8d4939456bdbf0f81f0a4b07e4de096e4b8f08cd90fd5d35776605969ef4be2272c8fc92d988d92" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/natalia_macri.jpg" alt="Natalia Macri" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Investigadora - Docente</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Magíster en Educación y TIC (UOC), con Posgrado en Sistemas de Información en las Organizaciones y Gestión de Empresas de TI (UDELAR) y Contadora Pública (Universidad de Montevideo). Actualmente cursa el Doctorado en Ciencias de la Educación en la UNLP. Se desempeña como docente e investigadora en UTEC, en la carrera de Ingeniería en Logística, y es decana de la Facultad de Educación Física, Recreación y Deporte del IUACJ. Cuenta con más de 15 años de experiencia en coordinación de equipos técnicos orientados a la capacitación y consultoría para MIPYMES, así como en la formación y asesoramiento a empresarios.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rommel Andrés Díaz -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Rommel Andrés Díaz</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:rommel.diaz@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>rommel.diaz@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-rdiaz" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-rdiaz">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="www.linkedin.com/in/rommel-andrés-díaz-838b1742" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/rommel_diaz.jpg" alt="Rommel Díaz" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Encargado de Cursos</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Doctor en Derecho y Ciencias Sociales, Universidad de la República. - Analista en Comercio Exterior, Universidad ORT Uruguay. - Curso de posgrado Supply Chain Management, en la Facultad de Ingeniería de la Universidad de Buenos Aires. -Programa de Desarrollo Gerencial, Universidad ORT Uruguay. -Postgrado en Educación, Universidad ORT Uruguay. - Tesis en curso del Máster en Educación, Universidad ORT Uruguay. Fue Ejecutivo de Cuenta (Coordinador Logístico Senior) en Costa Oriental, Operador Logístico ubicado en Zonamerica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- EJE: ALIMENTOS -->
+                <h4 class="fw-bold titulo-eje-cientifico mb-4 mt-2">
+                    <i class="bi bi-diagram-3-fill me-2"></i>Ciencia y Tecnología de Alimentos
+                </h4>
+                <div class="row mb-5">
+
+                    <!-- Tomás López Pedemonte -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Tomás López Pedemonte</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:tomas.lopez@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>tomas.lopez@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-tpedemonte" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-tpedemonte">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?60a5cc2a5312de1830d131c4661217e33f20c3315cb3ad1f50cfabd222b817df99fca59344a48ccbaeaa278ac153f8ee877607b830a7cb5a0b2404c7b902a1c1" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/tomas_lopez.jpg" alt="Tomás López" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Director del Departamento de Alimentos</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Es Director del Departamento de Alimentos de UTEC. Es Químico Farmacéutico egresado de la Universidad de la República-UDELAR, Máster y Doctor por la Universidad Autónoma de Barcelona (Programa de doctorado en Ciencia y Tecnología de los Alimentos; mención europea otorgada). Profesor Senior UTEC (Encargado de las unidades curriculares Tecnología de Lácteos I y II) y Responsable de la Unidad Tecnológica de Lácteos de UTEC. Su actividad investigadora abarca: aplicación de tecnologías emergentes para el procesamiento de alimentos (alta presión hidrostática y de altas presiones dinámicas); inocuidad alimentaria; nanotecnología aplicada a alimentos; ciencia y tecnología de productos lácteos; desarrollo de productos tradicionales y novedosos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- María Pía Grignola -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">María Pía Grignola</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:maria.grignola@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>maria.grignola@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-mgrignola" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-mgrignola">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?0e7956f223a61a880454748d67cf59486bf554d462e33238232b94d5a7321fe8a84b4dc1351c31bfbe615433b0c66d3c065ea6cbb1d67641469d8e273ae5d136" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/maria_pia.jpg" alt="María Pía Grignola" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Adjunto de la Licenciatura en Análisis Alimentario con funciones de gestión en Posgrado de Biociencias y sostenibilidad alimentaria</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Licenciada en Bioquímica, de la facultad de Ciencias, UdelaR con una maestría en Ciencias Agrarias, de la facultad de Agronomía, UdelaR. Docente encargada de Biotecnología en Alimentos, con énfasis en Ingeniería Genética. Coordinadora del posgrado de Biociencias y sostenibilidad alimentaria.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Valentina Bartaburu -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Valentina Bartaburu</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:valentina.bartaburu@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>valentina.bartaburu@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-vbartaburu" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-vbartaburu">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://export.cvuy.uy/cv/?11122ad2e8960442bec6c2873dc5e623" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/valentina_bartaburu.jpg" alt="Valentina Bartaburu" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Licenciatura en Análisis Alimentario</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Es Licenciada en Nutrición (UNER) esta cursando una maestria en Tecnología Alimentaría (MITA) y tiene una diplomatura en Formación Profesional de la Universidad de San Martín e INEFOP) es profesora de Nutrición Humana, colabora con la difusión de la carrera.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laura Celano -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Laura Celano</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:laura.celano@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>laura.celano@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-lcelano" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-lcelano">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://export.cvuy.uy/cvsni/?urlId=ecc9baa449e3c24c4bd5def32f9151967cda3af25638e72660807aae6eed67ceecd0199609f309c9f86d4d602fa24a56414b483814301a60a0b3895df365e096&convocatoria=21&formato=html" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/laura_celano.jpg" alt="Laura Celano" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Asociado de Bioquímica y Microbiología</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Lic. en Bioquímica, Mag. en Biología con especialización en Bioquímica y Doc. en Biología. He trabajado en INIA- La Estanzuela y en Facultad de Ciencias como docente efectiva en la Cátedra de Bioquímica y Enzimología durante 15 años. Actualmente me desempeño en UTEC como Docente Asociada de Bioquímica y Microbiología en la Licenciatura en Ciencia y Tecnología de Lácteos, dedicándome a tareas de docencia, investigación y gestión. He dirigido y participado como tribunal de numerosas tesinas de grado y en llamados a concurso para la provisión de cargos en UTEC y UdelaR. Actualmente integro el PEDECIBA- Biología como Investigadora GRADO 3 y he publicado 9 artículos en revistas científicas internacionales arbitradas, 4 de ellos como como primer autor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- María Gabriela Tamaño Berterame -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">María Gabriela Tamaño Berterame</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:gabriela.tamano@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>gabriela.tamano@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-mgberterame" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-mgberterame">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?b6eca049a15fd9112e2121127da91b3a" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/gabriela_tamano.jpg" alt="María Gabriela Tamaño" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Encargado Tecnología de la Miel y Productos Apicolas</span>
+                                            <span class="d-block small text-muted">Responsable de Laboratorio ApiUTEC</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Doctora en Ciencia, Tecnología y Gestión Alimentaria y Diplomada en Estudios Avanzados en Ingeniería de Alimentos por la Universidad Politécnica de Valencia, e Ingeniera en Alimentos por la Universidad Nacional de Entre Ríos. Posee especializaciones en Vinculación Tecnológica y Agronegocios. Cuenta con amplia experiencia en investigación y extensión en miel y productos apícolas. Actualmente es docente de Tecnología de la Miel en la Universidad Tecnológica de Uruguay y responsable del laboratorio ApiUTEC, donde lidera investigaciones sobre caracterización de mieles, especialmente de áreas protegidas y flora nativa, buscando agregar valor. Sus líneas incluyen caracterización de mieles y propóleos, estudio de compuestos bioactivos, desarrollo de productos apícolas y evaluación sensorial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sandra Zapata Bustamante -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Sandra Zapata Bustamante</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad CES (Colombia)</span>
+                            <a href="mailto:szapata@ces.edu.co" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>szapata@ces.edu.co</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-szapata" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-szapata">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001218689" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/sandra_zapata.jpg" alt="Sandra Zapata" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Doctora en Ciencias Agrarias (2021), Magíster en Ciencia y Tecnología de Alimentos (2011) e Ingeniera Biológica (2008) de la Universidad Nacional de Colombia, sede Medellín. Realizó una estancia postdoctoral en el Laboratorio de Tecnología de la Miel y Productos Apícolas (ApiUTEC) (2023–2025). Ha estado vinculada a diferentes grupos de investigación enfocados en el área de ciencia de los alimentos, específicamente en la búsqueda de compuestos bioactivos de diversas matrices agroalimentarias, la evaluación de su actividad biológica y su relación con la salud. Actualmente, se desempeña como docente e investigadora en la Facultad de Ciencias de la Salud de la Universidad CES (Antioquia, Colombia).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- EJE: SOSTENIBILIDAD Y MEDIO AMBIENTE -->
+                <h4 class="fw-bold titulo-eje-cientifico mb-4 mt-2">
+                    <i class="bi bi-leaf-fill me-2"></i>Sostenibilidad y Medio Ambiente
+                </h4>
+                <div class="row mb-5">
+
+                    <!-- Blas Melissari -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Blas Melissari</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad de la República (Udelar)</span>
+                            <a href="mailto:bmelissari@fing.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>bmelissari@fing.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-bmelissari" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-bmelissari">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://www.linkedin.com/in/bmelissari/" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/blas_melissari.jpg" alt="Blas Melissari" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Investigador</span>
+                                            <span class="d-block small text-muted">Par Evaluador</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Ph.D. en Ciencias de la Universidad de Toronto con trayectoria en docencia, investigación y desarrollo tecnológico interdisciplinario. Profesor universitario y coordinador de proyectos, trabaja en la intersección entre ingeniería, biotecnología y sostenibilidad, promoviendo soluciones innovadoras con impacto educativo y productivo. Ha liderado iniciativas en agro-tecnología, economía circular y formación en STEM, integrando herramientas digitales y metodologías activas. Participa como Par Evaluador académico y colabora en la articulación entre ciencia, tecnología y sociedad, contribuyendo al fortalecimiento de capacidades y al desarrollo sostenible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Natalia Besil -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Natalia Besil</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad de la República (Udelar)</span>
+                            <a href="mailto:nbesil@litoralnorte.udelar.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>nbesil@litoralnorte.udelar.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-nbesil" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-nbesil">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/CvEstatico/?urlId=d9ef591b887f1c3085554d26a1a037ad6bb934a1b02c33961dcaaceb30e7a18e3d9b6058477ab597c12ba561cac0c6b36ca5631b1182e93fc29c55482029565c&formato=pdf&convocatoria=21" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/natalia_besil.jpg" alt="Natalia Besil" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Profesor Adjunto</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Mi investigación y área de especialización se centran en el análisis de compuestos trazas, en un modo amplio, y la aplicación de la espectrometría de masas como apoyo al desarrollo del núcleo agroalimentario y agroindustrial. Esto involucra la aplicación del análisis de residuos de pesticidas al estudio de problemas ambientales y alimentarios que incluye la mitigación química y biológica de aguas que contienen contaminantes orgánicos así como el estudio de decaimiento de pesticidas en alimentos. En paralelo abordo también el estudio de productos naturales y contaminantes traza en plantas medicinales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Silvina Niell -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Silvina Niell</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad de la República (Udelar)</span>
+                            <a href="mailto:sniell@cup.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>sniell@cup.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-sniell" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-sniell">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/CvEstatico/?urlId=9ebed494994e4d029e9ac91ec7af697025da6ff986853d68042dca6d656a9bac42094c8e1d5310146b243dc9c738edb1ae8d1f452bb00ba96379829cb99b33cc&formato=pdf&convocatoria=21" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/silvina_niell.jpg" alt="silvina niell" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Profesora Adjunta</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Dra. en Química, Profesora Adjunta en Departamento de Química del Litoral, CENUR Litoral Norte, Sede Paysandú, Udelar. Investigación en biomonitores, principalmente en la colmena como biomonitor ambiental de pesticidas, así como el desarrollo de metodologías analíticas con espectrometría de masas y de modelos informáticos tendientes a evaluaciones de riesgos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guillermo Zinola -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Guillermo Zinola</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:guillermo.zinola@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>guillermo.zinola@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-gzinola" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-gzinola">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?178923525023ada108579cca52442a60cb44a3e35e8eed1c5b9db04baf184cb21ead03a0f3a3e5265a4bd7f0bbd6e30fe0036e345cb0c7edd284ca45d50899fd" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/guillermo_zinola.jpg" alt="Guillermo Zinola" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Adjunto</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Docente Adjunto de la UTEC en el área de Efluentes y Residuos del Departamento de Sostenibilidad Ambiental, integrando el Grupo de investigación de Biotecnología y Química Ambiental (BiQA) y el Grupo de Investigación Estratégica Gestión Sostenible Suelo y Agua (GIE-GeSAS). Egresado de la carrera de Químico Agrícola y Ambiental de la UdelaR y de una Maestría de doble titulación en Ingeniería Sanitaria y Ambiental otorgada por el instituto IHE (Delft, Holanda) y la Universidad del Valle (Cali, Colombia). Además, realiza el Doctorado en Química de la UdelaR en la UTEC y el IIBCE. Se especializa en el estudio de efluentes y residuos agroindustriales, el desarrollo de biotecnologías para su valorización, y en la evaluación de la sostenibilidad de estas tecnologías.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kelly Liesenfeld -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-integrante h-100 rounded-4 p-3 shadow-sm">
+                            <h5 class="fw-bold text-primary mb-1">Kelly Liesenfeld</h5>
+                            <span class="badge bg-light text-primary border border-primary-subtle mb-2 align-self-start">Universidad Tecnológica del Uruguay (UTEC)</span>
+                            <a href="mailto:kelly.liesenfeld@utec.edu.uy" class="text-muted small mb-3 text-decoration-none"><i class="bi bi-envelope me-1"></i>kelly.liesenfeld@utec.edu.uy</a>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill align-self-start btn-toggle-perfil" type="button" data-bs-toggle="collapse" data-bs-target="#perfil-kliesenfeld" aria-expanded="false">
+                                <span class="texto-mostrar">Ver perfil</span>
+                                <span class="texto-ocultar">Ocultar perfil</span>
+                            </button>
+
+                            <div class="collapse mt-3" id="perfil-kliesenfeld">
+                                <div class="p-3 rounded-4" style="background-color: #f0f4fa; border: 1px dashed #9bc0ff;">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <a href="https://exportcvuy.anii.org.uy/cv/?2a2250f966489ffcb6fe9152c28fbe64" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+                                            <img loading="lazy" src="images/kelly_liesenfeld.jpg" alt="Kelly Liesenfeld" class="rounded-circle img-perfil-colapsado shadow-sm flex-shrink-0" style="width: 65px; height: 65px; object-fit: cover;">
+                                        </a>
+                                        
+                                        <div class="lh-sm">
+                                            <span class="d-block fw-bold text-secondary small mb-1">Docente Adjunta</span>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2" style="border-color: #9bc0ff; opacity: 0.5;">
+                                    <p class="mb-0 mt-2 small text-muted" style="text-align: justify;">Ingeniera Ambiental y Sanitarista y se desempeña como docente e investigadora en la carrera de Ingeniería en Agua y Desarrollo Sostenible de la Universidad Tecnológica del Uruguay (UTEC). Posee una Maestría en Agua y Desarrollo Sostenible, con perfil en Ingeniería Sanitaria, y actualmente realiza estudios de doctorado en Ingeniería en el área de tecnología de materiales y medio ambiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-            
+
+        <!-- Esto es un super comentario para aclarar que aquí vienen los recursos para el proceso de evaluación -->
+        <div class="card shadow-sm mb-5 border-0 rounded-4" style="background-color: #f7fcf2; border-left: 8px solid #A6CE39 !important;">
+            <div class="card-body p-4 p-md-5">
+                
+                <div class="d-flex align-items-center mb-4">
+                    <span class="badge rounded-pill me-2 shadow-sm text-dark d-flex align-items-center" style="background-color: #A6CE39; font-size: 1rem; padding: 0.4em 0.8em;">
+                        <i class="bi bi-info-circle fs-6 me-1"></i> Información de interés
+                    </span>
+                    <h4 class="fw-bold mb-0" style="color: #333333;"><strong>Recursos de apoyo</strong><br>para orientar el proceso de evaluación de trabajos<br>por parte del Comité Científico</h4>
+                </div>
+
+                <p class="mb-4 text-secondary" style="text-align: justify; font-size: 1.05rem;">
+                    📋 <strong>Apreciados miembros del comité científico:</strong> <br>Como pasos previos al diligenciamiento del formulario de evaluación, les solicitamos muy amablemente:
+                    <br> 1. ✅ Leer atentamente los trabajos presentados por los autores correspondientes al eje temático del cual hacen parte.
+                    <br> 2. ✅ Verificar que cada trabajo se encuentra debidamente anonimizado.
+                    <br> 3. ✅ Registrar, en el siguiente formulario, la evaluación colegiada correspondiente a los trabajos del eje temático del cual hace parte:
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4 mb-4">
+                    <a href="https://ee-eu.kobotoolbox.org/x/oEJtEBV7" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Ir al Formulario de Evaluación">
+                        <i class="bi bi-clipboard2-check-fill me-1" style="color: #198754;"></i> Formulario para la evaluación académica y científica de trabajos postulados a TecBioTec 2026
+                    </a>
+                </div>
+                <br>
+
+                <div class="d-flex align-items-center p-3 mb-4 shadow-sm rounded-3" style="background-color: #fff8e1; border-left: 6px solid #ffc107;">
+                    <i class="bi bi-exclamation-triangle-fill fs-4 me-3" style="color: #ffc107;"></i>
+                    <p class="mb-0 text-dark" style="font-size: 1.05rem;">
+                        <strong>¡Importante!</strong> Le recordamos registrar su respuesta en el formulario <strong>antes del miércoles 20 de mayo de 2026, a las 16:00 h.</strong>
+                    </p>
+                </div>
+                <br>
+
+                <p class="mb-4 text-secondary" style="text-align: justify; font-size: 1.05rem;">
+                    📚 Además, ponemos a disposición los siguientes <strong>recursos de apoyo</strong>, con el propósito de orientar y facilitar la organización de los criterios de evaluación:
+                </p>
+                
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    
+                    <a href="https://youtu.be/JTn16-43Rcs?si=JXp6tYSQi4ZSYu1a" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
+                        <i class="bi bi-youtube me-1" style="color: #ff0000;"></i> Ver video "Evaluación de trabajos postulados a TecBioTec 2026"
+                    </a>
+
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    
+                    <a href="docs/Trabajo código 7627580XX.pdf" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir PDF de Ejemplo">
+                        <i class="bi bi-file-earmark-pdf-fill me-1" style="color: #dc3545;"></i> PDF de referencia: ejemplo de trabajo recibido
+                    </a>
+
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="docs/Evaluación del trabajo código 762758003 (Ejemplo de referencia).docx" 
+                       download="Evaluacion_Ejemplo_Referencia.docx" 
+                       class="btn fw-bold shadow-sm px-4" 
+                       style="background-color: #A6CE39; color: #000; border-radius: 8px;" 
+                       data-bs-toggle="tooltip" 
+                       data-bs-placement="right" 
+                       title="Descargar documento Word">
+                        <i class="bi bi-file-word-fill me-1" style="color: #0d6efd;"></i> 
+                        Documento de apoyo para la organización y posterior sistematización de los conceptos de evaluación
+                    </a>
+
+                </div>
+
+                <br>
+                <p class="mb-4 text-secondary" style="text-align: justify; font-size: 1.05rem;">
+                    📚 A continuación, se presentan algunos recursos utilizados previamente por los autores de los trabajos recibidos:
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    
+                    <a href="https://youtu.be/nuI9oVewPK0?si=n6FI7txB68F42gab" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
+                        <i class="bi bi-youtube me-1" style="color: #ff0000;"></i> Video "Comparte tu trabajo en el congreso TecBioTec 2026 - Guía práctica para una postulación exitosa."
+                    </a>
+
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="https://drive.google.com/file/d/1AuR_OlL2vG5eINhuNdJ4Qc6SITvQXyAU/view" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir Guía Breve">
+                        <i class="bi bi-file-earmark-text-fill me-1" style="color: #0056b3;"></i> Guía breve de conceptos y orientaciones iniciales
+                        para la postulación de trabajos
+                    </a>
+
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="https://drive.google.com/file/d/17zxl_g8tyiYzh662T6YpXFRaWbhn4KX5/view" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir Guía Práctica">
+                        <i class="bi bi-file-earmark-pdf-fill me-1" style="color: #dc3545;"></i> Guía paso a paso para postular trabajos a TecBioTec 2026
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <!-- Esto es un super comentario para aclarar que aquí viene la Sección “Ponentes” -->
@@ -790,7 +1485,7 @@
             <div class="card-body p-4 p-lg-5">
                 
                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4 text-center text-md-start">
-                    <img id="ICONO_Ponentes" src="images/Ponentes.png" alt="Ponentes IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
+                    <img loading="lazy" id="ICONO_Ponentes" src="images/Ponentes.png" alt="Ponentes IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
                     <h4 class="mb-0 text-primary fw-bold">Información de interés para la participación como ponente:</h4>
                 </div>
 
@@ -918,10 +1613,10 @@
                                 <div id="recursos" class="p-4 bg-white rounded-3 border">
                                     <h6 class="fw-bold text-primary mb-3"><i class="bi bi-link-45deg me-2"></i> Recursos complementarios</h6>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://utec.edu.uy/uploads/documento/82a36430707aab6fe708f8fbdf9497a1723251db.pdf" target="_blank" class="text-decoration-none">Manual de identidad visual de UTEC</a></li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://red.utec.edu.uy/" target="_blank" class="text-decoration-none">Plataforma RED UTEC</a></li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://utec.edu.uy/uploads/documento/82a36430707aab6fe708f8fbdf9497a1723251db.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Manual de identidad visual de UTEC</a></li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> <a href="https://red.utec.edu.uy/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Plataforma RED UTEC</a></li>
                                         <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Formato sugerido: <strong>Formato de presentaciones TecBioTec 2026</strong> (Documento descargable en esta sección)</li>
-                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Referente documental institucional: <a href="https://utec.edu.uy/uploads/documento/9f9e2d435acabd7513239771febf322fb3f0e227.pdf" target="_blank" class="text-decoration-none">Circular de trabajos finales de carreras</a></li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Referente documental institucional: <a href="https://utec.edu.uy/uploads/documento/9f9e2d435acabd7513239771febf322fb3f0e227.pdf" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Circular de trabajos finales de carreras</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -954,7 +1649,7 @@
             <div class="card-body p-4 p-lg-5">
                 
                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4 text-center text-md-start">
-                    <img id="ICONO_Posters" src="images/Posters.png" alt="Posters IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
+                    <img loading="lazy" id="ICONO_Posters" src="images/Posters.png" alt="Posters IMG" width="75" height="75" class="mb-3 mb-md-0 me-md-4">
                     <h4 class="mb-0 text-primary fw-bold">Información de interés para la participación en modalidad de póster:</h4>
                 </div>
 
@@ -1152,21 +1847,21 @@
             </div>
 
             <div class="carousel-inner">
-                <div class="carousel-item active"><img src="images/ITR_SO_FB01.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 1"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB02.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 2"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB03.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 3"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB04.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 4"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB05.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 5"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB06.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 6"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB07.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 7"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB08.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 8"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB09.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 9"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB10.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 10"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB11.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 11"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB12.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 12"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB13.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 13"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB14.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 14"></div>
-                <div class="carousel-item"><img src="images/ITR_SO_FB15.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 15"></div>
+                <div class="carousel-item active"><img loading="lazy" src="images/ITR_SO_FB01.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 1"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB02.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 2"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB03.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 3"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB04.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 4"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB05.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 5"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB06.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 6"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB07.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 7"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB08.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 8"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB09.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 9"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB10.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 10"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB11.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 11"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB12.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 12"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB13.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 13"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB14.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 14"></div>
+                <div class="carousel-item"><img loading="lazy" src="images/ITR_SO_FB15.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Slide 15"></div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carruselLugar" data-bs-slide="prev">
@@ -1180,10 +1875,10 @@
         </div>
 
         <div class="d-flex flex-column flex-lg-row justify-content-center gap-3 mb-5">
-            <a href="https://www.rionegro.gub.uy/" target="_blank" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
+            <a href="https://www.rionegro.gub.uy/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
                 <i class="bi bi-bank me-2"></i> Intendencia de Rio Negro
             </a>
-            <a href="https://www.tripadvisor.es/Tourism-g316042-Fray_Bentos_Rio_Negro_Department-Vacations.html" target="_blank" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
+            <a href="https://www.tripadvisor.es/Tourism-g316042-Fray_Bentos_Rio_Negro_Department-Vacations.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-lg px-4 fw-bold shadow-sm">
                 <i class="bi bi-compass me-2"></i> Descubre Fray Bentos
             </a>
         </div>
@@ -1207,13 +1902,13 @@
 
                     <br><br>
                     <div class="d-flex flex-column flex-md-row gap-3">
-                        <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                        <a href="https://utec.edu.uy/es/sobre-utec/utec-en-territorio/suroeste/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
                             Sobre UTEC Suroeste
                         </a>
-                        <a href="https://utec.edu.uy/es/noticias/suroeste/" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                        <a href="https://utec.edu.uy/es/noticias/suroeste/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
                             Noticias UTEC Suroeste
                         </a>
-                        <a href="https://whc.unesco.org/es/list/1464" target="_blank" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
+                        <a href="https://whc.unesco.org/es/list/1464" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-4 fw-bold shadow-sm">
                             Paisaje cultural industrial de Fray Bentos
                         </a>
                     </div>
@@ -1247,7 +1942,7 @@
                     </p>
                     
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhcuSDL_ruNTwo1-D4RWmdlH4p-iANVr3Ul-LotXiEJ5sSLw/viewform?pli=1" 
-                       target="_blank" 
+                       target="_blank" rel="noopener noreferrer" 
                        class="btn btn-primary btn-lg px-4 fw-bold shadow-sm"
                        data-bs-toggle="tooltip" 
                        data-bs-placement="right" 
@@ -1262,7 +1957,7 @@
                 </div>
  
                 <div class="col-lg-4 text-center p-4 bg-white d-flex align-items-center justify-content-center h-100">
-                    <img src="images/Inscripción (público general)_TECBIOTEC.png" alt="QR Asistente" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
+                    <img loading="lazy" src="images/Inscripción (público general)_TECBIOTEC.png" alt="QR Asistente" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
                 </div>
 
             </div>
@@ -1272,7 +1967,7 @@
     
             <div class="row g-0 align-items-center">
                 <div class="col-lg-4 p-4 p-lg-5 text-center d-flex align-items-center justify-content-center border-end">
-                    <img src="images/Inscripción (expositores)_TECBIOTEC.png" alt="Inscripción expositores" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
+                    <img loading="lazy" src="images/Inscripción (expositores)_TECBIOTEC.png" alt="Inscripción expositores" class="img-fluid rounded-3 shadow-sm" style="max-width: 250px;">
                 </div>
                 
                 <div class="col-lg-8 p-4 p-lg-5">
@@ -1283,7 +1978,7 @@
                     <p class="mb-0" style="text-align: justify; font-size: 1.1rem; color: #333;">
                         Es una oportunidad única para mostrar tu trabajo, recibir retroalimentación valiosa y formar parte del diálogo sobre los avances en ingeniería y biociencias.<br>
                         <a href="https://ee-eu.kobotoolbox.org/x/qXf69UdV" 
-                           target="_blank" 
+                           target="_blank" rel="noopener noreferrer" 
                            class="fw-bold text-primary text-decoration-none mt-2 d-inline-block"
                            onclick="gtag('event', 'click_inscripcion', {
                                'event_category': 'inscripcion',
@@ -1302,11 +1997,6 @@
                             <p class="mb-0 fs-5">Este congreso es <strong>sin costo de inscripción de trabajos</strong> para los autores.</p>
                         </div>
                     </div>
-
-
-
-
-
 
                 </div>
             </div>
@@ -1338,21 +2028,21 @@
                             
                             <div>
                                 <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                                    <a href="https://orcid.org/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
+                                    <a href="https://orcid.org/" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-naranja" title="¡Importante!">
                                         <i class="bi bi-plus-circle me-1"></i> Crear mi ORCID
                                     </a>
 
-                                    <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                    <a href="https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
                                         <i class="bi bi-question-circle me-1"></i> Guía paso a paso
                                     </a>
 
-                                    <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
+                                    <a href="https://info.orcid.org/es/video-tutorials/" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #fff; border-radius: 8px;">
                                         <i class="bi bi-play-btn me-1"></i> Videotutoriales
                                     </a>
                                 </div>
 
                                 <div class="text-center mt-4">
-                                    <img id="XOR_CID" src="images/XOR_CID.jpg" alt="XOR_CID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
+                                    <img loading="lazy" id="XOR_CID" src="images/XOR_CID.jpg" alt="Ejemplo de identificador ORCID" class="img-fluid w-75 mx-auto d-block rounded shadow-sm" style="max-width: 600px;">
                                 </div>
                             </div>
 
@@ -1374,7 +2064,7 @@
                             </p>
 
                             <div class="d-flex flex-wrap gap-3 mt-4">
-                                <a href="https://youtu.be/nuI9oVewPK0" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
+                                <a href="https://youtu.be/nuI9oVewPK0" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir video en YouTube">
                                     <i class="bi bi-youtube me-1" style="color: #ff0000;"></i> Ver video en YouTube
                                 </a>
                             </div><br>
@@ -1385,11 +2075,11 @@
                             
                             <div class="d-flex flex-wrap gap-3 mt-4">
                                 
-                                <a href="https://drive.google.com/file/d/17zxl_g8tyiYzh662T6YpXFRaWbhn4KX5/view" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Abrir PDF de la Guía">
+                                <a href="https://drive.google.com/file/d/17zxl_g8tyiYzh662T6YpXFRaWbhn4KX5/view" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Abrir PDF de la Guía">
                                     <i class="bi bi-file-earmark-text-fill me-1" style="color: #0056b3;"></i> Ver Guía práctica para postulación exitosa
                                 </a>
 
-                                <a href="https://drive.google.com/file/d/1GncvWgcWjavzsWTkFsDOaYJK69hbLMeG/view?usp=sharing" target="_blank" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir PDF del Ejemplo">
+                                <a href="https://drive.google.com/file/d/1GncvWgcWjavzsWTkFsDOaYJK69hbLMeG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn fw-bold shadow-sm px-4" style="background-color: #A6CE39; color: #000; border-radius: 8px;" data-bs-toggle="tooltip" data-bs-placement="right" title="Abrir PDF del Ejemplo">
                                     <i class="bi bi-file-earmark-pdf-fill me-1" style="color: #dc3545;"></i> Ver PDF de Ejemplo de referencia 
                                 </a>
 
@@ -1449,7 +2139,7 @@
                         <div class="col-12 text-center">
                             <p class="lead mb-0">
                                 <strong>¿Preguntas y Comentarios?</strong> escribe al correo de contacto:
-                                <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="color: rgb(192,0,0); text-decoration: none;">
+                                <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Anímate a escribirnos!" style="color: rgb(192,0,0); text-decoration: none;">
                                     <span style="text-shadow: 0px 0px 10px rgba(255,255,255, 0.8);">              
                                         <strong>tecbiotec@utec.edu.uy</strong>
                                     </span>
@@ -1468,8 +2158,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/educacion/carrera/licenciatura-en-analisis-alimentario/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/LAA-logo-CMYK_FBM.png" alt="Logo LAA" style="max-height: 180px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/licenciatura-en-analisis-alimentario/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/LAA-logo-CMYK_FBM.png" alt="Logo LAA" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -1485,8 +2175,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/educacion/posgrado/programa-de-posgrado-en-biociencias-y-sostenibilidad-alimentaria/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/Esp_Biociencias.png" alt="Esp&M_Biociencias" style="max-height: 180px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/educacion/posgrado/programa-de-posgrado-en-biociencias-y-sostenibilidad-alimentaria/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/Esp_Biociencias.png" alt="Esp&M_Biociencias" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -1502,8 +2192,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-mecatronica/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/IMEC-logo-CMYK_FBM.png" alt="Logo_IMEC" style="max-height: 180px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-mecatronica/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/IMEC-logo-CMYK_FBM.png" alt="Logo_IMEC" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -1519,8 +2209,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-logistica/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/ILOG-logo-CMYK_FBM.png" alt="Logo ILOG" style="max-height: 180px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/educacion/carrera/ingenieria-en-logistica/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/ILOG-logo-CMYK_FBM.png" alt="Logo ILOG" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -1531,52 +2221,6 @@
 
         <!-- ¡FUA! Estos son los miembros del comité organizador: -->
 
-        <style>
-            /* 1. Contenedor de la tarjeta: Bordes redondeados y transición suave */
-            .card-docente { 
-                border-radius: 10px; 
-                overflow: hidden; 
-                transition: all 0.3s ease; 
-            }
-
-            /* 2. Contenedor de la foto: Centra la imagen con espacio arriba y abajo */
-            .icon-container { 
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                padding: 20px 0; 
-            }
-
-            /* 3. Estilo de la imagen: Tamaño fijo, bordes y sombra */
-            .img-docente { 
-                width: 160px; 
-                height: 160px; 
-                object-fit: cover; /* Evita que la foto se estire */
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
-                border-radius: 25px; 
-                transition: transform 0.3s ease; /* Efecto hover */
-            }
-
-            /* 4. Efecto visual: La foto crece un poco al pasar el mouse */
-            .img-docente:hover { 
-                transform: scale(1.05); 
-            }
-
-            /* 5. Texto del perfil: Justificado y con tamaño de letra cómodo para lectura larga */
-            .collapse-content { 
-                text-align: justify; 
-                font-size: 0.9rem; 
-                line-height: 1.5; 
-            }
-            
-            /* Opcional: Estilo para los títulos */
-            .docente-cargo {
-                font-weight: 600;
-                color: #555;
-                margin-bottom: 10px;
-            }
-        </style>
-
         <div class="row">
 
             <div class="col-md-4 mb-4">
@@ -1586,8 +2230,8 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?ac71d9df68079ec566de0dc88b568a88" target="_blank">
-                                <img class="img-docente" src="images/Yamilé Lara.jpg" alt="Yamilé Lara">
+                            <a href="https://export.cvuy.uy/cv/?ac71d9df68079ec566de0dc88b568a88" target="_blank" rel="noopener noreferrer">
+                                <img loading="lazy" class="img-docente" src="images/Yamilé Lara.jpg" alt="Yamilé Lara">
                             </a>
                         </div>
                         <p class="card-text fw-bold mb-1">Coordinación<br>Ingeniería en Mecatrónica</p>
@@ -1601,8 +2245,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYamile">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYamile">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1615,8 +2262,8 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?03d2db806f51a66e099c07807aba53de" target="_blank">
-                                <img class="img-docente" src="images/Annabela Estevez.jpg" alt="Annabela Estevez">
+                            <a href="https://export.cvuy.uy/cv/?03d2db806f51a66e099c07807aba53de" target="_blank" rel="noopener noreferrer">
+                                <img loading="lazy" class="img-docente" src="images/Annabela Estevez.jpg" alt="Annabela Estevez">
                             </a>
                         </div>
                         <p class="card-text fw-bold mb-1">Coordinación<br>Licenciatura en Análisis Alimentario</p>
@@ -1630,8 +2277,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAnnabela">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAnnabela">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1644,7 +2294,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/Nolan Sánchez.jpg" alt="Nolan Sánchez">
+                            <img loading="lazy" class="img-docente" src="images/Nolan Sánchez.jpg" alt="Nolan Sánchez">
                         </div>
                         <p class="card-text fw-bold mb-1">Coordinación Ingeniería Logística<br>(Sede Fray Bentos)</p>
                         <p class="card-text mb-3">
@@ -1657,16 +2307,15 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilNolan">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilNolan">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm card-docente">
@@ -1675,8 +2324,8 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank">
-                                <img class="img-docente" src="images/JPFR.jpg" alt="JPFR">
+                            <a href="https://export.cvuy.uy/cv/?4591fc71f387b6445921fd67d286fad2" target="_blank" rel="noopener noreferrer">
+                                <img loading="lazy" class="img-docente" src="images/JPFR.jpg" alt="JPFR">
                             </a>
                         </div>
                         <p class="card-text fw-bold mb-1">Docente Ingeniería Logística<br>e Ingeniería Mecatrónica</p>
@@ -1690,8 +2339,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJPFR">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJPFR">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1704,7 +2356,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                                <img class="img-docente" src="images/JDMV.jpg" alt="JDMV">
+                            <img loading="lazy" class="img-docente" src="images/JDMV.jpg" alt="JDMV">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica<br>e Ingeniería Logística</p>
                         <p class="card-text mb-3">
@@ -1717,8 +2369,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJDMV">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJDMV">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1727,35 +2382,34 @@
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm card-docente">
                     <div class="card-header text-white bg-primary py-3">
-                        <h5 class="card-title mb-0">Diego Mauricio Acero Soto<br><small style="font-size: 0.8rem; opacity: 0.8;">Comité de Innovación de Procesos y Desarrollo Tecnológico</small></h5>
+                        <h5 class="card-title mb-0">Diego Acero Soto<br><small style="font-size: 0.8rem; opacity: 0.8;">Comité de Innovación de Procesos y Desarrollo Tecnológico</small></h5>
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <a href="https://academia.uniandes.edu.co/AcademyCv/d.aceros" target="_blank">
-                                <img class="img-docente" src="images/Diego Acero.jpg" alt="Diego Acero">
+                            <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000409421" target="_blank" rel="noopener noreferrer">
+                                <img loading="lazy" class="img-docente" src="images/Diego Acero.jpg" alt="Diego Acero">
                             </a>
                         </div>
                         <p class="card-text fw-bold mb-1">Doctorado<br>Gestión de la Innovación Tecnológica</p>
                         <p class="card-text mb-3">
-                            <small class="text-muted">Email: <a href="mailto:d.aceros@uniandes.edu.co">d.aceros@uniandes.edu.co</a></small>
+                            <small class="text-muted">Email: <a href="mailto:dacero@pedagogica.edu.co">dacero@pedagogica.edu.co</a></small>
                         </p>
 
                         <div class="collapse collapse-content text-start" id="perfilDiego">
                             <div class="pt-3 border-top mt-2">
-                                <p><small class="text-body-secondary">Es Ingeniero Electrónico y estudiante de doctorado en el programa DGIT de la Universidad de los Andes, Colombia. Se desempeñó como docente de inicio a la investigación en UTEC en el segundo semestre de 2023, y también como docente de planta en la Universidad Pedagógica Nacional de Colombia.</small></p>
+                                <p><small class="text-body-secondary">Es Ingeniero Electrónico y estudiante de doctorado en el programa DGIT de la Universidad de los Andes, Colombia. Se desempeñó como docente de inicio a la investigación en UTEC en el segundo semestre de 2023. Docente investigador con 23 años de experiencia. Experto en desarrollo de hardware-software y educación en tecnología.</small></p>
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilDiego">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilDiego">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm card-docente">
@@ -1764,7 +2418,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                                <img class="img-docente" src="images/Rossina Figliolo.jpg" alt="Rossina Figliolo">
+                            <img loading="lazy" class="img-docente" src="images/Rossina Figliolo.jpg" alt="Rossina Figliolo">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
                         <p class="card-text mb-3">
@@ -1777,8 +2431,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilRossina">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilRossina">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1791,7 +2448,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/Miqueas Abraham.jpg" alt="Miqueas Abraham">
+                            <img loading="lazy" class="img-docente" src="images/Miqueas Abraham.jpg" alt="Miqueas Abraham">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
                         <p class="card-text mb-3">
@@ -1804,8 +2461,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilMiqueas">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilMiqueas">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1818,7 +2478,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/JhonatanCardozo.jpg" alt="Jhonatan Cardozo">
+                            <img loading="lazy" class="img-docente" src="images/JhonatanCardozo.jpg" alt="Jhonatan Cardozo">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente<br>Licenciatura en Análisis Alimentario</p>
                         <p class="card-text mb-3">
@@ -1831,16 +2491,15 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJhonatan">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilJhonatan">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm card-docente">
@@ -1849,7 +2508,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/AgustinaRodriguez.jpg" alt="Agustina Rodriguez">
+                            <img loading="lazy" class="img-docente" src="images/AgustinaRodriguez.jpg" alt="Agustina Rodriguez">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente Ingeniería Logística</p>
                         <p class="card-text mb-3">
@@ -1862,8 +2521,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAgustina">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilAgustina">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1876,7 +2538,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/YecarandaRamos.jpg" alt="Yecaranda Ramos">
+                            <img loading="lazy" class="img-docente" src="images/YecarandaRamos.jpg" alt="Yecaranda Ramos">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
                         <p class="card-text mb-3">
@@ -1889,8 +2551,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYecaranda">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYecaranda">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1903,7 +2568,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/YazmínBentancour.jpg" alt="Yazmín Bentancour">
+                            <img loading="lazy" class="img-docente" src="images/YazmínBentancour.jpg" alt="Yazmín Bentancour">
                         </div>
                         <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
                         <p class="card-text mb-3">
@@ -1916,16 +2581,15 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYazmin">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYazmin">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm card-docente">
@@ -1934,9 +2598,9 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/María Chelotti.jpg" alt="María Chelotti">
+                            <img loading="lazy" class="img-docente" src="images/María Chelotti.jpg" alt="María Chelotti">
                         </div>
-                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
+                        <p class="card-text fw-bold mb-1">Docente <br> Ingeniería Mecatrónica</p>
                         <p class="card-text mb-3">
                             <small class="text-muted">Email: <a href="mailto:maria.chelotti@utec.edu.uy">maria.chelotti@utec.edu.uy</a></small>
                         </p>
@@ -1947,8 +2611,11 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilChelotti">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilChelotti">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1961,7 +2628,7 @@
                     </div>
                     <div class="card-body d-flex flex-column text-center">
                         <div class="icon-container">
-                            <img class="img-docente" src="images/AnelissePlachicoff.jpg" alt="Anelisse Plachicoff">
+                            <img loading="lazy" class="img-docente" src="images/AnelissePlachicoff.jpg" alt="Anelisse Plachicoff">
                         </div>
                         <p class="card-text fw-bold mb-1">Coordinadora<br>Relacionamiento con el medio</p>
                         <p class="card-text mb-3">
@@ -1974,41 +2641,15 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilPlachicoff">Ver perfil completo</button>
+                        <div class="pt-3">
+                            <button class="btn btn-sm btn-primary w-100 btn-toggle-perfil collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilPlachicoff">
+                                <span class="text-ver">Ver perfil completo</span>
+                                <span class="text-ocultar">Ocultar perfil</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm card-docente">
-                    <div class="card-header text-white bg-primary py-3">
-                        <h5 class="card-title mb-0">Yazmín Bentancour</h5>
-                    </div>
-                    <div class="card-body d-flex flex-column text-center">
-                        <div class="icon-container">
-                            <img class="img-docente" src="images/YazmínBentancour.jpg" alt="Yazmín Bentancour">
-                        </div>
-                        <p class="card-text fw-bold mb-1">Docente Ingeniería Mecatrónica</p>
-                        <p class="card-text mb-3">
-                            <small class="text-muted">Email: <a href="mailto:yazmin.bentancour@utec.edu.uy">yazmin.bentancour@utec.edu.uy</a></small>
-                        </p>
-
-                        <div class="collapse collapse-content text-start" id="perfilYazmin2">
-                            <div class="pt-3 border-top mt-2">
-                                <p><small class="text-body-secondary">Tecnóloga en Mecatrónica y estudiante de Ingeniería en Mecatrónica.<br><br>Es docente de inicio del área de Ingeniería Mecatrónica en el ITRSO.<br><br>Durante el año 2024 fue becaria de la carrera de IMEC y becaria de iniciación a la investigación de UTEC en la unidad tecnológica IMTE durante el 2025.</small></p>
-                            </div>
-                        </div>
-
-                        <div class="mt-auto pt-3">
-                            <button class="btn btn-sm btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#perfilYazmin2">Ver perfil completo</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
 
         </div>
 
@@ -2041,8 +2682,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/investigacion/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/DIE-logo-CMYK_FB.png" alt="Logo DIE" style="max-height: 180px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/investigacion/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/DIE-logo-CMYK_FB.png" alt="Logo DIE" style="max-height: 180px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -2058,8 +2699,8 @@
                     
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-lg-10 text-center">
-                            <a href="https://utec.edu.uy/es/educacion/carreras/" target="_blank" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                <img class="img-fluid" src="images/DED-logo.png" alt="Logo DED" style="max-height: 220px; object-fit: contain;">
+                            <a href="https://utec.edu.uy/es/educacion/carreras/" target="_blank" rel="noopener noreferrer" class="d-inline-block bg-white p-4 p-md-5 rounded-4 shadow-sm w-100" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <img loading="lazy" class="img-fluid" src="images/DED-logo.png" alt="Logo DED" style="max-height: 220px; object-fit: contain;">
                             </a>
                         </div>
                     </div>
@@ -2110,11 +2751,11 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5"> 
-                    <a href="https://www.paysandu.gub.uy/" target="_blank">
-                        <img class="img-fluid" src="images/LOGO_INT_Paysandu.png" alt="LOGO_INT_Paysandu" style="width: 240px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.paysandu.gub.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/LOGO_INT_Paysandu.png" alt="LOGO_INT_Paysandu" style="width: 240px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
-                    <a href="https://adp.org.uy/" target="_blank">
-                        <img class="img-fluid" src="images/LOGO_AD_Paysandu.png" alt="LOGO_AD_Paysandu" style="width: 440px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://adp.org.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/LOGO_AD_Paysandu.png" alt="LOGO_AD_Paysandu" style="width: 440px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2123,8 +2764,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">
-                    <a href="https://www.rionegro.gub.uy/" target="_blank">
-                        <img class="img-fluid" src="images/LOGO_INT_RioNegro.png" alt="LOGO_INT_RioNegro" style="width: 480px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.rionegro.gub.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/LOGO_INT_RioNegro.png" alt="LOGO_INT_RioNegro" style="width: 480px; height: 200px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>   
                 </div>
             </div>
@@ -2133,8 +2774,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.inefop.uy/proyectos" target="_blank">
-                        <img class="img-fluid" src="images/LOGO_INEFOP.png" alt="LOGO_INEFOP" style="width: 344px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.inefop.uy/proyectos" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/LOGO_INEFOP.png" alt="LOGO_INEFOP" style="width: 344px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
                 <div class="d-flex justify-content-center align-items-center my-5">  
@@ -2146,8 +2787,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://linktr.ee/montesdelplata" target="_blank">
-                        <img class="img-fluid" src="images/MDP_LogoFT.png" alt="MDP_LogoFT" style="width: 603px; height: 120px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://linktr.ee/montesdelplata" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/MDP_LogoFT.png" alt="MDP_LogoFT" style="width: 603px; height: 120px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2156,8 +2797,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.sofka.com.co/" target="_blank">
-                        <img class="img-fluid" src="images/SOFKA_FT.png" alt="SOFKA_FT" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.sofka.com.co/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/SOFKA_FT.png" alt="SOFKA_FT" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2166,8 +2807,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.dexin.com.uy/" target="_blank">
-                        <img class="img-fluid" src="images/Dexin.png" alt="Dexin" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.dexin.com.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/Dexin.png" alt="Dexin" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2176,8 +2817,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.biologistica.com.uy/inicio" target="_blank">
-                        <img class="img-fluid" src="images/BIOLOGISTICA.jpg" alt="BIOLOGISTICA" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.biologistica.com.uy/inicio" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/BIOLOGISTICA.jpg" alt="BIOLOGISTICA" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2186,8 +2827,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.laboratoriodezenur.com.uy/" target="_blank">
-                        <img class="img-fluid" src="images/DEZENUR.png" alt="DEZENUR" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.laboratoriodezenur.com.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/DEZENUR.png" alt="DEZENUR" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2196,8 +2837,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://pontevedra.com.uy/" target="_blank">
-                        <img class="img-fluid" src="images/Pontevedra.png" alt="Pontevedra" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://pontevedra.com.uy/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/Pontevedra.png" alt="Pontevedra" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2206,8 +2847,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://azucarlito.com/inicio/" target="_blank">
-                        <img class="img-fluid" src="images/Azucalito.png" alt="Azucalito" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://azucarlito.com/inicio/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/Azucalito.png" alt="Azucalito" style="width: 336px; height: 100px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2216,8 +2857,8 @@
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="d-flex justify-content-center align-items-center my-5">  
-                    <a href="https://www.instagram.com/aguamoroti/" target="_blank">
-                        <img class="img-fluid" src="images/ElMoroti.png" alt="Moroti" style="width: 240px; height: 150px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
+                    <a href="https://www.instagram.com/aguamoroti/" target="_blank" rel="noopener noreferrer">
+                        <img loading="lazy" class="img-fluid" src="images/ElMoroti.png" alt="Moroti" style="width: 240px; height: 150px; box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);">
                     </a>
                 </div>
             </div>
@@ -2227,15 +2868,15 @@
     </section>
 
     <footer class="bg-primary text-white text-center py-3">
-        <p class="lead">TecBioTec 2026 - <a href="https://utec.edu.uy/es/" target="_blank" style="color: #FFFFFF;"><strong>UTEC</strong></a></p>
+        <p class="lead">TecBioTec 2026 - <a href="https://utec.edu.uy/es/" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;"><strong>UTEC</strong></a></p>
         <p class="lead">
-            <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" class="text-white" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Anímate a escribirnos!">Contacta con nosotros</a> al Email: <strong>tecbiotec@utec.edu.uy</strong>
+            <a href="mailto:tecbiotec@utec.edu.uy" target="_blank" rel="noopener noreferrer" class="text-white" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Anímate a escribirnos!">Contacta con nosotros</a> al Email: <strong>tecbiotec@utec.edu.uy</strong>
         </p>
         <p class="lead" style="font-size: 14px;">El diseño conceptual y la creación de contenido están a cargo del comité organizador.<br>Las imágenes han sido proporcionadas por el departamento de comunicaciones de UTEC, junto con otras obtenidas de dominio público.</p>
-        <p class="lead" style="font-size: 14px;">Esta página web ha sido desarrollada utilizando el framework <a href="https://getbootstrap.com/" target="_blank" style="color: #FFFFFF;">Bootstrap 5.3</a></p>
-        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 21-04-2026<br><br>República Oriental del Uruguay</p>
+        <p class="lead" style="font-size: 14px;">Esta página web ha sido desarrollada utilizando el framework <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;">Bootstrap 5.3</a></p>
+        <p class="lead" style="font-size: 14px;">Desarrollo web: JPFR & JDMV<br>Marzo de 2026<br>Ultima actualización: 08-05-2026<br><br>República Oriental del Uruguay</p>
         <p class="lead" style="font-size: 14px;">
-            <a href="https://utec.edu.uy/uploads/documento/17de002e9a04c9d1859f0ffaef508d38e8452613.pdf" target="_blank" style="color: #FFFFFF;" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Consulta y conoce mas!!">
+            <a href="https://utec.edu.uy/uploads/documento/17de002e9a04c9d1859f0ffaef508d38e8452613.pdf" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Consulta y conoce mas!!">
                 Política de privacidad y tratamiento de datos
             </a> 
         </p>
