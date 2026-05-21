@@ -1,8 +1,8 @@
-// =========================================================
+// ======================================
 // TECBIOTEC 2026 - Scripts principales
 // Bootstrap 5.3 + Tailwind CSS 4
 // 21-05-2026
-// =========================================================
+// ======================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -181,6 +181,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     } else {
         console.warn("Bootstrap no está disponible. Revisa que bootstrap.bundle.min.js cargue antes de scripts.js.");
+    }
+
+    /* =======================================
+       4. CIERRE AUTOMÁTICO DEL MENÚ MÓVIL
+       ======================================= */
+
+    const navbarCollapseEl = document.getElementById("navbarNav");
+    const navbarTogglerEl = document.querySelector(".navbar-toggler");
+
+    if (navbarCollapseEl && navbarTogglerEl && typeof bootstrap !== "undefined") {
+        document.querySelectorAll("#navbarNav .nav-link").forEach((navLink) => {
+            navLink.addEventListener("click", () => {
+                const isMobileMenuVisible = window.getComputedStyle(navbarTogglerEl).display !== "none";
+                const isMenuOpen = navbarCollapseEl.classList.contains("show");
+
+                if (isMobileMenuVisible && isMenuOpen) {
+                    bootstrap.Collapse.getOrCreateInstance(navbarCollapseEl).hide();
+                }
+            });
+        });
     }
 
 });
