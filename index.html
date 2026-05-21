@@ -92,16 +92,21 @@
     </div>
 
     <!-- Esto es un super comentario para aclarar que aquí viene el header -->
-    <header class="navbar navbar-expand-xl navbar-dark sticky-top z-[1030] shadow-lg bg-gradient-to-r from-[#1473F7] via-[#126CF4] to-[#004B8D] border-bottom border-white/10"
-        style="backdrop-filter: blur(14px);">
+    <!-- 
+    <header class="navbar navbar-expand-xl navbar-dark sticky-top z-[1030] shadow-lg bg-gradient-to-r from-[#1473F7] via-[#126CF4] to-[#004B8D] border-bottom border-white/10" style="backdrop-filter: blur(14px);">
+    -->
+    <header class="navbar navbar-expand-xl navbar-dark sticky-top z-[1030] shadow-lg bg-gradient-to-r from-[#1473F7] via-[#126CF4] to-[#004B8D] border-bottom border-white/10 tbt-main-header" style="backdrop-filter: blur(14px);">
 
-        <div class="container-fluid d-flex flex-column px-3 py-2">
+        <!-- <div class="container-fluid d-flex flex-column px-3 py-2"> -->
+        <div class="container-fluid d-flex flex-column px-3 py-2 tbt-header-shell">
 
             <!-- Fila superior: logos + título + botón móvil -->
-            <div class="d-flex align-items-center w-100 gap-3">
+            <!-- <div class="d-flex align-items-center w-100 gap-3"> -->
+            <div class="d-flex align-items-center w-100 gap-3 tbt-header-top">
 
                 <!-- Logos -->
-                <div class="d-flex align-items-center gap-3 flex-shrink-0 rounded-4 px-3 py-2 bg-white/10 ring-1 ring-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.18)]">
+                <!-- <div class="d-flex align-items-center gap-3 flex-shrink-0 rounded-4 px-3 py-2 bg-white/10 ring-1 ring-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.18)]"> -->
+                <div class="d-flex align-items-center gap-3 flex-shrink-0 rounded-4 px-3 py-2 bg-white/10 ring-1 ring-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.18)] tbt-logo-box">
 
                     <a href="https://utec.edu.uy/es/"
                        target="_blank"
@@ -124,7 +129,9 @@
                 </div>
 
                 <!-- Título -->
-                <a class="navbar-brand text-decoration-none me-0 flex-grow-1 min-w-0 text-center" href="#">
+                <!-- <a class="navbar-brand text-decoration-none me-0 flex-grow-1 min-w-0 text-center" href="#"> -->
+                <a class="navbar-brand text-decoration-none me-0 flex-grow-1 min-w-0 text-center tbt-brand" href="#">
+
                     <h2 class="mb-0 fw-bold d-none d-md-block text-truncate drop-shadow-sm text-white"
                         style="line-height: 1.15;">
                         2o Congreso de Tecnología y Biociencias de
@@ -144,7 +151,8 @@
                 </a>
 
                 <!-- Botón móvil -->
-                <button class="navbar-toggler border-white/30 shadow-sm flex-shrink-0"
+                <!-- <button class="navbar-toggler border-white/30 shadow-sm flex-shrink-0" -->
+                <button class="navbar-toggler border-white/30 shadow-sm flex-shrink-0 tbt-menu-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
@@ -162,7 +170,8 @@
             </div>
 
             <!-- Fila inferior: navegación -->
-            <div class="collapse navbar-collapse w-100 mt-1 xl:pl-[280px]" id="navbarNav">
+            <!-- <div class="collapse navbar-collapse w-100 mt-1 xl:pl-[280px]" id="navbarNav"> -->
+            <div class="collapse navbar-collapse w-100 mt-1 xl:pl-[280px] tbt-nav-collapse" id="navbarNav">
                 <ul class="navbar-nav w-100 justify-content-center align-items-center text-center text-xl-nowrap flex-wrap py-2 py-xl-0 gap-xl-1"
                     style="font-size: 0.94rem;">
 
