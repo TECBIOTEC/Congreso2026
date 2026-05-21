@@ -1,102 +1,186 @@
-// Esperar a que todo el HTML se cargue antes de ejecutar el código
+// =========================================================
+// TECBIOTEC 2026 - Scripts principales
+// Bootstrap 5.3 + Tailwind CSS 4
+// 21-05-2026
+// =========================================================
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ==========================================
+    /* =====================
        1. CUENTA REGRESIVA
-       ========================================== */
+       ===================== */
+
     const countdownEl = document.getElementById("countdown");
 
-    // Solo ejecutamos el contador si el elemento existe en la página
     if (countdownEl) {
-        // Configuración de la nueva fecha de inicio del evento: 4 de junio de 2026
-        const eventDate = new Date("June 4, 2026 09:00:00").getTime();
+        // Fechas del evento en horario de Uruguay (UTC-3)
+        const eventStart = new Date("2026-06-04T09:00:00-03:00").getTime();
+        const secondDayStart = new Date("2026-06-05T00:00:00-03:00").getTime();
+        const eventEnd = new Date("2026-06-06T00:00:00-03:00").getTime();
 
-        // Actualiza la cuenta regresiva cada segundo
-        const countdownInterval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = eventDate - now;
+        let countdownInterval = null;
 
-            // Si el evento ya llegó, detenemos el contador y salimos de la función
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                countdownEl.innerHTML = "¡El evento ha comenzado!";
-                return; 
+        const updateCountdown = () => {
+            const now = Date.now();
+
+            // Antes del inicio oficial: cuenta regresiva
+            if (now < eventStart) {
+                const distance = eventStart - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((distance / (1000 * 60)) % 60);
+                const seconds = Math.floor((distance / 1000) % 60);
+
+                countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                return;
             }
 
-            // Cálculos de tiempo
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // 4 de junio, desde las 09:00: primer día del congreso
+            if (now >= eventStart && now < secondDayStart) {
+                countdownEl.textContent = "Primer día de congreso";
+                return;
+            }
 
-            // Inyectar el resultado en el HTML (usando Template Literals)
-            countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }, 1000);
+            // 5 de junio: segundo día del congreso
+            if (now >= secondDayStart && now < eventEnd) {
+                countdownEl.textContent = "Segundo día de congreso";
+                return;
+            }
+
+            // Después del 5 de junio
+            countdownEl.textContent = "El evento ha finalizado";
+
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+        };
+
+        updateCountdown();
+        countdownInterval = setInterval(updateCountdown, 1000);
     }
 
     /* ==========================================
-       2. MANEJO DEL TEMA (CLARO / OSCURO)
+       2. MANEJO DEL TEMA CLARO / OSCURO / AUTO
        ========================================== */
 
-    // Función para cambiar la imagen del logo según el tema
-    const updateLogo = () => {
-        const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-        const logo = document.getElementById('logo-main');
-        
-        // Verificamos si el logo existe antes de cambiar su ruta
-        if (logo) {
-            // Sintaxis corta: Si es dark usa logoTB, sino logoTN
-            logo.src = currentTheme === 'dark' ? 'images/logoTB.png' : 'images/logoTN.png';
+    const getStoredTheme = () => {
+        try {
+            return localStorage.getItem("theme");
+        } catch (error) {
+            return null;
         }
     };
 
-    // Función para actualizar el ícono del botón de tema
+    const setStoredTheme = (theme) => {
+        try {
+            localStorage.setItem("theme", theme);
+        } catch (error) {
+            // Si localStorage no está disponible, no se rompe la web.
+        }
+    };
+
+    const getSystemTheme = () => {
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    };
+
+    const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme();
+
+        if (storedTheme === "light" || storedTheme === "dark" || storedTheme === "auto") {
+            return storedTheme;
+        }
+
+        return "auto";
+    };
+
+    const applyTheme = (theme) => {
+        const resolvedTheme = theme === "auto" ? getSystemTheme() : theme;
+        document.documentElement.setAttribute("data-bs-theme", resolvedTheme);
+        updateLogo(resolvedTheme);
+        updateThemeIcon(theme);
+        updateThemeButtons(theme);
+    };
+
+    const updateLogo = (resolvedTheme) => {
+        const logo = document.getElementById("logo-main");
+
+        if (!logo) return;
+
+        logo.src = resolvedTheme === "dark"
+            ? "images/logoTB.png"
+            : "images/logoTN.png";
+    };
+
     const updateThemeIcon = (theme) => {
-        const themeIcon = document.querySelector('.theme-icon-active');
-        if (!themeIcon) return; // Evita errores si no encuentra el ícono
+        const themeIcon = document.querySelector(".theme-icon-active");
 
-        if (theme === 'light') {
-            themeIcon.innerHTML = '<use href="#sun-fill"></use>';
-        } else if (theme === 'dark') {
-            themeIcon.innerHTML = '<use href="#moon-stars-fill"></use>';
-        } else {
-            themeIcon.innerHTML = '<use href="#circle-half"></use>';
-        }
+        if (!themeIcon) return;
+
+        const iconHref = {
+            light: "#sun-fill",
+            dark: "#moon-stars-fill",
+            auto: "#circle-half"
+        };
+
+        themeIcon.innerHTML = `<use href="${iconHref[theme] || iconHref.auto}"></use>`;
     };
 
-    // 2.1 Aplicar el tema guardado en el almacenamiento local al inicio (si existe)
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-bs-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-    }
-    // Asegurar que el logo correcto cargue desde el inicio
-    updateLogo(); 
+    const updateThemeButtons = (activeTheme) => {
+        document.querySelectorAll("[data-bs-theme-value]").forEach((button) => {
+            const buttonTheme = button.getAttribute("data-bs-theme-value");
+            const isActive = buttonTheme === activeTheme;
 
-    // 2.2 Escuchar los clics en los botones de cambio de tema
-    document.querySelectorAll('[data-bs-theme-value]').forEach((button) => {
-        button.addEventListener('click', function () {
-            const theme = this.getAttribute('data-bs-theme-value');
-            document.documentElement.setAttribute('data-bs-theme', theme);
-            localStorage.setItem('theme', theme);
-            
-            updateLogo(); 
-            updateThemeIcon(theme);
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", isActive ? "true" : "false");
+
+            const checkIcon = button.querySelector("svg:last-child");
+            if (checkIcon) {
+                checkIcon.classList.toggle("d-none", !isActive);
+            }
+        });
+    };
+
+    // Aplicar tema inicial
+    applyTheme(getPreferredTheme());
+
+    // Escuchar clics en selector de tema
+    document.querySelectorAll("[data-bs-theme-value]").forEach((button) => {
+        button.addEventListener("click", () => {
+            const selectedTheme = button.getAttribute("data-bs-theme-value");
+
+            if (!selectedTheme) return;
+
+            setStoredTheme(selectedTheme);
+            applyTheme(selectedTheme);
         });
     });
 
-    /* ==========================================
-       3. INICIALIZACIÓN DE BOOTSTRAP (Popovers y Tooltips)
-       ========================================== */
-
-    // Inicialización de Tooltips
-    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltipTriggerEl) => {
-        new bootstrap.Tooltip(tooltipTriggerEl);
+    // Si el usuario tiene modo AUTO, responder a cambios del sistema
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+        if (getPreferredTheme() === "auto") {
+            applyTheme("auto");
+        }
     });
 
-    // Inicialización de Popovers
-    document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popoverTriggerEl) => {
-        new bootstrap.Popover(popoverTriggerEl);
-    });
+    /* =======================================
+       3. INICIALIZACIÓN SEGURA DE BOOTSTRAP
+       ======================================= */
+
+    if (typeof bootstrap !== "undefined") {
+
+        // Tooltips
+        document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltipTriggerEl) => {
+            bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl);
+        });
+
+        // Popovers
+        document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popoverTriggerEl) => {
+            bootstrap.Popover.getOrCreateInstance(popoverTriggerEl);
+        });
+
+    } else {
+        console.warn("Bootstrap no está disponible. Revisa que bootstrap.bundle.min.js cargue antes de scripts.js.");
+    }
 
 });
