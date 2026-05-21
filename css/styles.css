@@ -601,3 +601,192 @@ body.dark .titulo-eje-cientifico {
         scroll-behavior: auto !important;
     }
 }
+
+/* =================================================
+   14. HEADER RESPONSIVO MÓVIL - TECBIOTEC
+   Ajuste para celulares en vertical/horizontal
+   ================================================= */
+
+/* Evita desbordes horizontales del header */
+.tbt-main-header {
+    overflow-x: clip;
+}
+
+.tbt-header-shell {
+    max-width: 100%;
+}
+
+/* El menú desplegado en tablet/móvil debe poder desplazarse */
+@media (max-width: 1199.98px) {
+    .tbt-nav-collapse {
+        width: 100%;
+        max-height: calc(100dvh - 135px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.75rem;
+    }
+
+    .tbt-nav-collapse .navbar-nav {
+        align-items: stretch !important;
+    }
+
+    .tbt-nav-collapse .nav-link {
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+/* Celular vertical: logos y botón arriba; título abajo */
+@media (max-width: 575.98px) {
+    html {
+        scroll-padding-top: 180px;
+    }
+
+    .tbt-header-shell {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        padding-top: 0.65rem !important;
+        padding-bottom: 0.65rem !important;
+    }
+
+    .tbt-header-top {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+            "logos toggle"
+            "title title";
+        align-items: center;
+        gap: 0.65rem !important;
+    }
+
+    .tbt-logo-box {
+        grid-area: logos;
+        justify-self: start;
+        gap: 0.6rem !important;
+        padding: 0.55rem 0.7rem !important;
+        max-width: min(72vw, 260px);
+    }
+
+    .tbt-logo-box img[alt="Logo UTEC"] {
+        width: 96px !important;
+        max-width: 96px !important;
+    }
+
+    .tbt-logo-box img[alt="TecBioTec Logo"] {
+        width: 56px !important;
+        height: 56px !important;
+        max-width: 56px !important;
+        max-height: 56px !important;
+    }
+
+    .tbt-menu-toggle {
+        grid-area: toggle;
+        justify-self: end;
+        align-self: center;
+        width: 46px;
+        height: 42px;
+        padding: 0.35rem 0.55rem;
+    }
+
+    .tbt-brand {
+        grid-area: title;
+        width: 100%;
+        max-width: 100%;
+        justify-self: center;
+        text-align: center !important;
+        white-space: normal;
+        padding-top: 0.2rem;
+    }
+
+    .tbt-brand h2 {
+        font-size: clamp(0.82rem, 3.8vw, 1.02rem) !important;
+        line-height: 1.15 !important;
+        white-space: normal;
+        text-wrap: balance;
+    }
+
+    .tbt-nav-collapse {
+        max-height: calc(100dvh - 165px);
+        margin-top: 0.5rem !important;
+    }
+
+    .tbt-nav-collapse .navbar-nav {
+        gap: 0.15rem;
+    }
+
+    .tbt-nav-collapse .nav-link {
+        font-size: 1.02rem;
+        padding-top: 0.55rem !important;
+        padding-bottom: 0.55rem !important;
+    }
+}
+
+/* Celular horizontal: menú en dos columnas */
+@media (max-width: 991.98px) and (max-height: 520px) {
+    .tbt-header-shell {
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.45rem !important;
+    }
+
+    .tbt-logo-box {
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.45rem !important;
+    }
+
+    .tbt-logo-box img[alt="Logo UTEC"] {
+        width: 92px !important;
+        max-width: 92px !important;
+    }
+
+    .tbt-logo-box img[alt="TecBioTec Logo"] {
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    .tbt-brand h2 {
+        font-size: clamp(0.82rem, 2.2vw, 1.05rem) !important;
+        line-height: 1.1 !important;
+    }
+
+    .tbt-nav-collapse {
+        max-height: calc(100dvh - 112px);
+        overflow-y: auto;
+        padding-top: 0.25rem;
+    }
+
+    .tbt-nav-collapse .navbar-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.2rem 0.75rem;
+        width: 100%;
+    }
+
+    .tbt-nav-collapse .nav-item {
+        width: 100%;
+    }
+
+    .tbt-nav-collapse .nav-link {
+        font-size: 0.95rem;
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+    }
+}
+
+/* Pantallas muy angostas */
+@media (max-width: 380px) {
+    .tbt-logo-box img[alt="Logo UTEC"] {
+        width: 86px !important;
+        max-width: 86px !important;
+    }
+
+    .tbt-logo-box img[alt="TecBioTec Logo"] {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .tbt-brand h2 {
+        font-size: 0.78rem !important;
+    }
+}
