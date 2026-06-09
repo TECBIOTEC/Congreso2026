@@ -1,14 +1,10 @@
-// ======================================
 // TECBIOTEC 2026 - Scripts principales
 // Bootstrap 5.3 + Tailwind CSS 4
-// 21-05-2026
-// ======================================
+// 09-06-2026
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =====================
-       1. CUENTA REGRESIVA
-       ===================== */
+    /* 1. CUENTA REGRESIVA */
 
     const countdownEl = document.getElementById("countdown");
 
@@ -60,9 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         countdownInterval = setInterval(updateCountdown, 1000);
     }
 
-    /* ==========================================
-       2. MANEJO DEL TEMA CLARO / OSCURO / AUTO
-       ========================================== */
+    /* 2. MANEJO DEL TEMA CLARO / OSCURO / AUTO */
 
     const getStoredTheme = () => {
         try {
@@ -156,16 +150,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Si el usuario tiene modo AUTO, responder a cambios del sistema
+    // Si el usuario tiene modo AUTO, responde a cambios del sistema
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
         if (getPreferredTheme() === "auto") {
             applyTheme("auto");
         }
     });
 
-    /* =======================================
-       3. INICIALIZACIÓN SEGURA DE BOOTSTRAP
-       ======================================= */
+    /* 3. INICIALIZACIÓN SEGURA DE BOOTSTRAP */
 
     if (typeof bootstrap !== "undefined") {
 
@@ -183,9 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.warn("Bootstrap no está disponible. Revisa que bootstrap.bundle.min.js cargue antes de scripts.js.");
     }
 
-    /* =======================================
-       4. CIERRE AUTOMÁTICO DEL MENÚ MÓVIL
-       ======================================= */
+    /* 4. CIERRE AUTOMÁTICO DEL MENÚ MÓVIL */
 
     const navbarCollapseEl = document.getElementById("navbarNav");
     const navbarTogglerEl = document.querySelector(".navbar-toggler");
@@ -201,6 +191,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
+    }
+
+    /* 5. MODAL DE CIERRE Y RECONOCIMIENTO */
+
+    const modalGraciasEl = document.getElementById("modalGraciasTecBioTec");
+
+    if (modalGraciasEl && typeof bootstrap !== "undefined") {
+        const yaMostrado = sessionStorage.getItem("modalGraciasTecBioTecMostrado");
+
+        if (!yaMostrado) {
+            const modalGracias = new bootstrap.Modal(modalGraciasEl, {
+                backdrop: true,
+                keyboard: true,
+                focus: true
+            });
+
+            modalGracias.show();
+            sessionStorage.setItem("modalGraciasTecBioTecMostrado", "true");
+        }
     }
 
 });
