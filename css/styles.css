@@ -790,3 +790,31 @@ body.dark .titulo-eje-cientifico {
         font-size: 0.78rem !important;
     }
 }
+
+/* Modal de cierre TecBioTec 2026 - Ajustes responsivos para video Drive */
+
+#modalGraciasTecBioTec iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    #modalGraciasTecBioTec .modal-content {
+        border-radius: 0 !important;
+    }
+
+    #modalGraciasTecBioTec .modal-body {
+        padding: 1rem !important;
+    }
+
+    #modalGraciasTecBioTec .modal-title {
+        font-size: 1.35rem;
+        line-height: 1.2;
+    }
+
+    #modalGraciasTecBioTec .ratio {
+        min-height: 220px;
+    }
+}
